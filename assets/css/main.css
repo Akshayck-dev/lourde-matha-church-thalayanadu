@@ -6983,3 +6983,18 @@ body.modal-open {
     body.nav-open .nav-overlay { opacity: 1; pointer-events: auto; }
     body.nav-open { overflow: hidden; }
 }
+
+/* ===== Neutralize old template .nav-link leftovers inside the new menu ===== */
+.desktop-nav .nav-link,
+#mobileDrawer .nav-link { color: #ffffff !important; }
+.desktop-nav .nav-link:hover { color: var(--menu-accent) !important; }
+.desktop-nav .nav-link.active,
+.desktop-nav .nav-item.has-sub.active-parent > .sub-toggle,
+#mobileDrawer .nav-link.active,
+#mobileDrawer .nav-item.open > .nav-link { color: var(--menu-accent) !important; }
+.desktop-nav .nav-link::after,
+.desktop-nav .sub-menu a::after,
+#mobileDrawer .nav-link::after,
+#mobileDrawer .sub-menu a::after { content: none !important; display: none !important; }
+/* Hide floating CTA buttons while the drawer is open (like the reference) */
+body.nav-open .floating-actions { display: none !important; }
