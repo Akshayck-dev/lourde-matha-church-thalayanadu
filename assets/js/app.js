@@ -874,8 +874,12 @@ $(function() {
         fab.classList.remove('fab-hidden');
         fab.style.top = 'auto';
         fab.style.bottom = '20px';
+        // NOTE: getBoundingClientRect is visual-viewport relative, so the gap
+        // must be measured against visualViewport.height (not innerHeight),
+        // otherwise the buggy webview's short layout viewport hides the gap.
+        var vvH = window.visualViewport ? window.visualViewport.height : window.innerHeight;
         var rect = fab.getBoundingClientRect();
-        var gap = window.innerHeight - rect.bottom;
+        var gap = vvH - rect.bottom;
         if (gap > 120) {
             fab.style.top = Math.round(rect.top + gap) + 'px';
             fab.style.bottom = 'auto';
