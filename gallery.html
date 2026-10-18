@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parish Gallery | Lourde Matha Church, Thalayanadu</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css?v=2.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=10.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <style>
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            aspect-ratio: 4 / 3; /* Force uniform high-fidelity grid */
+            position: relative;
+            background: #f0f0f0;
+        }
+        .gallery-item img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: block;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header data-include="header"></header>
+
+        <!-- Banner -->
+        <section class="subpage-banner">
+            <div class="container" data-aos="fade-up">
+                <h1>Parish Gallery</h1>
+                <p class="text-white-50">Glimpses of faith, feast and fellowship at Lourde Matha Church</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+
+        <!-- Gallery Grid -->
+        <section class="section bg-white pt-2" id="gallery-start">
+            <div class="container">
+                <div class="text-center mb-3" data-aos="fade-up">
+                    <h2 class="display-6">Moments of Faith</h2>
+                    <p class="text-muted small">The church, the grotto, the feast and the faithful</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/hero-church-exterior.jpg" data-fancybox="gallery" data-title="The parish church at dusk">
+                                <img src="./assets/images/hero-church-exterior.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="The parish church at dusk" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/hero-church-interior.jpg" data-fancybox="gallery" data-title="The sanctuary and altar">
+                                <img src="./assets/images/hero-church-interior.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="The sanctuary and altar" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/about-marian-grotto.jpg" data-fancybox="gallery" data-title="Grotto of Our Lady of Lourdes">
+                                <img src="./assets/images/about-marian-grotto.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Grotto of Our Lady of Lourdes" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/gallery-feast-procession.jpg" data-fancybox="gallery" data-title="Parish feast procession">
+                                <img src="./assets/images/gallery-feast-procession.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Parish feast procession" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/gallery-stained-glass.jpg" data-fancybox="gallery" data-title="Stained glass in sacred light">
+                                <img src="./assets/images/gallery-stained-glass.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Stained glass in sacred light" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/gallery-votive-candles.jpg" data-fancybox="gallery" data-title="Candles of prayer and petition">
+                                <img src="./assets/images/gallery-votive-candles.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Candles of prayer and petition" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/gallery-bell-tower.jpg" data-fancybox="gallery" data-title="The bell tower">
+                                <img src="./assets/images/gallery-bell-tower.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="The bell tower" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="gallery-item shadow-sm h-100">
+                            <a href="./assets/images/gallery-parish-community.jpg" data-fancybox="gallery" data-title="The parish community at prayer">
+                                <img src="./assets/images/gallery-parish-community.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="The parish community at prayer" loading="lazy" width="600" height="450">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <footer data-include="footer"></footer>
+    </div>
+
+    <script src="./assets/js/jquery.js" defer></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script src="./assets/js/app.js?v=8.0" defer></script>
+    <div data-include="modals"></div>
+</body>
+</html>

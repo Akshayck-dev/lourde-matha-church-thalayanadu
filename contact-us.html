@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit & Contact | Lourde Matha Church, Thalayanadu</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css?v=22.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=10.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- CSS START (v22 Scoped Modern Split - Custom Validation) -->
+    <style>
+        .contact-v12 {
+            padding: 20px 10px !important;
+            background: #f9fafb !important;
+            font-family: 'Inter', sans-serif !important;
+            min-height: auto !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        .v12-container {
+            max-width: 1100px !important;
+            margin: auto !important;
+            display: flex !important;
+            gap: 50px !important;
+            align-items: stretch !important;
+            width: 100%;
+        }
+        /* LEFT CARD: GET IN TOUCH (v15: Transparent Theme) */
+        .v12-info-card {
+            flex: 1 !important;
+            background: transparent !important;
+            color: #0b2a4a !important;
+            padding: 45px 0 !important;
+            border-radius: 16px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+        .v12-info-card h3 {
+            font-family: 'Playfair Display', serif !important;
+            font-size: 38px !important;
+            font-weight: 700 !important;
+            margin-bottom: 30px !important;
+            color: #0b2a4a !important;
+        }
+        .v12-info-items p {
+            margin-bottom: 25px !important;
+            font-size: 17px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 15px !important;
+            color: #4b5563 !important;
+        }
+        .v12-info-items i {
+            color: #d4a63a !important;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+        }
+        .v12-whatsapp-btn {
+            display: inline-block !important;
+            margin-top: 30px !important;
+            background: #25d366 !important;
+            padding: 15px 30px !important;
+            border-radius: 12px !important;
+            color: #fff !important;
+            text-decoration: none !important;
+            font-weight: 700 !important;
+            transition: all 0.3s ease !important;
+            text-align: center !important;
+            width: fit-content;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.2) !important;
+        }
+
+        /* RIGHT CARD: FORM (Clean Shadow) */
+        .v12-form-card {
+            flex: 1.1 !important;
+            background: #fff !important;
+            padding: 25px !important;
+            border-radius: 16px !important;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.06) !important;
+            border: 1px solid rgba(0,0,0,0.03) !important;
+        }
+        .v12-form-card h2 {
+            font-family: 'Playfair Display', serif !important;
+            font-weight: 700 !important;
+            color: #0b2a4a !important;
+            margin-bottom: 20px !important;
+            font-size: 26px !important;
+        }
+        .form-group { width: 100% !important; margin-bottom: 15px !important; position: relative !important; }
+        .v12-form-card input, .v12-form-card textarea {
+            width: 100% !important;
+            padding: 14px !important;
+            border-radius: 10px !important;
+            border: 1px solid #e5e5e5 !important;
+            background: #fafafa !important;
+            color: #333 !important;
+            font-family: 'Inter', sans-serif !important;
+            transition: all 0.2s ease-in-out !important;
+            font-size: 15px !important;
+        }
+        .v12-form-card input:focus, .v12-form-card textarea:focus {
+            border-color: #d4a63a !important;
+            background: #ffffff !important;
+            box-shadow: 0 0 0 3px rgba(212, 166, 58, 0.15) !important;
+            outline: none !important;
+        }
+        .error-message {
+            color: #e74c3c !important;
+            font-size: 12px !important;
+            margin-top: 5px !important;
+            display: none;
+            font-weight: 500 !important;
+        }
+        .input-error {
+            border-color: #e74c3c !important;
+            background: #fff5f5 !important;
+        }
+        .v12-form-card textarea { height: 80px !important; resize: none !important; }
+        .v12-submit-btn {
+            width: 100% !important;
+            padding: 15px !important;
+            background: #d4a63a !important;
+            color: #fff !important;
+            border-radius: 10px !important;
+            border: none !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            font-size: 15px !important;
+        }
+        .v12-submit-btn:hover { background: #b88e2d !important; transform: translateY(-1px) !important; }
+
+        @media (max-width: 768px) {
+            .v12-container { flex-direction: column !important; gap: 30px !important; }
+            .v12-info-card, .v12-form-card { width: 100% !important; padding: 35px 25px !important; }
+            .contact-v12 { padding: 40px 15px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header data-include="header"></header>
+        <section class="subpage-banner">
+            <div class="container" data-aos="fade-up">
+                <h1>Visit &amp; Contact</h1>
+                <p class="text-white-50">We would love to welcome you to our parish</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- HTML START (v22 Transparent Split - Custom Validation) -->
+        <section class="contact-v12">
+            <div class="v12-container" data-aos="fade-up">
+                <div class="v12-info-card">
+                    <h3>Get in Touch</h3>
+                    <div class="v12-info-items">
+                        <a href="tel:+914862258257" class="contact-item">
+                            <i class="fas fa-phone-alt"></i> +91 4862 258 257
+                        </a>
+                        <span class="contact-item">
+                            <i class="far fa-clock"></i> Open daily · 6:00 AM – 8:00 PM
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-calendar-alt"></i> Established 26 October 1935
+                        </span>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i> Kolapra – Thalayanadu Rd, Idukki, Kerala 685585
+                        </a>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener" class="v12-whatsapp-btn"><i class="fas fa-diamond-turn-right"></i> Get Directions</a>
+                </div>
+
+                <div class="v12-form-card">
+                    <h2>Reach the Parish</h2>
+                    <p class="text-muted mb-4">For Mass intentions, certificates, baptisms and marriages, please contact the parish office directly — we will be happy to help.</p>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fas fa-phone-alt text-gold" style="font-size: 1.4rem;"></i>
+                        <a href="tel:+914862258257" class="text-navy fw-bold" style="font-size: 1.3rem;">+91 4862 258 257</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fas fa-map-marker-alt text-gold" style="font-size: 1.4rem;"></i>
+                        <span>Kolapra – Thalayanadu Road, Thalayanadu,<br>Idukki, Kerala 685585, India</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <i class="far fa-clock text-gold" style="font-size: 1.4rem;"></i>
+                        <span>Open daily · 6:00 AM – 8:00 PM</span>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="tel:+914862258257" class="btn btn-primary px-5"><i class="fas fa-phone me-2"></i>Call the Parish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="v12-map-section" style="padding: 0 20px 80px;">
+            <div id="mapContainer" style="max-width: 1100px; margin: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 450px; background: #eaecf0; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative;" onclick="loadMap()">
+                <div style="text-align: center; color: #0b2a4a; z-index: 2;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 50px; margin-bottom: 15px; color: #d4a63a;"></i>
+                    <h4 style="font-family: 'Playfair Display', serif;">Click to View Map</h4>
+                    <p class="small text-muted">View our location in Idukki</p>
+                </div>
+                <!-- Premium Background Blur Effect -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('./assets/images/hero-church-exterior.jpg') center/cover; opacity: 0.15; filter: grayscale(1);"></div>
+            </div>
+        </section>
+
+        <!-- Support / Donation Section -->
+
+
+        <footer data-include="footer"></footer>
+    </div>
+
+    <script src="./assets/js/jquery.js" defer></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./assets/js/app.js?v=8.0" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // AOS Sync
+            if (typeof AOS !== 'undefined') AOS.init({ duration: 1000, once: true });
+
+        }); // Close DOMContentLoaded
+
+        function loadMap() {
+            const container = document.getElementById("mapContainer");
+            if (!container) return;
+            container.innerHTML = `<iframe 
+                    src="https://maps.google.com/maps?q=9.839756,76.774719&z=16&output=embed"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;"
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>`;
+            container.removeAttribute('onclick');
+            container.style.cursor = 'default';
+        }
+    </script>
+    <div data-include="modals"></div>
+
+
+</body>
+</html>

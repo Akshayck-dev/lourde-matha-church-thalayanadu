@@ -1,0 +1,134 @@
+<!-- Plan Your Visit Modal -->
+<div class="modal fade" id="visitModal" tabindex="-1" aria-labelledby="visitModalLabel" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content premium-modal border-0" data-lenis-prevent>
+            <div class="modal-body p-4 p-md-5">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-branding text-center mb-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                        style="width: 64px; height: 64px; background: linear-gradient(135deg, #0b2a4a, #16437a); color: #f2b705; font-size: 1.8rem;"
+                        aria-hidden="true"><i class="fas fa-church"></i></span>
+                    <h2 class="modal-main-title" id="visitModalLabel">Plan Your Visit</h2>
+                    <p class="modal-brand-tagline">Lourde Matha Church, Thalayanadu</p>
+                    <div class="modal-header-divider"></div>
+                </div>
+                <ul class="list-unstyled visit-info-list">
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-map-marker-alt text-gold me-3 mt-1"></i>
+                        <span>Kolapra – Thalayanadu Road, Thalayanadu,<br>Idukki, Kerala 685585, India</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-phone text-gold me-3 mt-1"></i>
+                        <span><a href="tel:+914862258257" class="text-navy fw-bold">+91 4862 258 257</a><br>
+                        <small class="text-muted">Parish office</small></span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="far fa-clock text-gold me-3 mt-1"></i>
+                        <span>Open daily · 6:00 AM – 8:00 PM</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-cross text-gold me-3 mt-1"></i>
+                        <span><strong>Sunday Mass:</strong> 6:00 AM · 7:30 AM · 9:30 AM<br>
+                        <strong>Weekdays:</strong> 6:00 AM &amp; 5:30 PM<br>
+                        <small class="text-muted">Timings may vary — please confirm with the parish office.</small></span>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener" class="btn btn-primary flex-grow-1 py-3">
+                        <i class="fas fa-diamond-turn-right me-2"></i>Get Directions
+                    </a>
+                    <a href="tel:+914862258257" class="btn btn-outline-navy flex-grow-1 py-3">
+                        <i class="fas fa-phone me-2"></i>Call the Parish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ministry Details Modal (content injected via JS) -->
+<div class="modal fade" id="courseDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;" data-lenis-prevent>
+            <div class="modal-body p-4 p-md-5">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div id="courseModalContent">
+                    <span class="badge bg-gold-soft text-navy mb-2 px-3 py-2 rounded-pill" id="modalCourseTagline"></span>
+                    <h2 id="modalCourseTitle" style="color: #0b2a4a; font-weight: 700; font-family: 'Playfair Display', serif; margin-bottom: 5px;"></h2>
+                    <p class="text-muted small mb-3" id="modalCourseDuration"><i class="far fa-calendar-alt me-2"></i></p>
+
+                    <!-- Highlights Section -->
+                    <div class="modal-highlights-container mb-4" id="modalHighlights">
+                        <!-- Injected via JS -->
+                    </div>
+
+                    <!-- Stats Section -->
+                    <div class="modal-stats-container d-flex flex-wrap gap-2 mb-4" id="modalStats">
+                        <!-- Injected via JS -->
+                    </div>
+
+                    <div class="divider mb-4" style="height: 2px; width: 60px; background: #b88e2d; border-radius: 2px;"></div>
+
+                    <div class="course-description mb-4" id="modalCourseBody" style="font-size: 1.05rem; line-height: 1.7; color: #444;">
+                        <!-- Content injected via JS -->
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row gap-3 mt-5">
+                        <a href="contact-us.html" class="btn btn-primary flex-grow-1 py-3">
+                            Plan a Visit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Legacy Modal (Renamed to avoid Bootstrap conflict) -->
+<div id="legacyModal" class="legacy-modal-overlay">
+  <div class="legacy-modal-content">
+    <span class="legacy-modal-close">&times;</span>
+    <img id="legacy-modal-img" src="" alt="Profile Image">
+    <h3 id="legacy-modal-title"></h3>
+    <p id="legacy-modal-text"></p>
+  </div>
+</div>
+
+<!-- Contact the Parish Modal (display only) -->
+<div class="modal fade" id="supportModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content support-modal-content border-0 shadow-lg" data-lenis-prevent>
+            <div class="modal-header border-0 pb-0 position-relative">
+                <h3 class="modal-title w-100 text-center text-navy mt-3" style="font-family: 'Playfair Display', serif; font-weight: 700;">Contact the Parish</h3>
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body p-4 pt-2 text-center">
+                <p class="text-muted small mb-4">For Mass intentions, certificates, baptisms and marriages, please reach the parish office directly.</p>
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <i class="fas fa-phone text-gold"></i>
+                    <a href="tel:+914862258257" class="text-navy fw-bold fs-5">+91 4862 258 257</a>
+                </div>
+                <p class="text-muted small mb-1"><i class="far fa-clock me-2"></i>Open daily · 6:00 AM – 8:00 PM</p>
+                <p class="text-muted small mb-4"><i class="fas fa-map-marker-alt me-2"></i>Kolapra – Thalayanadu Rd, Idukki, Kerala 685585</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener" class="btn btn-navy w-100 py-3 rounded-3 fw-bold shadow-sm">
+                    Get Directions <i class="fas fa-diamond-turn-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast">✔ Thank you!</div>
+
+<!-- Premium Success Alert (v31) -->
+<div id="successAlert" class="success-alert">
+  <div class="alert-box">
+    <span class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+        style="width: 56px; height: 56px; background: linear-gradient(135deg, #0b2a4a, #16437a); color: #f2b705; font-size: 1.5rem;"
+        aria-hidden="true"><i class="fas fa-church"></i></span>
+    <h3 style="font-family: 'Playfair Display', serif; font-weight: 700;">Thank You!</h3>
+    <hr style="width: 50px; margin: 15px auto; border-top: 2px solid #b88e2d; opacity: 1;">
+    <p>Thanks for reaching out. We will get back to you soon.</p>
+  </div>
+</div>

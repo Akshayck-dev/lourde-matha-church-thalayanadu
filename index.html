@@ -1,424 +1,1046 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lourde Matha Church, Thalayanadu | A Parish of Faith Since 1935</title>
-    <meta name="description" content="Lourde Matha Church, Thalayanadu — a Catholic parish on the Kolapra–Thalayanadu Road, Idukki, serving the faithful since 26 October 1935 under the patronage of Our Lady of Lourdes.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛪</text></svg>">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <meta name="description"
+        content="Lourde Matha Church, Thalayanadu — a Catholic parish on the Kolapra-Thalayanadu Road, Idukki, serving the faithful since 26 October 1935 under the patronage of Our Lady of Lourdes.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=120.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        /* Fancybox Premium Blur Effect */
+        .fancybox__backdrop {
+            background: rgba(0, 0, 0, 0.7) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+    <style>
+        /* Force Uniform Feature Box Heights on Desktop */
+        @media (min-width: 768px) {
+            .about-features-grid {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                grid-auto-rows: 1fr !important;
+                align-items: stretch !important;
+            }
+
+            .about-feature-item {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: center !important;
+                background: #fff !important;
+                padding: 25px 15px !important;
+                /* Further Reduced Padding */
+                border-radius: 15px !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+                border: 1px solid rgba(0, 0, 0, 0.03) !important;
+                height: 100% !important;
+                min-height: 280px !important;
+                /* Further Reduced for more compact look */
+            }
+
+            .about-feature-item h6 {
+                margin-top: 5px !important;
+                /* Minimal top margin */
+                margin-bottom: 12px !important;
+                font-weight: 700 !important;
+                color: var(--primary-navy) !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <div class="wrapper">
+        <header data-include="header"></header>
 
-<!-- ======= Top bar ======= -->
-<div class="topbar d-none d-md-block">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div>
-            <i class="fa-solid fa-location-dot me-1"></i> Kolapra – Thalayanadu Road, Idukki, Kerala 685585
-            <span class="sep">|</span>
-            <i class="fa-regular fa-clock me-1"></i> Open daily · 6:00 AM – 8:00 PM
-        </div>
-        <div>
-            <i class="fa-solid fa-phone me-1"></i> <a href="tel:+914862258257">+91 4862 258 257</a>
-        </div>
-    </div>
-</div>
 
-<!-- ======= Navbar ======= -->
-<nav class="navbar navbar-expand-lg main-nav sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#home">
-            <span class="brand-mark"><i class="fa-solid fa-church"></i></span>
-            <span>
-                <span class="brand-name">Lourde Matha Church</span><br>
-                <span class="brand-sub">Thalayanadu · Est. 1935</span>
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#worship">Worship</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ministries">Ministries</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item ms-lg-2"><a class="nav-link nav-cta" href="#visit"><i class="fa-solid fa-location-arrow me-1"></i> Plan a Visit</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+        <!-- Hero Section -->
+        <section class="p-0 position-relative overflow-hidden">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide hero-slide">
+                        <img src="./assets/images/hero-church-exterior.jpg" alt="Lourde Matha Church, Thalayanadu" loading="eager"
+                            fetchpriority="high" width="1920" height="1080">
+                        <div class="hero-overlay">
+                            <div class="container hero-content" data-aos="fade-up">
+                                <h1>Lourde Matha Church, Thalayanadu</h1>
+                                <p>A parish family under the patronage of Our Lady of Lourdes — serving Thalayanadu since 1935.</p>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-outline" data-bs-toggle="modal"
+                                        data-bs-target="#visitModal">Mass Timings</a>
+                                    <a href="about.html" class="btn btn-outline">Our Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide hero-slide">
+                        <img src="./assets/images/hero-church-interior.jpg" alt="Sanctuary of Lourde Matha Church" loading="eager"
+                            width="1920" height="1080">
+                        <div class="hero-overlay">
+                            <div class="container hero-content" data-aos="fade-up">
+                                <h1>A House of Prayer, Open Every Day</h1>
+                                <p>Daily Holy Mass and a sanctuary of peace — open 6 AM to 8 PM.</p>
+                                <div class="hero-buttons">
+                                    <a href="services.html#schedule" class="btn btn-outline">Worship Schedule</a>
+                                    <a href="contact-us.html" class="btn btn-outline">Find Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide hero-slide">
+                        <img src="./assets/images/about-marian-grotto.jpg" alt="Grotto of Our Lady of Lourdes" loading="lazy" width="1920"
+                            height="1080">
+                        <div class="hero-overlay">
+                            <div class="container hero-content" data-aos="fade-up">
+                                <h1>Under Her Mantle of Grace</h1>
+                                <p>Generations have lit a candle here and found comfort in our Mother's intercession.</p>
+                                <div class="hero-buttons">
+                                    <a href="services.html" class="btn btn-outline">Parish Life</a>
+                                    <a href="gallery.html" class="btn btn-outline">Gallery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-<!-- ======= Hero slider ======= -->
-<header id="home">
-    <div class="swiper hero-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide hero-slide">
-                <img src="assets/img/hero-church-exterior.jpg" alt="Lourde Matha Church, Thalayanadu" fetchpriority="high">
-                <div class="hero-overlay">
-                    <div class="container hero-content" data-aos="fade-up">
-                        <span class="hero-eyebrow">Welcome Home</span>
-                        <h1>Lourde Matha Church,<br>Thalayanadu</h1>
-                        <p>A parish family under the patronage of Our Lady of Lourdes — serving Thalayanadu since 1935.</p>
-                        <div class="hero-buttons">
-                            <a href="#worship" class="btn-gold">Mass Timings</a>
-                            <a href="#about" class="btn-outline">Our Story</a>
+        <div class="section-divider"></div>
+
+        <!-- Programs Section with Background -->
+        <section class="section programs-section-premium fade-in" id="programs">
+            <div class="container position-relative">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 text-white mb-4"
+                        style="font-family: 'Playfair Display', serif; font-weight: 700;">Ministries &amp; Sacraments</h2>
+                    <div class="programs-intro text-white-50 mx-auto" style="max-width: 900px;">
+                        <h5 class="italic mb-3" style="color: #f4c542;">"A parish of faith since 1935"</h5>
+                        <p class="lead" style="font-size: 1.1rem; line-height: 1.8;">
+                            Under the patronage of Our Lady of Lourdes, our parish celebrates the sacraments,
+                            gathers daily for Holy Mass, and serves one another in faith and charity
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-3 g-md-4 justify-content-center">
+                    <!-- Program 1 -->
+                    <div class="col-6 col-md-6 col-lg-4 d-flex mb-3 mb-md-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="card course-card-v3">
+                            <div class="icon-box-v3 icon-teal">
+                                <i class="fas fa-cross"></i>
+                            </div>
+                            <span class="category-tag">DAILY WORSHIP</span>
+                            <h3 class="card-title">
+                                Holy Eucharist
+                            </h3>
+                            <button onclick="openCourse('eucharist')" class="btn btn-primary apply-course-btn"
+                                data-course="eucharist">
+                                READ MORE <i class="fas fa-chevron-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div class="col-6 col-md-6 col-lg-4 d-flex mb-3 mb-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card course-card-v3">
+                            <div class="icon-box-v3 icon-navy">
+                                <i class="fas fa-hands-praying"></i>
+                            </div>
+                            <span class="category-tag">CHRISTIAN LIFE</span>
+                            <h3 class="card-title">
+                                Sacraments — Baptism &middot; Marriage
+                            </h3>
+                            <button onclick="openCourse('sacraments')" class="btn btn-primary apply-course-btn"
+                                data-course="sacraments">
+                                READ MORE <i class="fas fa-chevron-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div class="col-6 col-md-6 col-lg-4 d-flex mb-3 mb-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card course-card-v3">
+                            <div class="icon-box-v3 icon-maroon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <span class="category-tag">FAITH FORMATION</span>
+                            <h3 class="card-title">
+                                Catechism &amp; Faith Formation
+                            </h3>
+                            <button onclick="openCourse('catechism')" class="btn btn-primary apply-course-btn"
+                                data-course="catechism">
+                                READ MORE <i class="fas fa-chevron-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div><!-- End initial grid -->
+
+                <!-- View All Button (Linking to Full List) -->
+                <div class="view-more-container" id="viewMoreBtnRow">
+                    <a href="services.html" class="btn btn-primary">
+                        View All Ministries <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Preview -->
+        <section class="about-section fade-in" id="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-image-wrapper" data-aos="fade-right">
+                        <!-- Desktop Only Shapes -->
+                        <div class="about-shape shape-1 d-none d-lg-block"></div>
+                        <div class="about-shape shape-2 d-none d-lg-block"></div>
+
+                        <div class="about-image mb-lg-4">
+                            <img src="./assets/images/hero-church-exterior.jpg" alt="Lourde Matha Church, Thalayanadu"
+                                class="img-fluid" loading="lazy" width="800" height="600">
+                            <div class="badge-30">90+ Years of Faith</div>
+                        </div>
+
+                        <!-- Stats Grid Staggered (Desktop ONLY - Left Position) -->
+                        <div class="about-stats-staggered d-none d-lg-grid">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-history stat-icon"></i>
+                                <div class="stat-info">
+                                    <span class="stat-num">90+ Years</span>
+                                    <span class="stat-text">Of Faith</span>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-church stat-icon"></i>
+                                <div class="stat-info">
+                                    <span class="stat-num">Est. 1935</span>
+                                    <span class="stat-text">Parish</span>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                <i class="fas fa-clock stat-icon"></i>
+                                <div class="stat-info">
+                                    <span class="stat-num">Open Daily</span>
+                                    <span class="stat-text">6 AM – 8 PM</span>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                                <i class="fas fa-map-marker-alt stat-icon"></i>
+                                <div class="stat-info">
+                                    <span class="stat-num">Idukki</span>
+                                    <span class="stat-text">Kerala</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <span class="text-gold fw-bold text-uppercase ls-2">Welcome to Lourde Matha Church</span>
+                        <h2 class="mb-3 text-navy">✝ Nine Decades of Faith in Thalayanadu</h2>
+                        <h5 class="text-navy mb-4 italic">A Catholic parish under the patronage of Our Lady of Lourdes</h5>
+                        <div class="ornament">✦ ✦ ✦</div>
+                        <p>
+                            Established on 26 October 1935, Lourde Matha Church stands on the Kolapra–Thalayanadu Road
+                            in the heart of Idukki district. For over ninety years, this parish has been the
+                            spiritual home of the Catholic families of Thalayanadu — a place where faith is handed
+                            down from generation to generation, and where all are welcome to pray.
+                        </p>
+
+                        <!-- Features Grid (Desktop Only) -->
+                        <div class="about-features-grid mt-5 d-none d-md-grid">
+                            <div class="about-feature-item">
+                                <i class="fas fa-church fa-2x text-gold mb-3"></i>
+                                <h6>Catholic Parish</h6>
+                                <p class="small text-muted mb-0">Rooted in the faith and traditions of the Catholic
+                                    Church since 1935.</p>
+                            </div>
+                            <div class="about-feature-item">
+                                <i class="fas fa-cross fa-2x text-gold mb-3"></i>
+                                <h6>Daily Holy Mass</h6>
+                                <p class="small text-muted mb-0">Morning and evening Mass every day, with Sunday
+                                    celebrations for the whole parish.</p>
+                            </div>
+                            <div class="about-feature-item">
+                                <i class="fas fa-hands-praying fa-2x text-gold mb-3"></i>
+                                <h6>Marian Devotion</h6>
+                                <p class="small text-muted mb-0">Under the mantle of Our Lady of Lourdes — novena on
+                                    the 11th of every month.</p>
+                            </div>
+                        </div>
+
+                        <!-- Features Carousel (Mobile Only) -->
+                        <div id="featuresCarousel" class="carousel slide d-md-none mt-5 pt-4 border-top"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="text-center px-3">
+                                        <i class="fas fa-church fa-3x text-gold mb-3"></i>
+                                        <h5 class="text-navy fw-bold">Catholic Parish</h5>
+                                        <p class="small text-muted">Rooted in the faith and traditions of the Catholic
+                                            Church since 1935.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="text-center px-3">
+                                        <i class="fas fa-cross fa-3x text-gold mb-3"></i>
+                                        <h5 class="text-navy fw-bold">Daily Holy Mass</h5>
+                                        <p class="small text-muted">Morning and evening Mass every day, with Sunday
+                                            celebrations for the whole parish.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="text-center px-3">
+                                        <i class="fas fa-hands-praying fa-3x text-gold mb-3"></i>
+                                        <h5 class="text-navy fw-bold">Marian Devotion</h5>
+                                        <p class="small text-muted">Under the mantle of Our Lady of Lourdes — novena on
+                                            the 11th of every month.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators" style="position: relative; margin-top: 20px;">
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="0"
+                                    class="active bg-gold rounded-circle" style="width: 10px; height: 10px;"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="1"
+                                    class="bg-gold rounded-circle" style="width: 10px; height: 10px;"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="2"
+                                    class="bg-gold rounded-circle" style="width: 10px; height: 10px;"></button>
+                            </div>
+                        </div>
+
+                        <!-- Original Mobile Stats Grid (Mobile ONLY) -->
+                        <div class="mb-5 mt-5 d-lg-none">
+                            <div class="stat-box">90+ Years</div>
+                            <div class="stat-box">Est. 1935</div>
+                            <div class="stat-box">Open Daily</div>
+                            <div class="stat-box">Idukki, Kerala</div>
+                        </div>
+
+                        <a href="about.html" class="btn btn-primary">Read More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Leadership Section -->
+        <section class="section bg-white pb-3" id="administration">
+            <div class="container">
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="display-4 text-navy">Our Patroness</h2>
+                    <div class="ornament">✦ ✦ ✦</div>
+                    <p class="text-muted">Under the mantle of Our Lady of Lourdes</p>
+                </div>
+
+                <!-- Desktop: 2-column grid -->
+                <div class="row g-4 justify-content-center d-none d-md-flex">
+                    <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="faculty-card leadership-card">
+                            <div class="profile-img-wrapper">
+                                <img src="./assets/images/about-marian-grotto.jpg" alt="Our Lady of Lourdes"
+                                    loading="lazy" width="400" height="400">
+                            </div>
+                            <div class="card-content mt-4">
+                                <span class="designation-text text-gold text-uppercase fw-bold mb-2 d-block">PATRONESS</span>
+                                <h4 class="text-navy">Our Lady of Lourdes</h4>
+                                <p class="text-muted small">Pray for us · Feast: 11 February</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="faculty-card leadership-card">
+                            <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 300px;">
+                                <i class="fas fa-user-tie" style="font-size: 5rem; color: #f2b705;" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-content mt-4">
+                                <span class="designation-text text-gold text-uppercase fw-bold mb-2 d-block">PARISH PRIEST</span>
+                                <h4 class="text-navy">Parish Priest</h4>
+                                <p class="text-muted small">For appointments, contact the parish office: <a href="tel:+914862258257" class="text-navy fw-bold">+91 4862 258 257</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile: Auto-moving Carousel -->
+                <div id="adminCarousel" class="carousel slide d-md-none" data-bs-ride="carousel"
+                    data-bs-interval="4000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="faculty-card leadership-card mx-2">
+                                <div class="profile-img-wrapper">
+                                    <img src="./assets/images/about-marian-grotto.jpg"
+                                        alt="Our Lady of Lourdes" loading="lazy" width="400" height="400">
+                                </div>
+                                <div class="card-content mt-4 text-center">
+                                    <span class="designation-text text-gold text-uppercase fw-bold mb-2 d-block">PATRONESS</span>
+                                    <h4 class="text-navy">Our Lady of Lourdes</h4>
+                                    <p class="text-muted small">Pray for us · Feast: 11 February</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="faculty-card leadership-card mx-2">
+                                <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 300px;">
+                                    <i class="fas fa-user-tie" style="font-size: 5rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-content mt-4 text-center">
+                                    <span class="designation-text text-gold text-uppercase fw-bold mb-2 d-block">PARISH PRIEST</span>
+                                    <h4 class="text-navy">Parish Priest</h4>
+                                    <p class="text-muted small">For appointments, contact the parish office: <a href="tel:+914862258257" class="text-navy fw-bold">+91 4862 258 257</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <div class="carousel-indicators" style="position: relative; margin-top: 20px; margin-bottom: 0;">
+                        <button type="button" data-bs-target="#adminCarousel" data-bs-slide-to="0"
+                            class="active bg-gold" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#adminCarousel" data-bs-slide-to="1" class="bg-gold"
+                            aria-label="Slide 2"></button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Faculty Section -->
+        <section class="faculty-section section bg-light pt-4 pb-5" id="faculty">
+            <div class="container text-center">
+
+                <div data-aos="fade-up">
+                    <h2 class="display-6 text-navy mb-3">Parish Life</h2>
+                    <p class="faculty-subtitle text-muted">One parish, many ways to grow in faith and serve one another.</p>
+                </div>
+
+                <!-- Desktop View: 4-column grid (Hidden on mobile) -->
+                <div class="row g-4 justify-content-center d-none d-md-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="faculty-card">
+                            <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                <i class="fas fa-music" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                            </div>
+                            <h5>Choir &amp; Liturgy</h5>
+                            <span class="designation">Voices raised in praise</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="faculty-card">
+                            <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                <i class="fas fa-hands-praying" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                            </div>
+                            <h5>Prayer Groups</h5>
+                            <span class="designation">Legion of Mary &amp; rosary</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="faculty-card">
+                            <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                <i class="fas fa-people-group" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                            </div>
+                            <h5>Youth &amp; Family</h5>
+                            <span class="designation">Fellowship in faith</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="faculty-card">
+                            <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                <i class="fas fa-hand-holding-heart" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                            </div>
+                            <h5>Charitable Outreach</h5>
+                            <span class="designation">Serving the needy</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mobile View: Bootstrap Carousel (Hidden on desktop) -->
+                <div id="facultyCarousel" class="carousel slide d-md-none" data-bs-ride="carousel"
+                    data-bs-interval="4000" data-aos="fade-up">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="faculty-card mx-auto">
+                                <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                    <i class="fas fa-music" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <h5 class="mt-2">Choir &amp; Liturgy</h5>
+                                <span class="designation">Voices raised in praise</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="faculty-card mx-auto">
+                                <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                    <i class="fas fa-hands-praying" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <h5 class="mt-2">Prayer Groups</h5>
+                                <span class="designation">Legion of Mary &amp; rosary</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="faculty-card mx-auto">
+                                <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                    <i class="fas fa-people-group" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <h5 class="mt-2">Youth &amp; Family</h5>
+                                <span class="designation">Fellowship in faith</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="faculty-card mx-auto">
+                                <div class="profile-img-wrapper d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a); min-height: 220px;">
+                                    <i class="fas fa-hand-holding-heart" style="font-size: 3.5rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <h5 class="mt-2">Charitable Outreach</h5>
+                                <span class="designation">Serving the needy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <div class="carousel-indicators" style="position: relative; margin-top: 25px; margin-bottom: 0;">
+                        <button type="button" data-bs-target="#facultyCarousel" data-bs-slide-to="0"
+                            class="active bg-gold" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#facultyCarousel" data-bs-slide-to="1" class="bg-gold"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#facultyCarousel" data-bs-slide-to="2" class="bg-gold"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#facultyCarousel" data-bs-slide-to="3" class="bg-gold"
+                            aria-label="Slide 4"></button>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="faculty-actions mt-3">
+                    <a href="services.html" class="btn btn-primary">View All Ministries <i class="fas fa-users ms-2"
+                            aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Premium Testimonials - Restored (v35 - 220px Fixed) -->
+        <section id="testimonials" class="bg-light overflow-hidden pt-4 pb-4">
+            <style>
+                /* Critical Mobile Override to bypass cache (V42: Extended Centering) */
+                @media (max-width: 1024px) {
+                    .testim-text {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        font-style: italic;
+                    }
+
+                    .testim-read-more-btn {
+                        margin-top: 10px;
+                        background: none;
+                        border: none;
+                        color: #000000;
+                        cursor: pointer;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+
+                    .testimonial-box {
+                        padding-bottom: 25px !important;
+                    }
+
+                    .testimonial-modal-v2 #testim-modal-img {
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 3px solid #b88e2d;
+                        margin: 0 auto 15px;
+                        display: block;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .testim-modal-header {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        align-items: center !important;
+                        text-align: center !important;
+                        width: 100% !important;
+                    }
+
+                    #testim-modal-name {
+                        color: #1a237e;
+                        font-weight: 700;
+                        font-family: 'Playfair Display', serif;
+                        margin-bottom: 5px;
+                        font-size: 1.4rem;
+                        text-align: center !important;
+                        width: 100% !important;
+                    }
+
+                    #testim-modal-info {
+                        color: #b88e2d;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 20px;
+                        text-align: center !important;
+                        width: 100% !important;
+                    }
+
+                    #testim-modal-text {
+                        text-align: center !important;
+                    }
+                }
+
+                .testimonial-modal-v2 {
+                    display: none;
+                }
+
+                .testimonial-modal-v2.active {
+                    display: flex;
+                    position: fixed;
+                    inset: 0;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 99999;
+                }
+            </style>
+            <div class="container">
+                <div class="col-12 text-center mb-4">
+                    <h6 class="text-uppercase fw-bold" style="color: #c9a45c; letter-spacing: 2px;">Words of Faith</h6>
+                    <h2 class="fw-bold mb-4" style="color: #00212b;">Scripture for the Journey</h2>
+                </div>
+                <!-- CUSTOM MOBILE SLIDER (Exactly 4 Requested Students) -->
+                <div class="testimonial-container-mobile d-md-none" data-aos="fade-up">
+                    <div class="testimonial-wrapper" id="mobileTestimonialSlider">
+                        <!-- Card 1: Luke 1:45 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-box program-card-premium">
+                                <div class="testimonial-header mb-3">
+                                    <div class="testimonial-avatar d-flex align-items-center justify-content-center"
+                                        style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                        <i class="fas fa-book-bible" style="font-size: 2rem; color: #f2b705;" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="testim-name">Luke 1:45</h5>
+                                    <p class="testim-info">Holy Bible</p>
+                                </div>
+                                <p class="testim-text-body">&ldquo;Blessed is she who has believed that the Lord would fulfill his promises to her.&rdquo;</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Psalm 23:1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-box program-card-premium">
+                                <div class="testimonial-header mb-3">
+                                    <div class="testimonial-avatar d-flex align-items-center justify-content-center"
+                                        style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                        <i class="fas fa-book-bible" style="font-size: 2rem; color: #f2b705;" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="testim-name">Psalm 23:1</h5>
+                                    <p class="testim-info">Holy Bible</p>
+                                </div>
+                                <p class="testim-text-body">&ldquo;The Lord is my shepherd; I shall not want.&rdquo;</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: John 14:27 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-box program-card-premium">
+                                <div class="testimonial-header mb-3">
+                                    <div class="testimonial-avatar d-flex align-items-center justify-content-center"
+                                        style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                        <i class="fas fa-book-bible" style="font-size: 2rem; color: #f2b705;" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="testim-name">John 14:27</h5>
+                                    <p class="testim-info">Holy Bible</p>
+                                </div>
+                                <p class="testim-text-body">&ldquo;Peace I leave with you; my peace I give you. Do not let your hearts be troubled.&rdquo;</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Philippians 4:13 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-box program-card-premium">
+                                <div class="testimonial-header mb-3">
+                                    <div class="testimonial-avatar d-flex align-items-center justify-content-center"
+                                        style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                        <i class="fas fa-book-bible" style="font-size: 2rem; color: #f2b705;" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="testim-name">Philippians 4:13</h5>
+                                    <p class="testim-info">Holy Bible</p>
+                                </div>
+                                <p class="testim-text-body">&ldquo;I can do all things through Christ who strengthens me.&rdquo;</p>
+                            </div>
+                        </div>
+                    <!-- Slider Controls -->
+                    <div class="testimonial-dots" id="mobileSliderDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <!-- ORIGINAL DESKTOP CONTINUOUS MARQUEE (Exactly 4 Requested Students) -->
+                <div class="testimonial-marquee-wrapper d-none d-md-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-marquee-track">
+                        <!-- Card 1: Luke 1:45 -->
+                        <div class="testimonial-box">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <div class="testimonial-avatar me-3 d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                    <i class="fas fa-book-bible" style="font-size: 1.6rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <div class="student-info">
+                                    <h6 class="mb-0">Luke 1:45</h6>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">&ldquo;Blessed is she who has believed that the Lord would fulfill his promises to her.&rdquo;</div>
+                        </div>
+
+                        <!-- Card 2: Psalm 23:1 -->
+                        <div class="testimonial-box">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <div class="testimonial-avatar me-3 d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                    <i class="fas fa-book-bible" style="font-size: 1.6rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <div class="student-info">
+                                    <h6 class="mb-0">Psalm 23:1</h6>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">&ldquo;The Lord is my shepherd; I shall not want.&rdquo;</div>
+                        </div>
+
+                        <!-- Card 3: John 14:27 -->
+                        <div class="testimonial-box">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <div class="testimonial-avatar me-3 d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                    <i class="fas fa-book-bible" style="font-size: 1.6rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <div class="student-info">
+                                    <h6 class="mb-0">John 14:27</h6>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">&ldquo;Peace I leave with you; my peace I give you. Do not let your hearts be troubled.&rdquo;</div>
+                        </div>
+
+                        <!-- Card 4: Philippians 4:13 -->
+                        <div class="testimonial-box">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <div class="testimonial-avatar me-3 d-flex align-items-center justify-content-center"
+                                    style="background: linear-gradient(135deg, #0b2a4a, #16437a);">
+                                    <i class="fas fa-book-bible" style="font-size: 1.6rem; color: #f2b705;" aria-hidden="true"></i>
+                                </div>
+                                <div class="student-info">
+                                    <h6 class="mb-0">Philippians 4:13</h6>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">&ldquo;I can do all things through Christ who strengthens me.&rdquo;</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide hero-slide">
-                <img src="assets/img/hero-church-interior.jpg" alt="Church interior and altar" loading="lazy">
-                <div class="hero-overlay">
-                    <div class="container hero-content">
-                        <span class="hero-eyebrow">Come, Let Us Worship</span>
-                        <h1>A House of Prayer,<br>Open Every Day</h1>
-                        <p>Daily Holy Mass, quiet adoration and a sanctuary of peace — the doors are open from 6 AM to 8 PM.</p>
-                        <div class="hero-buttons">
-                            <a href="#worship" class="btn-gold">Worship Schedule</a>
-                            <a href="#contact" class="btn-outline">Find Us</a>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Parish Notices -->
+    <section class="bg-white pt-2 pb-5">
+        <div class="container">
+            <!-- REVERTED: Standard Responsive Grid (No Carousel) -->
+            <div class="row g-4" data-aos="fade-up">
+                <!-- Card 1: Sunday Bulletin -->
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-newspaper" aria-hidden="true"></i>
                         </div>
+                        <h4>Sunday Bulletin</h4>
+                        <p class="text-muted small mb-4">Weekly announcements available at the church entrance.</p>
+                        <a href="contact-us.html" class="btn btn-primary w-100">Plan a Visit</a>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide hero-slide">
-                <img src="assets/img/about-marian-grotto.jpg" alt="Marian grotto of Our Lady of Lourdes" loading="lazy">
-                <div class="hero-overlay">
-                    <div class="container hero-content">
-                        <span class="hero-eyebrow">Our Lady of Lourdes</span>
-                        <h1>Under Her Mantle<br>of Grace</h1>
-                        <p>Generations of the faithful have lit a candle here and found comfort in our Mother's intercession.</p>
-                        <div class="hero-buttons">
-                            <a href="#ministries" class="btn-gold">Parish Life</a>
-                            <a href="#gallery" class="btn-outline">Gallery</a>
+                <!-- Card 2: Mass Intentions -->
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-hands-praying" aria-hidden="true"></i>
                         </div>
+                        <h4>Mass Intentions</h4>
+                        <p class="text-muted small mb-4">Book Mass intentions at the parish office.</p>
+                        <a href="tel:+914862258257" class="btn btn-primary w-100"><i class="fas fa-phone me-2" aria-hidden="true"></i>Call the Parish</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="scroll-hint d-none d-md-block">Scroll</div>
-    </div>
-</header>
-
-<!-- ======= Welcome strip ======= -->
-<section class="welcome-strip">
-    <div class="container text-center" data-aos="fade-up">
-        <h2>Welcome to <span class="gold">Lourde Matha Church</span></h2>
-        <p>Whether you are a parishioner, a pilgrim passing through Idukki, or simply seeking a quiet moment with God — you are welcome here. Join us for Holy Mass, light a candle at the grotto of Our Lady, and be part of our parish family.</p>
-    </div>
-</section>
-
-<!-- ======= About ======= -->
-<section class="section" id="about">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6" data-aos="fade-right">
-                <div class="about-img-frame">
-                    <img src="assets/img/about-marian-grotto.jpg" alt="Grotto of Our Lady of Lourdes at Thalayanadu" loading="lazy">
-                    <div class="about-badge">
-                        <div class="num">1935</div>
-                        <div class="lbl">Serving since</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <span class="section-eyebrow">Our Parish</span>
-                <h2 class="section-title">Nine Decades of Faith in <span class="gold">Thalayanadu</span></h2>
-                <p>Established on <strong>26 October 1935</strong>, Lourde Matha Church stands on the Kolapra–Thalayanadu Road in the heart of Idukki district. For over ninety years, this parish has been the spiritual home of the Catholic families of Thalayanadu — a place where faith is handed down from generation to generation.</p>
-                <p>Under the loving patronage of <strong>Our Lady of Lourdes</strong>, the parish gathers daily for Holy Mass and prayer, celebrates the sacraments of Christian life, and reaches out in charity to all.</p>
-                <ul class="about-list">
-                    <li>
-                        <span class="tick"><i class="fa-solid fa-check"></i></span>
-                        <div><strong>Patroness</strong><br><span class="text-muted">Our Lady of Lourdes — parish feast in February</span></div>
-                    </li>
-                    <li>
-                        <span class="tick"><i class="fa-solid fa-check"></i></span>
-                        <div><strong>Daily worship</strong><br><span class="text-muted">Holy Mass every morning and evening; church open 6 AM – 8 PM</span></div>
-                    </li>
-                    <li>
-                        <span class="tick"><i class="fa-solid fa-check"></i></span>
-                        <div><strong>A living parish</strong><br><span class="text-muted">Catechism, choir, prayer groups and youth ministry for all ages</span></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ======= Stats band ======= -->
-<section class="stats-band">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-6 col-md-3" data-aos="fade-up"><div class="stat"><div class="num">90+</div><div class="lbl">Years of Grace</div></div></div>
-            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100"><div class="stat"><div class="num">365</div><div class="lbl">Days Open a Year</div></div></div>
-            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200"><div class="stat"><div class="num">2×</div><div class="lbl">Daily Holy Mass</div></div></div>
-            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300"><div class="stat"><div class="num">1</div><div class="lbl">Parish Family</div></div></div>
-        </div>
-    </div>
-</section>
-
-<!-- ======= Worship schedule ======= -->
-<section class="section" id="worship" style="background: var(--bg-light);">
-    <div class="container">
-        <div class="section-head" data-aos="fade-up">
-            <span class="section-eyebrow">Worship</span>
-            <h2 class="section-title">Holy Mass & <span class="gold">Prayer Schedule</span></h2>
-            <p class="section-sub">All are welcome. The church is open every day from 6:00 AM to 8:00 PM for personal prayer.</p>
-            <div class="gold-rule"></div>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-7" data-aos="fade-right">
-                <div class="schedule-wrap">
-                    <div class="schedule-tabs" role="tablist">
-                        <button class="active" data-tab="sunday">Sunday</button>
-                        <button data-tab="weekday">Weekdays</button>
-                        <button data-tab="special">Special</button>
-                    </div>
-                    <div class="schedule-body">
-                        <div class="tab-pane" id="tab-sunday">
-                            <div class="schedule-row"><div class="svc">Holy Mass<small>First Mass</small></div><div class="time">6:00 AM</div></div>
-                            <div class="schedule-row"><div class="svc">Holy Mass<small>Parish Mass</small></div><div class="time">7:30 AM</div></div>
-                            <div class="schedule-row"><div class="svc">Holy Mass<small>Catechism Mass</small></div><div class="time">9:30 AM</div></div>
-                            <div class="schedule-row"><div class="svc">Evening Prayer &amp; Novena<small>To Our Lady of Lourdes</small></div><div class="time">4:30 PM</div></div>
+                <!-- Card 3: Feast Calendar -->
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-calendar-days" aria-hidden="true"></i>
                         </div>
-                        <div class="tab-pane d-none" id="tab-weekday">
-                            <div class="schedule-row"><div class="svc">Holy Mass<small>Morning</small></div><div class="time">6:00 AM</div></div>
-                            <div class="schedule-row"><div class="svc">Holy Rosary<small>Evening devotion</small></div><div class="time">5:00 PM</div></div>
-                            <div class="schedule-row"><div class="svc">Holy Mass<small>Evening</small></div><div class="time">5:30 PM</div></div>
-                            <div class="schedule-row"><div class="svc">Confession<small>Before Mass or by request</small></div><div class="time">On request</div></div>
-                        </div>
-                        <div class="tab-pane d-none" id="tab-special">
-                            <div class="schedule-row"><div class="svc">First Friday<small>Holy Mass &amp; Adoration</small></div><div class="time">6:00 AM</div></div>
-                            <div class="schedule-row"><div class="svc">11th of Every Month<small>Lourdes Novena</small></div><div class="time">5:30 PM</div></div>
-                            <div class="schedule-row"><div class="svc">Parish Feast<small>In honour of Our Lady of Lourdes</small></div><div class="time">February</div></div>
-                            <div class="schedule-row"><div class="svc">Baptism &amp; Marriage<small>By appointment with the parish office</small></div><div class="time">Sundays</div></div>
-                        </div>
-                        <p class="schedule-note"><i class="fa-solid fa-circle-info me-1"></i> Timings may vary on feast days and special occasions — please confirm with the parish office.</p>
+                        <h4>Feast Calendar</h4>
+                        <p class="text-muted small mb-4">Parish feast in honour of Our Lady of Lourdes every February.</p>
+                        <a href="services.html" class="btn btn-primary w-100">View Ministries</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5" data-aos="fade-left">
-                <div class="schedule-side">
-                    <div class="info-card">
-                        <h4><i class="fa-solid fa-door-open"></i> Church Hours</h4>
-                        <p>Open daily for prayer and visits<br><strong>6:00 AM – 8:00 PM</strong></p>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5" data-aos="fade-up">
+                <div>
+                    <h4 class="text-gold display-font">Moments</h4>
+                    <h2 class="display-6">Parish Gallery</h2>
+                </div>
+                <a href="gallery.html" class="btn btn-primary mb-2">View Full Gallery</a>
+            </div>
+
+            <div class="row g-3 gallery-section-row mb-5 d-none d-md-flex">
+                <!-- Row 1 (Only 3 Images shown on Home Page) -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="./assets/images/hero-church-exterior.jpg" data-fancybox="gallery">
+                        <img src="./assets/images/hero-church-exterior.jpg"
+                            class="img-fluid rounded shadow-sm hover-zoom" alt="The parish church at dusk" loading="lazy"
+                            style="height: 250px; width: 100%; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="./assets/images/about-marian-grotto.jpg" data-fancybox="gallery">
+                        <img src="./assets/images/about-marian-grotto.jpg" class="img-fluid rounded shadow-sm hover-zoom"
+                            alt="Grotto of Our Lady of Lourdes" loading="lazy" style="height: 250px; width: 100%; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="./assets/images/gallery-feast-procession.jpg" data-fancybox="gallery">
+                        <img src="./assets/images/gallery-feast-procession.jpg" class="img-fluid rounded shadow-sm hover-zoom"
+                            alt="Parish feast procession" loading="lazy" style="height: 250px; width: 100%; object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile: Gallery Carousel (Limited to 3 Images) -->
+            <div id="galleryCarousel" class="carousel slide d-md-none mb-5" data-bs-ride="carousel"
+                data-bs-interval="3500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="./assets/images/hero-church-exterior.jpg" data-fancybox="gallery">
+                            <img src="./assets/images/hero-church-exterior.jpg" class="d-block w-100 rounded shadow-sm"
+                                alt="The parish church at dusk">
+                        </a>
                     </div>
-                    <div class="info-card">
-                        <h4><i class="fa-solid fa-hands-praying"></i> Confession</h4>
-                        <p>The sacrament of reconciliation is available before Holy Mass, or anytime by approaching the parish priest.</p>
+                    <div class="carousel-item">
+                        <a href="./assets/images/about-marian-grotto.jpg" data-fancybox="gallery">
+                            <img src="./assets/images/about-marian-grotto.jpg" class="d-block w-100 rounded shadow-sm"
+                                alt="Grotto of Our Lady of Lourdes">
+                        </a>
                     </div>
-                    <div class="info-card">
-                        <h4><i class="fa-solid fa-phone"></i> Parish Office</h4>
-                        <p>For Mass intentions, certificates, baptisms and marriages, call<br><a href="tel:+914862258257" style="color:var(--primary-navy);font-weight:600;">+91 4862 258 257</a></p>
+                    <div class="carousel-item">
+                        <a href="./assets/images/gallery-feast-procession.jpg" data-fancybox="gallery">
+                            <img src="./assets/images/gallery-feast-procession.jpg" class="d-block w-100 rounded shadow-sm"
+                                alt="Parish feast procession">
+                        </a>
                     </div>
                 </div>
+                <!-- Indicators (Sync with 3 images) -->
+                <div class="carousel-indicators" style="position: relative; margin-top: 15px; margin-bottom: 0;">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active bg-gold"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"
+                        class="bg-gold"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"
+                        class="bg-gold"></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta-banner">
+        <div class="container text-center" data-aos="fade-up">
+            <h2 class="display-4 text-white mb-4">Come, Visit &amp; Pray With Us</h2>
+            <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 800px;">The doors of Lourde Matha Church are open every day.
+                Join us for Holy Mass, light a candle for someone you love, and be part of our parish family.</p>
+            <div class="hero-buttons justify-content-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener"
+                    class="btn btn-outline">Get Directions</a>
+                <a href="tel:+914862258257" class="btn btn-outline">Call the Parish</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer data-include="footer"></footer>
+    </div>
+
+    <!-- Scripts Internal & Libraries -->
+    <script src="./assets/js/jquery.js" defer></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script src="./assets/js/courses-data.js" defer></script>
+    <script src="./assets/js/app.js?v=122.0" defer></script>
+
+    <script>
+        // AOS and Swiper are now managed by app.js to ensure proper loading sequence
+
+        // Course Reveal Animation - Robust Implementation
+        const revealCards = () => {
+            const cards = document.querySelectorAll('.program-card-premium');
+            const triggerBottom = window.innerHeight + 100; // Trigger earlier
+
+            cards.forEach(card => {
+                const box = card.getBoundingClientRect();
+                if (box.top < triggerBottom) {
+                    card.classList.add('show');
+                }
+            });
+        };
+
+        // 1. Listen to window scroll fallback
+        window.addEventListener('scroll', revealCards);
+        // 3. Initial check and fallback
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(revealCards, 100);
+            setTimeout(revealCards, 1000); // 1s fallback
+        });
+        // 4. Fire immediately in case DOMContentLoaded already passed
+        revealCards();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script>
+        window.lenis = new Lenis({
+            duration: 1.2,
+            smooth: true,
+            smoothTouch: true
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+    <div data-include="modals"></div>
+
+
+    <!-- Mobile Testimonial Detail Modal -->
+    <div id="testimonialDetailModal" class="testimonial-modal-v2">
+        <div class="testim-modal-overlay"></div>
+        <div class="testim-modal-content">
+            <button class="testim-modal-close">&times;</button>
+            <div class="testim-modal-body">
+                <div class="testim-modal-header">
+                    <img id="testim-modal-img" src="" alt="Student Profile">
+                    <h5 id="testim-modal-name"></h5>
+                    <p id="testim-modal-info"></p>
+                </div>
+                <div id="testim-modal-text" class="testim-modal-text"></div>
             </div>
         </div>
     </div>
-</section>
 
-<!-- ======= Ministries ======= -->
-<section class="section" id="ministries">
-    <div class="container">
-        <div class="section-head" data-aos="fade-up">
-            <span class="section-eyebrow">Parish Life</span>
-            <h2 class="section-title">Ministries & <span class="gold">Sacraments</span></h2>
-            <p class="section-sub">One parish, many ways to grow in faith and serve one another.</p>
-            <div class="gold-rule"></div>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-cross"></i></div>
-                    <h4>Holy Eucharist</h4>
-                    <p>Daily and Sunday Holy Mass at the heart of parish life, with First Friday adoration and Eucharistic devotion.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-droplet"></i></div>
-                    <h4>Sacraments</h4>
-                    <p>Baptism, First Holy Communion, Confirmation and Marriage — celebrated with preparation and joy.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <h4>Catechism</h4>
-                    <p>Sunday faith formation for children and youth, nurturing the next generation of the parish.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-music"></i></div>
-                    <h4>Choir &amp; Liturgy</h4>
-                    <p>Voices raised in praise — the parish choir and altar servers beautify every celebration.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-hands-holding-heart"></i></div>
-                    <h4>Prayer Groups</h4>
-                    <p>Legion of Mary, rosary groups and family prayer units keeping the flame of devotion alive.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
-                <div class="ministry-card">
-                    <div class="ministry-icon"><i class="fa-solid fa-people-group"></i></div>
-                    <h4>Youth &amp; Family</h4>
-                    <p>Youth fellowship, women's associations and charitable outreach serving the wider community.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <script>
+        // --- Testimonial Automation Logic ---
+        document.addEventListener("DOMContentLoaded", () => {
+            // Wait slightly for dynamic content or animations
+            setTimeout(() => {
+                // SCOPE strictly to Testimonials to avoid picking up Faculty/Course cards
+                const testimonialContainer = document.querySelector('#mobileTestimonialSlider');
+                if (!testimonialContainer) return;
 
-<!-- ======= Marian banner ======= -->
-<section class="marian-banner">
-    <div class="container" data-aos="fade-up">
-        <span class="hero-eyebrow">Our Patroness</span>
-        <h2>Under the Mantle of <span class="gold">Our Lady of Lourdes</span></h2>
-        <p>Since 1935, the faithful of Thalayanadu have gathered before their Mother — in joy and in sorrow, in gratitude and in need. Her grotto remains a place of quiet miracles and answered prayers.</p>
-        <p class="verse">"I am the Immaculate Conception." — Our Lady to St. Bernadette, Lourdes 1858</p>
-    </div>
-</section>
+                testimonialContainer.querySelectorAll('.program-card-premium').forEach(card => {
+                    if (card.querySelector('.read-more-btn')) return;
 
-<!-- ======= Gallery ======= -->
-<section class="section" id="gallery">
-    <div class="container">
-        <div class="section-head" data-aos="fade-up">
-            <span class="section-eyebrow">Moments</span>
-            <h2 class="section-title">Parish <span class="gold">Gallery</span></h2>
-            <p class="section-sub">Glimpses of faith, feast and fellowship at Lourde Matha Church.</p>
-            <div class="gold-rule"></div>
-        </div>
-        <div class="row g-4">
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up"><div class="g-item" data-full="assets/img/hero-church-exterior.jpg"><img src="assets/img/hero-church-exterior.jpg" alt="Church exterior at golden hour" loading="lazy"><div class="cap">The parish church at dusk</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><div class="g-item" data-full="assets/img/hero-church-interior.jpg"><img src="assets/img/hero-church-interior.jpg" alt="Church interior" loading="lazy"><div class="cap">The sanctuary and altar</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><div class="g-item" data-full="assets/img/about-marian-grotto.jpg"><img src="assets/img/about-marian-grotto.jpg" alt="Marian grotto" loading="lazy"><div class="cap">Grotto of Our Lady of Lourdes</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up"><div class="g-item" data-full="assets/img/gallery-feast-procession.jpg"><img src="assets/img/gallery-feast-procession.jpg" alt="Feast procession" loading="lazy"><div class="cap">Parish feast procession</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><div class="g-item" data-full="assets/img/gallery-stained-glass.jpg"><img src="assets/img/gallery-stained-glass.jpg" alt="Stained glass windows" loading="lazy"><div class="cap">Stained glass in sacred light</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><div class="g-item" data-full="assets/img/gallery-votive-candles.jpg"><img src="assets/img/gallery-votive-candles.jpg" alt="Votive candles" loading="lazy"><div class="cap">Candles of prayer and petition</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up"><div class="g-item" data-full="assets/img/gallery-bell-tower.jpg"><img src="assets/img/gallery-bell-tower.jpg" alt="Bell tower" loading="lazy"><div class="cap">The bell tower</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><div class="g-item" data-full="assets/img/gallery-parish-community.jpg"><img src="assets/img/gallery-parish-community.jpg" alt="Parishioners at prayer" loading="lazy"><div class="cap">The parish community at prayer</div></div></div>
-            <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
-                <div class="g-item" style="background: var(--primary-navy); height: 260px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 30px;">
-                    <div>
-                        <i class="fa-solid fa-camera" style="font-size: 2rem; color: var(--accent-gold);"></i>
-                        <p class="mt-3 mb-0" style="color: rgba(255,255,255,.85); font-size: .95rem;">Share your parish photos with the church office to be featured here.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    // Target specifically by class to avoid "undefined" errors
+                    const textElement = card.querySelector('.testim-text-body');
+                    if (!textElement) return;
 
-<!-- ======= Final CTA ======= -->
-<section class="final-cta" id="visit">
-    <div class="container" data-aos="fade-up">
-        <h2>Come, Visit &amp; Pray With Us</h2>
-        <p>The doors of Lourde Matha Church are open every day. Join us for Holy Mass, spend a quiet moment before the Blessed Sacrament, or simply light a candle for someone you love.</p>
-        <div class="hero-buttons">
-            <a href="https://www.google.com/maps/search/?api=1&query=Lourde+Matha+Church+Thalayanadu" target="_blank" rel="noopener" class="btn-gold"><i class="fa-solid fa-diamond-turn-right me-2"></i>Get Directions</a>
-            <a href="tel:+914862258257" class="btn-outline"><i class="fa-solid fa-phone me-2"></i>Call the Parish</a>
-        </div>
-    </div>
-</section>
+                    textElement.classList.add('testim-text');
 
-<!-- ======= Contact ======= -->
-<section class="section" id="contact">
-    <div class="container">
-        <div class="section-head" data-aos="fade-up">
-            <span class="section-eyebrow">Find Us</span>
-            <h2 class="section-title">Visit &amp; <span class="gold">Contact</span></h2>
-            <div class="gold-rule"></div>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-5" data-aos="fade-right">
-                <div class="contact-card">
-                    <h3>Lourde Matha Church</h3>
-                    <div class="contact-line">
-                        <span class="ic"><i class="fa-solid fa-location-dot"></i></span>
-                        <div>Kolapra – Thalayanadu Road,<br>Thalayanadu, Idukki,<br>Kerala 685585, India</div>
-                    </div>
-                    <div class="contact-line">
-                        <span class="ic"><i class="fa-solid fa-phone"></i></span>
-                        <div><a href="tel:+914862258257">+91 4862 258 257</a><br><small style="opacity:.7">Parish office</small></div>
-                    </div>
-                    <div class="contact-line">
-                        <span class="ic"><i class="fa-regular fa-clock"></i></span>
-                        <div>Open daily<br><strong style="color: var(--accent-gold);">6:00 AM – 8:00 PM</strong></div>
-                    </div>
-                    <div class="contact-line mb-0">
-                        <span class="ic"><i class="fa-solid fa-calendar-days"></i></span>
-                        <div>Established<br><strong style="color: var(--accent-gold);">26 October 1935</strong></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7" data-aos="fade-left">
-                <div class="map-frame">
-                    <iframe title="Map — Lourde Matha Church, Thalayanadu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        src="https://maps.google.com/maps?q=9.839756,76.774719&z=16&output=embed"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    const btn = document.createElement('button');
+                    btn.innerText = "Read More";
+                    btn.className = "testim-read-more-btn";
 
-<!-- ======= Footer ======= -->
-<footer>
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <h5><i class="fa-solid fa-church me-2" style="color: var(--accent-gold);"></i>Lourde Matha Church</h5>
-                <p style="font-size:.92rem;">A Catholic parish at Thalayanadu, Idukki — serving the faithful under the patronage of Our Lady of Lourdes since 1935.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="footer-links">
-                    <li><a href="#about"><i class="fa-solid fa-chevron-right"></i>About the Parish</a></li>
-                    <li><a href="#worship"><i class="fa-solid fa-chevron-right"></i>Mass Timings</a></li>
-                    <li><a href="#ministries"><i class="fa-solid fa-chevron-right"></i>Ministries</a></li>
-                    <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i>Gallery</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact</h5>
-                <ul class="footer-links">
-                    <li><i class="fa-solid fa-location-dot"></i> Kolapra – Thalayanadu Rd, Kerala 685585</li>
-                    <li><a href="tel:+914862258257"><i class="fa-solid fa-phone"></i> +91 4862 258 257</a></li>
-                    <li><i class="fa-regular fa-clock"></i> Open daily · 6:00 AM – 8:00 PM</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            © 2026 Lourde Matha Church, Thalayanadu · All rights reserved
-        </div>
-    </div>
-</footer>
+                    textElement.after(btn);
+                    card.classList.add('testimonial-card');
+                });
+            }, 600);
+        });
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-    <span class="close-x" id="lbClose">&times;</span>
-    <img id="lbImg" src="" alt="Gallery image">
-</div>
+        // Click handler for Read More and Modal Close
+        document.addEventListener("click", function (e) {
+            // Open Modal
+            if (e.target.classList.contains("testim-read-more-btn")) {
+                const card = e.target.closest(".testimonial-card");
+                if (!card) return;
 
-<!-- Floating buttons -->
-<a class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+                // Extract data using explicit classes
+                const name = card.querySelector(".testim-name")?.innerText || "Student";
+                const info = card.querySelector(".testim-info")?.innerText || "";
+                const text = card.querySelector(".testim-text-body")?.innerText || "";
+                const img = card.querySelector("img")?.getAttribute("src");
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
+                // Update Modal Content
+                document.getElementById("testim-modal-name").innerText = name;
+                document.getElementById("testim-modal-info").innerText = info;
+                document.getElementById("testim-modal-text").innerText = text;
+
+                const modalImg = document.getElementById("testim-modal-img");
+                if (modalImg) {
+                    if (img && img !== "undefined" && img !== "") {
+                        modalImg.src = img;
+                        modalImg.style.display = 'block';
+                    } else {
+                        modalImg.src = "";
+                        modalImg.style.display = 'none';
+                    }
+                    // Error fallback for missing images
+                    modalImg.onerror = () => { modalImg.style.display = 'none'; };
+                }
+
+                document.getElementById("testimonialDetailModal").classList.add("active");
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Close Modal Logic
+            if (e.target.classList.contains("testim-modal-close") || e.target.classList.contains("testim-modal-overlay")) {
+                const modal = document.getElementById("testimonialDetailModal");
+                if (modal) modal.classList.remove("active");
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
 </body>
+
 </html>
