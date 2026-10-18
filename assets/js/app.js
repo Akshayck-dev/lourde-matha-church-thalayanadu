@@ -842,7 +842,7 @@ $(function() {
             $('.navbar').removeClass('sticky');
         }
 
-        // 6a. Floating Buttons Visibility (Always Visible per user request)
+                // 6a. Floating Buttons Visibility (Always Visible per user request)
         // Hiding logic removed to ensure visibility on all pages at all times.
 
         // 6b. Smart Toggle Icon/Mode logic (only if button exists)
@@ -862,6 +862,19 @@ $(function() {
         }
     });
 
+
+    // Smart floating buttons: hide while scrolling down (avoids overlapping headings),
+    // show again on scroll up or near the top.
+    let fabLastY = window.scrollY || 0;
+    $(window).on('scroll', function () {
+        const y = window.scrollY || 0;
+        const $fab = $('.floating-buttons');
+        if ($fab.length) {
+            if (y < 60 || y < fabLastY - 5) $fab.removeClass('fab-hidden');
+            else if (y > fabLastY + 5) $fab.addClass('fab-hidden');
+        }
+        fabLastY = y;
+    });
 
     // Use delegated click for dynamic include compatibility
     $(document).on('click', '#scrollToggleBtn', function(e) {

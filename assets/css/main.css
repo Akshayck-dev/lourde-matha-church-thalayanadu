@@ -7028,3 +7028,7 @@ body.nav-open .floating-buttons { display: none !important; }
 }
 .floating-buttons a span { display: none !important; }
 .floating-buttons a i { font-size: 20px !important; margin: 0 !important; }
+
+/* Smart floating buttons: hide on scroll down (no content overlap), show on scroll up */
+.floating-buttons { transition: transform .32s ease, opacity .32s ease; }
+.floating-buttons.fab-hidden { transform: translateY(160%); opacity: 0; pointer-events: none; }
