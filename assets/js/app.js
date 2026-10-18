@@ -863,36 +863,6 @@ $(function() {
     });
 
 
-    // Self-correcting FAB position: some in-app browsers (Facebook/Instagram)
-    // misplace position:fixed + bottom elements, floating them up over content.
-    // Measure the real rendered position; if the gap to the viewport bottom is
-    // abnormally large, nudge down by exactly that gap.
-    function positionFab() {
-        var fab = document.querySelector('.floating-buttons');
-        if (!fab) return;
-        var wasHidden = fab.classList.contains('fab-hidden');
-        fab.classList.remove('fab-hidden');
-        fab.style.top = 'auto';
-        fab.style.bottom = '20px';
-        // NOTE: getBoundingClientRect is visual-viewport relative, so the gap
-        // must be measured against visualViewport.height (not innerHeight),
-        // otherwise the buggy webview's short layout viewport hides the gap.
-        var vvH = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-        var rect = fab.getBoundingClientRect();
-        var gap = vvH - rect.bottom;
-        if (gap > 120) {
-            fab.style.top = Math.round(rect.top + gap) + 'px';
-            fab.style.bottom = 'auto';
-        }
-        if (wasHidden || (window.scrollY || 0) > 60) fab.classList.add('fab-hidden');
-    }
-    $(document).on('include-complete', positionFab);
-    $(window).on('resize orientationchange load', positionFab);
-    if (window.visualViewport) {
-        window.visualViewport.addEventListener('resize', positionFab);
-    }
-    positionFab();
-
     // Smart floating buttons: hide while scrolling down (avoids overlapping headings),
     // show again on scroll up or near the top.
     let fabLastY = window.scrollY || 0;
