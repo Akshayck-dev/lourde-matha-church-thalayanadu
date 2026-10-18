@@ -1157,8 +1157,8 @@ I would like to know more about your courses.`;
         }
     });
     // Close drawer when a link is tapped (mobile) or Escape is pressed
-    $(document).on('click', '.main-nav a', function () {
-        if (window.innerWidth < 992) $('body').removeClass('nav-open');
+    $(document).on('click', '#mobileDrawer a', function () {
+        $('body').removeClass('nav-open');
     });
     $(document).on('keydown', function (e) {
         if (e.key === 'Escape') $('body').removeClass('nav-open');
