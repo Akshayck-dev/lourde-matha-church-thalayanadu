@@ -6868,3 +6868,14 @@ body.modal-open {
     position: relative;
     z-index: 2;
 }
+
+/* ---- Scroll flicker fix (iOS Safari): fixed backgrounds flicker on touch
+   devices, so force normal scrolling backgrounds below tablet width ---- */
+@media (max-width: 991px) {
+    .programs-section,
+    .final-cta-banner,
+    .programs-bg-section,
+    .subpage-banner {
+        background-attachment: scroll !important;
+    }
+}
