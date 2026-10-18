@@ -7014,3 +7014,17 @@ body.nav-open .floating-buttons { display: none !important; }
     .testim-text-body { font-size: .92rem !important; }
     .btn { padding: 10px 20px !important; font-size: 13px !important; }
 }
+
+/* ===== Floating buttons: round icon-only (user request) ===== */
+.floating-buttons a {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.floating-buttons a span { display: none !important; }
+.floating-buttons a i { font-size: 20px !important; margin: 0 !important; }
