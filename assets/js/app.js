@@ -863,6 +863,23 @@ $(function() {
     });
 
 
+    // Pin floating buttons with the VISUAL viewport: in-app browsers (Facebook/
+    // Instagram) report a wrong layout viewport, which pushes fixed-bottom
+    // buttons up over the content. top-based positioning avoids that.
+    function positionFab() {
+        var fab = document.querySelector('.floating-buttons');
+        if (!fab) return;
+        var vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        fab.style.top = Math.max(0, vh - fab.offsetHeight - 20) + 'px';
+        fab.style.bottom = 'auto';
+    }
+    $(document).on('include-complete', positionFab);
+    $(window).on('resize orientationchange load', positionFab);
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', positionFab);
+    }
+    positionFab();
+
     // Smart floating buttons: hide while scrolling down (avoids overlapping headings),
     // show again on scroll up or near the top.
     let fabLastY = window.scrollY || 0;
