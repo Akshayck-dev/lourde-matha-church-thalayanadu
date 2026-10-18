@@ -7046,9 +7046,9 @@ body.nav-open .floating-buttons { display: none !important; }
     margin-bottom: 0 !important;
 }
 
-/* FABs: anchor with top + dvh (bottom-anchored fixed is misplaced by iOS in-app browsers) */
+/* FABs: single call button, anchored with top + dvh (bottom-anchored fixed is misplaced by iOS in-app browsers) */
 .floating-buttons {
-    top: calc(100vh - 150px);
-    top: calc(100dvh - 150px);
+    top: calc(100vh - 74px);
+    top: calc(100dvh - 74px);
     bottom: auto !important;
 }
