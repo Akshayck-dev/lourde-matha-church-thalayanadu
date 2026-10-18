@@ -1137,6 +1137,49 @@ I would like to know more about your courses.`;
         }
     });
 
+
+    /* ---- Reference-style menu: drawer + accordion submenus (delegated: header loads via fetch) ---- */
+    $(document).on('click', '.menu-toggle', function () {
+        $('body').addClass('nav-open');
+    });
+    $(document).on('click', '.nav-close, .nav-overlay', function () {
+        $('body').removeClass('nav-open');
+    });
+    $(document).on('click', '.sub-toggle', function (e) {
+        e.preventDefault();
+        var $item = $(this).closest('.nav-item');
+        var wasOpen = $item.hasClass('open');
+        $item.closest('.nav-list').find('.has-sub.open').removeClass('open')
+            .find('.sub-toggle').attr('aria-expanded', 'false');
+        if (!wasOpen) {
+            $item.addClass('open');
+            $(this).attr('aria-expanded', 'true');
+        }
+    });
+    // Close drawer when a link is tapped (mobile) or Escape is pressed
+    $(document).on('click', '.main-nav a', function () {
+        if (window.innerWidth < 992) $('body').removeClass('nav-open');
+    });
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') $('body').removeClass('nav-open');
+    });
+    // Highlight the current page's menu item once the header include has loaded
+    function markActiveNav() {
+        var page = (window.location.pathname.split('/').pop() || 'index.html').split('?')[0].split('#')[0];
+        if (!page) page = 'index.html';
+        var $links = $('.main-nav [data-page]');
+        if (!$links.length) return false;
+        $links.each(function () {
+            var $a = $(this);
+            var on = $a.attr('data-page') === page;
+            $a.toggleClass('active', on);
+            $a.closest('.has-sub').toggleClass('active-parent', $a.closest('.has-sub').find('[data-page].active').length > 0);
+        });
+        return true;
+    }
+    $(document).on('include-complete', markActiveNav);
+    setTimeout(markActiveNav, 1200); // fallback if event timing differs
+
     // Set initial state
     $(window).trigger('scroll');
 });
