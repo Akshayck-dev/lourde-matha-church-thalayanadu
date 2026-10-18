@@ -863,6 +863,29 @@ $(function() {
     });
 
 
+    // DEBUG: ?debug=1 shows live viewport measurements (for diagnosing webview bugs)
+    if (location.search.indexOf('debug=1') !== -1) {
+        var dbg = document.createElement('div');
+        dbg.id = 'fab-debug';
+        dbg.style.cssText = 'position:fixed;top:10px;left:10px;z-index:999999;background:rgba(0,0,0,0.85);color:#0f0;font:11px monospace;padding:10px;border-radius:8px;max-width:92vw;white-space:pre-wrap;';
+        document.body.appendChild(dbg);
+        setInterval(function() {
+            var fab = document.querySelector('.floating-buttons');
+            var r = fab ? fab.getBoundingClientRect() : null;
+            var cs = fab ? getComputedStyle(fab) : null;
+            dbg.textContent =
+                'innerHeight: ' + window.innerHeight + '\n' +
+                'visualViewport: ' + (window.visualViewport ? window.visualViewport.height : 'n/a') + '\n' +
+                'docEl.clientHeight: ' + document.documentElement.clientHeight + '\n' +
+                'scrollY: ' + Math.round(window.scrollY) + '\n' +
+                'fab rect.top: ' + (r ? Math.round(r.top) : 'n/a') + '\n' +
+                'fab rect.bottom: ' + (r ? Math.round(r.bottom) : 'n/a') + '\n' +
+                'fab computed top: ' + (cs ? cs.top : 'n/a') + '\n' +
+                'fab computed bottom: ' + (cs ? cs.bottom : 'n/a') + '\n' +
+                'fab-hidden: ' + (fab ? fab.classList.contains('fab-hidden') : 'n/a');
+        }, 500);
+    }
+
     // Smart floating buttons: hide while scrolling down (avoids overlapping headings),
     // show again on scroll up or near the top.
     let fabLastY = window.scrollY || 0;
