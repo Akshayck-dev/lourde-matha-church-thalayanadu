@@ -6890,30 +6890,30 @@ body.modal-open {
 .brand { display: flex; align-items: center; text-decoration: none; }
 .brand-icon {
     display: inline-flex; align-items: center; justify-content: center;
-    width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
-    background: linear-gradient(135deg, #0b2a4a, #16437a); color: #f2b705; font-size: 1.5rem;
+    width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, #0b2a4a, #16437a); color: #f2b705; font-size: 1.3rem;
 }
 .brand-text { margin-left: 14px; display: flex; flex-direction: column; }
-.brand-name { font-weight: 800; color: #0b2a4a; font-size: clamp(1rem, 4vw, 1.22rem); letter-spacing: .02em; line-height: 1.15; }
+.brand-name { font-weight: 800; color: #0b2a4a; font-size: clamp(.9rem, 3.6vw, 1.08rem); letter-spacing: .02em; line-height: 1.15; }
 .brand-sub { color: #6c757d; font-size: clamp(.68rem, 2.5vw, .82rem); font-family: 'Playfair Display', serif; font-style: italic; }
 .menu-toggle { display: none; background: none; border: 0; padding: 10px 4px; cursor: pointer; }
-.menu-toggle span { display: block; width: 26px; height: 2.5px; background: #0b2a4a; margin: 6px 0; border-radius: 3px; transition: all .3s; }
+.menu-toggle span { display: block; width: 22px; height: 2.5px; background: #0b2a4a; margin: 6px 0; border-radius: 3px; transition: all .3s; }
 
 /* Desktop bar */
 .desktop-nav { background: linear-gradient(135deg, #0b2a4a 0%, #071d36 100%); }
 .desktop-nav .nav-list { display: flex; justify-content: center; align-items: stretch; list-style: none; margin: 0; padding: 0; }
 .desktop-nav .nav-item { position: relative; }
 .desktop-nav .nav-link {
-    display: flex; align-items: center; gap: 8px; color: #fff; font-weight: 600; font-size: .97rem;
-    padding: 17px 24px; text-decoration: none; background: none; border: 0; cursor: pointer;
+    display: flex; align-items: center; gap: 8px; color: #fff; font-weight: 600; font-size: .85rem;
+    padding: 14px 20px; text-decoration: none; background: none; border: 0; cursor: pointer;
     font-family: 'Inter', sans-serif; letter-spacing: .02em; transition: all .25s; white-space: nowrap;
 }
 .desktop-nav .nav-link:hover { color: var(--menu-accent); background: rgba(41,182,246,.08); }
-.desktop-nav .sub-toggle .fa-chevron-down { font-size: .66rem; color: #fff; transition: all .3s; }
+.desktop-nav .sub-toggle .fa-chevron-down { font-size: .6rem; color: #fff; transition: all .3s; }
 .desktop-nav .nav-item.open .sub-toggle { color: var(--menu-accent); }
 .desktop-nav .nav-item.open .sub-toggle .fa-chevron-down { transform: rotate(180deg); color: var(--menu-accent); }
 .desktop-nav .sub-menu {
-    position: absolute; top: 100%; left: 50%; min-width: 255px; z-index: 1050;
+    position: absolute; top: 100%; left: 50%; min-width: 230px; z-index: 1050;
     transform: translateX(-50%) translateY(10px); opacity: 0; visibility: hidden; transition: all .25s ease;
     background: #0a1826; border: 1px solid rgba(41,182,246,.25); border-top: 3px solid var(--menu-accent);
     border-radius: 0 0 12px 12px; list-style: none; margin: 0; padding: 8px 0;
@@ -6926,10 +6926,10 @@ body.modal-open {
     .desktop-nav .nav-item.has-sub:hover .sub-toggle .fa-chevron-down { color: var(--menu-accent); }
 }
 .desktop-nav .sub-menu a {
-    display: block; color: rgba(255,255,255,.88); padding: 11px 26px; font-size: .93rem;
+    display: block; color: rgba(255,255,255,.88); padding: 9px 22px; font-size: .82rem;
     text-decoration: none; transition: all .2s; white-space: nowrap;
 }
-.desktop-nav .sub-menu a:hover { color: var(--menu-accent); background: rgba(41,182,246,.08); padding-left: 32px; }
+.desktop-nav .sub-menu a:hover { color: var(--menu-accent); background: rgba(41,182,246,.08); padding-left: 28px; }
 .desktop-nav .nav-link.active, .desktop-nav .nav-item.has-sub.active-parent > .sub-toggle { color: var(--menu-accent); }
 
 /* Overlay + drawer base (hidden on desktop) */
@@ -6950,8 +6950,8 @@ body.modal-open {
     body.nav-open #mobileDrawer { transform: none; }
     #mobileDrawer .nav-head { display: flex; justify-content: flex-end; padding: 16px 20px 4px; }
     #mobileDrawer .nav-close {
-        background: none; border: 0; color: #fff; font-size: 1.7rem; cursor: pointer;
-        width: 46px; height: 46px; display: flex; align-items: center; justify-content: center;
+        background: none; border: 0; color: #fff; font-size: 1.35rem; cursor: pointer;
+        width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
         transition: color .25s;
     }
     #mobileDrawer .nav-close:hover { color: var(--menu-accent); }
@@ -6959,12 +6959,12 @@ body.modal-open {
     #mobileDrawer .nav-item { border-bottom: 1px solid rgba(255,255,255,.06); }
     #mobileDrawer .nav-list .nav-link {
         display: flex; width: 100%; justify-content: space-between; align-items: center;
-        color: #ffffff; font-size: 1.12rem; font-weight: 600; padding: 15px 28px; text-align: left;
+        color: #ffffff; font-size: .95rem; font-weight: 600; padding: 13px 24px; text-align: left;
         text-decoration: none; background: none; border: 0; cursor: pointer; font-family: 'Inter', sans-serif;
     }
     #mobileDrawer .nav-item.open > .nav-link { color: var(--menu-accent); background: rgba(41,182,246,.10); }
     #mobileDrawer .nav-link.active { color: var(--menu-accent); }
-    #mobileDrawer .sub-toggle .fa-chevron-down { font-size: .8rem; color: #fff; transition: all .3s; }
+    #mobileDrawer .sub-toggle .fa-chevron-down { font-size: .7rem; color: #fff; transition: all .3s; }
     #mobileDrawer .nav-item.open .sub-toggle .fa-chevron-down { transform: rotate(180deg); color: var(--menu-accent); }
     #mobileDrawer .sub-menu {
         display: none; list-style: none; margin: 0; padding: 4px 0;
@@ -6972,7 +6972,7 @@ body.modal-open {
     }
     #mobileDrawer .nav-item.open .sub-menu { display: block; }
     #mobileDrawer .sub-menu a {
-        display: block; color: #ffffff; padding: 12px 28px 12px 52px; font-size: 1rem;
+        display: block; color: #ffffff; padding: 10px 24px 10px 44px; font-size: .85rem;
         text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.04);
     }
     .nav-overlay {
