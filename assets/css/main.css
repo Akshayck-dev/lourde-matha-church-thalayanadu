@@ -1808,15 +1808,17 @@ section,
 
 /* Hero Section Refinement */
 .hero-slider {
-    height: 70vh !important;
-    min-height: 550px;
+    height: 100vh !important;
+    height: 100svh !important;
+    min-height: 600px;
     width: 100%;
 }
 
 @media (max-width: 768px) {
     .hero-slider {
-        height: 50vh !important;
-        min-height: 400px;
+        height: 100vh !important;
+        height: 100svh !important;
+        min-height: 520px;
     }
 }
 
