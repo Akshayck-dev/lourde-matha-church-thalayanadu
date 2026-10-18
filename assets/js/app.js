@@ -863,15 +863,24 @@ $(function() {
     });
 
 
-    // Pin floating buttons with the VISUAL viewport: in-app browsers (Facebook/
-    // Instagram) report a wrong layout viewport, which pushes fixed-bottom
-    // buttons up over the content. top-based positioning avoids that.
+    // Self-correcting FAB position: some in-app browsers (Facebook/Instagram)
+    // misplace position:fixed + bottom elements, floating them up over content.
+    // Measure the real rendered position; if the gap to the viewport bottom is
+    // abnormally large, nudge down by exactly that gap.
     function positionFab() {
         var fab = document.querySelector('.floating-buttons');
         if (!fab) return;
-        var vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-        fab.style.top = Math.max(0, vh - fab.offsetHeight - 20) + 'px';
-        fab.style.bottom = 'auto';
+        var wasHidden = fab.classList.contains('fab-hidden');
+        fab.classList.remove('fab-hidden');
+        fab.style.top = 'auto';
+        fab.style.bottom = '20px';
+        var rect = fab.getBoundingClientRect();
+        var gap = window.innerHeight - rect.bottom;
+        if (gap > 120) {
+            fab.style.top = Math.round(rect.top + gap) + 'px';
+            fab.style.bottom = 'auto';
+        }
+        if (wasHidden || (window.scrollY || 0) > 60) fab.classList.add('fab-hidden');
     }
     $(document).on('include-complete', positionFab);
     $(window).on('resize orientationchange load', positionFab);
