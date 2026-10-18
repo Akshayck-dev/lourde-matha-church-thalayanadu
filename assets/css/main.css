@@ -7052,3 +7052,36 @@ body.nav-open .floating-buttons { display: none !important; }
     top: calc(100dvh - 74px);
     bottom: auto !important;
 }
+
+/* Mobile slim header: hide top bar + brand row, floating menu button only */
+@media (max-width: 991.98px) {
+    .top-bar { display: none !important; }
+    .sticky-wrap { display: none !important; }
+    .menu-fab {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        z-index: 1050;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(11, 42, 74, 0.92);
+        border: 0;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        padding: 0;
+    }
+    .menu-fab span {
+        display: block;
+        width: 20px;
+        height: 2.5px;
+        background: #fff;
+        margin: 2.5px 0;
+        border-radius: 3px;
+    }
+    body.nav-open .menu-fab { display: none !important; }
+}

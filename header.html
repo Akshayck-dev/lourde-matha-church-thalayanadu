@@ -68,6 +68,11 @@
     </nav>
 </div>
 
+<!-- Floating menu button (mobile only) — outside sticky-wrap for iOS reliability -->
+<button class="menu-toggle menu-fab d-lg-none" aria-label="Open menu">
+    <span></span><span></span><span></span>
+</button>
+
 <!-- Mobile drawer + overlay live OUTSIDE the sticky container (iOS renders fixed
      elements inside sticky ancestors transparent/broken) -->
 <div class="nav-overlay" id="navOverlay"></div>
