@@ -6997,4 +6997,20 @@ body.modal-open {
 #mobileDrawer .nav-link::after,
 #mobileDrawer .sub-menu a::after { content: none !important; display: none !important; }
 /* Hide floating CTA buttons while the drawer is open (like the reference) */
-body.nav-open .floating-actions { display: none !important; }
+body.nav-open .floating-buttons { display: none !important; }
+
+/* ===== Average-size pass (mobile) — user request: ellam oru average size mathi ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 1.65rem !important; }
+    h2 { font-size: 1.4rem !important; }
+    h3 { font-size: 1.15rem !important; }
+    .lead { font-size: .98rem !important; }
+    .top-bar .btn { padding: 5px 12px !important; font-size: 10px !important; }
+    .floating-buttons a,
+    .floating-buttons button { padding: 8px 14px !important; font-size: 12px !important; }
+    .floating-buttons i { font-size: 15px !important; }
+    .testimonial-avatar { width: 60px !important; height: 60px !important; }
+    .testimonial-avatar i { font-size: 1.4rem !important; }
+    .testim-text-body { font-size: .92rem !important; }
+    .btn { padding: 10px 20px !important; font-size: 13px !important; }
+}
