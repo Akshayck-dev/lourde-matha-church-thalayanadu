@@ -7127,4 +7127,69 @@ body.nav-open .floating-buttons { display: none !important; }
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
 }
 
-
+/* Desktop header like peringuzhachurch.org: white, clean, logo left, menu right */
+@media (min-width: 992px) {
+    .top-bar { display: none !important; }
+    header .desktop-nav {
+        background: #ffffff !important;
+        box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    }
+    .brand-nav .brand-icon {
+        background: #1e6fa8;
+        color: #ffffff;
+        width: 46px; height: 46px;
+    }
+    .brand-nav .brand-name {
+        color: #1e3a5c;
+        font-weight: 800;
+        font-size: 1.05rem;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+    }
+    .brand-nav .brand-sub {
+        color: #3d9bd6;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: .72rem;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+    }
+    .desktop-nav .nav-link {
+        color: #3a3a3a;
+        font-weight: 700;
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        padding: 14px 14px;
+        background: none !important;
+    }
+    .desktop-nav .nav-link:hover,
+    .desktop-nav .nav-item.has-sub:hover .sub-toggle {
+        color: #3d9bd6 !important;
+    }
+    .desktop-nav .nav-link.active,
+    .desktop-nav .nav-item.has-sub.active-parent > .sub-toggle {
+        color: #3d9bd6 !important;
+    }
+    .desktop-nav .sub-toggle .fa-chevron-down { color: #3a3a3a; }
+    .desktop-nav .nav-item.open .sub-toggle .fa-chevron-down,
+    .desktop-nav .nav-item.has-sub:hover .sub-toggle .fa-chevron-down { color: #3d9bd6; }
+    .desktop-nav .sub-menu {
+        background: #ffffff;
+        border: 1px solid rgba(0,0,0,.08);
+        border-top: 3px solid #3d9bd6;
+        box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+    .desktop-nav .sub-menu a {
+        color: #3a3a3a;
+        text-transform: uppercase;
+        font-size: .75rem;
+        font-weight: 600;
+        letter-spacing: .04em;
+    }
+    .desktop-nav .sub-menu a:hover {
+        color: #3d9bd6;
+        background: rgba(61,155,214,.08);
+    }
+}
