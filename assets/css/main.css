@@ -7160,7 +7160,7 @@ body.nav-open .floating-buttons { display: none !important; }
         text-transform: uppercase;
     }
     .desktop-nav .nav-link {
-        color: #3a3a3a;
+        color: #3a3a3a !important;
         font-weight: 700;
         font-size: .78rem;
         text-transform: uppercase;
@@ -7176,7 +7176,7 @@ body.nav-open .floating-buttons { display: none !important; }
     .desktop-nav .nav-item.has-sub.active-parent > .sub-toggle {
         color: #3d9bd6 !important;
     }
-    .desktop-nav .sub-toggle .fa-chevron-down { color: #3a3a3a; }
+    .desktop-nav .sub-toggle .fa-chevron-down { color: #3a3a3a !important; }
     .desktop-nav .nav-item.open .sub-toggle .fa-chevron-down,
     .desktop-nav .nav-item.has-sub:hover .sub-toggle .fa-chevron-down { color: #3d9bd6; }
     .desktop-nav .sub-menu {
