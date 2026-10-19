@@ -7142,7 +7142,8 @@ body.nav-open .floating-buttons { display: none !important; }
         box-shadow: none !important;
     }
     header.scrolled .desktop-nav-inner {
-        max-width: 1020px;
+        max-width: 900px;
+        width: max-content;
         margin: 14px auto 0;
         border-radius: 50px;
         background: rgba(61, 155, 214, 0.55);
@@ -7150,7 +7151,11 @@ body.nav-open .floating-buttons { display: none !important; }
         backdrop-filter: blur(16px);
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 0 10px 34px rgba(30, 106, 168, 0.25);
-        padding: 6px 24px;
+        padding: 6px 10px 6px 24px;
+    }
+    header.scrolled .desktop-nav .nav-list {
+        flex-wrap: nowrap;
+        align-items: center;
     }
     /* Contact Us as white pill button when floating (like reference) */
     header.scrolled .desktop-nav .nav-list > .nav-item:last-child .nav-link {
