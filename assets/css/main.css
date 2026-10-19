@@ -7098,6 +7098,8 @@ body.nav-open .floating-buttons { display: none !important; }
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .brand-nav { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
 .brand-nav .brand-icon {
