@@ -7109,3 +7109,13 @@ body.nav-open .floating-buttons { display: none !important; }
 .brand-nav .brand-name { color: #fff; font-weight: 700; font-size: 1rem; letter-spacing: .04em; }
 .brand-nav .brand-sub { color: rgba(255,255,255,.65); font-size: .72rem; font-style: italic; }
 .desktop-nav .nav-list { justify-content: flex-end; flex-grow: 1; }
+
+/* Plan a Visit: plain text link, no button background */
+.plan-visit-link {
+    color: #f2b705;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.plan-visit-link:hover { color: #ffd54f; text-decoration: underline; }
