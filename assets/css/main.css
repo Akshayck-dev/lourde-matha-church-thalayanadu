@@ -37,8 +37,8 @@ html {
 body {
     -webkit-overflow-scrolling: touch;
     text-rendering: optimizeLegibility;
-    padding-top: 120px;
-    /* Compelsate for fixed header height */
+    padding-top: 96px;
+    /* Compelsate for fixed header height (JS fine-tunes on desktop) */
 }
 
 /* 📱 MOBILE PERFORMANCE OVERRIDES */

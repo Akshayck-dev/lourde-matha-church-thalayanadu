@@ -886,6 +886,16 @@ $(function() {
         }, 500);
     }
 
+    // Dynamic body offset for the fixed desktop header (no white gap)
+    function fixHeaderOffset() {
+        if (window.innerWidth < 992) return; // mobile handled by CSS
+        var header = document.querySelector('header[data-include="header"]');
+        if (!header) return;
+        document.body.style.paddingTop = header.offsetHeight + 'px';
+    }
+    $(document).on('include-complete', fixHeaderOffset);
+    $(window).on('resize orientationchange load', fixHeaderOffset);
+
     // Smart floating buttons: hide while scrolling down (avoids overlapping headings),
     // show again on scroll up or near the top.
     let fabLastY = window.scrollY || 0;
