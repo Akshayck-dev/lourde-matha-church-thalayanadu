@@ -7193,3 +7193,14 @@ body.nav-open .floating-buttons { display: none !important; }
         background: rgba(61,155,214,.08);
     }
 }
+
+/* Desktop: wide header at top, narrower on scroll */
+@media (min-width: 992px) {
+    header .desktop-nav-inner {
+        max-width: 1440px;
+        transition: max-width .35s ease;
+    }
+    header.scrolled .desktop-nav-inner {
+        max-width: 1140px;
+    }
+}
