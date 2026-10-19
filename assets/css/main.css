@@ -7127,13 +7127,21 @@ body.nav-open .floating-buttons { display: none !important; }
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
 }
 
-/* Centered floating pill nav (desktop) — like reference */
+/* Desktop: normal header at top, floating pill nav on scroll (like reference) */
 @media (min-width: 992px) {
     header .desktop-nav {
+        transition: background .35s ease, box-shadow .35s ease;
+    }
+    header .desktop-nav-inner {
+        transition: max-width .35s ease, margin .35s ease, border-radius .35s ease,
+                    background .35s ease, box-shadow .35s ease, padding .35s ease, border .35s ease;
+    }
+    header.scrolled .top-bar { display: none; }
+    header.scrolled .desktop-nav {
         background: transparent !important;
         box-shadow: none !important;
     }
-    .desktop-nav-inner {
+    header.scrolled .desktop-nav-inner {
         max-width: 1020px;
         margin: 14px auto 0;
         border-radius: 50px;
@@ -7144,8 +7152,8 @@ body.nav-open .floating-buttons { display: none !important; }
         box-shadow: 0 10px 34px rgba(30, 106, 168, 0.3);
         padding: 10px 30px;
     }
-    /* Contact Us as white pill button (like reference) */
-    .desktop-nav .nav-list > .nav-item:last-child .nav-link {
+    /* Contact Us as white pill button when floating (like reference) */
+    header.scrolled .desktop-nav .nav-list > .nav-item:last-child .nav-link {
         background: #ffffff;
         color: #1e6fa8 !important;
         border-radius: 50px;
@@ -7153,7 +7161,7 @@ body.nav-open .floating-buttons { display: none !important; }
         margin-left: 8px;
         font-weight: 700;
     }
-    .desktop-nav .nav-list > .nav-item:last-child .nav-link:hover {
+    header.scrolled .desktop-nav .nav-list > .nav-item:last-child .nav-link:hover {
         background: #f0f7fd;
         color: #1e6fa8 !important;
     }

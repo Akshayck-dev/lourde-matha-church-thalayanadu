@@ -886,6 +886,16 @@ $(function() {
         }, 500);
     }
 
+    // Floating pill nav on scroll (desktop) — like reference
+    function onScrollHeader() {
+        var y = window.scrollY || window.pageYOffset || 0;
+        document.querySelectorAll('header[data-include="header"]').forEach(function (h) {
+            h.classList.toggle('scrolled', y > 60 && window.innerWidth >= 992);
+        });
+    }
+    $(window).on('scroll', onScrollHeader);
+    $(document).on('include-complete', onScrollHeader);
+
     // Dynamic body offset for the fixed desktop header (no white gap)
     function fixHeaderOffset() {
         if (window.innerWidth < 992) return; // mobile handled by CSS
