@@ -1,7 +1,7 @@
 /* 
   Denahalaya Institute - Modern Design System 
   Typography: Playfair Display (Headings), Inter (Body)
-  Palette: Sky Blue (#3d9bd6), Gold (#c5a059), Background (#f7f9fc)
+  Palette: Sky Blue (#3d9bd6), Gold (#1e6fa8), Background (#f7f9fc)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
@@ -129,7 +129,7 @@ body {
 }
 
 .contact-link:hover {
-    color: #d4a63a !important;
+    color: #1e6fa8 !important;
     text-decoration: none !important;
 }
 
@@ -433,7 +433,7 @@ section,
     .btn:hover {
         transform: translateY(-3px) scale(1.02);
         box-shadow: 0 12px 25px rgba(212, 168, 68, 0.3);
-        background: linear-gradient(135deg, #e5b955, #d9ac4d);
+        background: linear-gradient(135deg, #1e6fa8, #1e6fa8);
     }
 }
 
@@ -1679,7 +1679,7 @@ section,
 }
 
 .leadership-card .designation-text {
-    color: #f1b71c !important;
+    color: #1e6fa8 !important;
     /* Brighter gold to match reference */
     font-size: 0.74rem !important;
     font-weight: 800;
@@ -2570,7 +2570,7 @@ section,
 }
 
 .footer-bottom-bar {
-    background-color: #f59e0b;
+    background-color: #1e6fa8;
     /* Vibrant gold/orange bar */
     color: white;
     padding: 15px 0;
@@ -3078,7 +3078,7 @@ form {
 }
 
 .btn-read-more:hover {
-    background: #e5b32e;
+    background: #1e6fa8;
     transform: translateY(-2px);
 }
 
@@ -3907,7 +3907,7 @@ body.modal-open-active {
 .contact-form-card-v11 button {
     width: 100% !important;
     padding: 14px !important;
-    background: #d4a63a !important;
+    background: #1e6fa8 !important;
     /* EXACT USER REQUIREMENT */
     border: none !important;
     border-radius: 8px !important;
@@ -3980,7 +3980,7 @@ footer {
 .footer-contact-item i {
     text-align: center !important;
     /* Center icon within its fixed 24px column */
-    color: #ffc107 !important;
+    color: #1e6fa8 !important;
     font-size: 16px !important;
     margin-top: 3px !important;
     /* Minor top-sync for grid row */
@@ -4034,7 +4034,7 @@ footer {
 }
 
 .btn-primary-custom:hover {
-    background: #e0aa2e !important;
+    background: #1e6fa8 !important;
     color: #000 !important;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(243, 193, 75, 0.4) !important;
@@ -4397,7 +4397,7 @@ footer {
 }
 
 .course-card-v3 .btn-pill-gold:hover {
-    background: #e0aa2e !important;
+    background: #1e6fa8 !important;
     transform: scale(1.02) !important;
     box-shadow: 0 10px 25px rgba(243, 193, 75, 0.3) !important;
 }
@@ -4467,7 +4467,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
-    background: linear-gradient(135deg, #1e6fa8, #c89b2c);
+    background: linear-gradient(135deg, #1e6fa8, #1e6fa8);
     color: #fff !important;
     border: none;
     transition: all 0.3s ease;
@@ -4683,7 +4683,7 @@ footer {
 }
 
 .legacy-card .read-more-btn:hover {
-    background: #e6c200;
+    background: #1e6fa8;
 }
 
 @media (max-width: 768px) {
@@ -6020,7 +6020,7 @@ body.modal-open {
 
 /* APPLY BUTTON (MATCH STYLE) */
 .apply-btn {
-    background: #d4a24c;
+    background: #1e6fa8;
     color: #fff !important;
     border: none;
     padding: 14px 26px;
@@ -7123,4 +7123,21 @@ body.nav-open .floating-buttons { display: none !important; }
 /* Hero: real image, no color wash — text shadow for readability */
 .hero-content h1, .hero-content p {
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Floating transparent nav header on scroll (desktop) */
+@media (min-width: 992px) {
+    header .desktop-nav {
+        transition: margin .35s ease, border-radius .35s ease, background .35s ease, box-shadow .35s ease;
+    }
+    header.scrolled .top-bar { display: none; }
+    header.scrolled .desktop-nav {
+        margin: 12px 20px 0;
+        border-radius: 18px;
+        background: rgba(61, 155, 214, 0.82) !important;
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 10px 34px rgba(30, 106, 168, 0.28);
+    }
+    header.scrolled .desktop-nav-inner { padding-top: 6px; padding-bottom: 6px; }
 }
