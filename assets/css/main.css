@@ -7134,6 +7134,10 @@ body.nav-open .floating-buttons { display: none !important; }
         background: #ffffff !important;
         box-shadow: 0 1px 0 rgba(0,0,0,.06);
     }
+    header .desktop-nav-inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .brand-nav .brand-icon {
         background: #1e6fa8;
         color: #ffffff;
