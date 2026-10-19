@@ -7090,3 +7090,22 @@ body.nav-open .floating-buttons { display: none !important; }
     }
     body.nav-open .menu-fab { display: none !important; }
 }
+
+/* Desktop: single navy header bar with logo + name + menu (white brand row removed) */
+.brand-row { display: none !important; }
+.desktop-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.brand-nav { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.brand-nav .brand-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #f2b705; color: #0b2a4a; font-size: 1.3rem; margin-right: 12px;
+}
+.brand-nav .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.brand-nav .brand-name { color: #fff; font-weight: 700; font-size: 1rem; letter-spacing: .04em; }
+.brand-nav .brand-sub { color: rgba(255,255,255,.65); font-size: .72rem; font-style: italic; }
+.desktop-nav .nav-list { justify-content: flex-end; flex-grow: 1; }
