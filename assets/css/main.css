@@ -7340,3 +7340,44 @@ body.nav-open .floating-buttons { display: none !important; }
         width: 100%;
     }
 }
+
+/* About photo: video link with circular play button */
+.about-video-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 18px;
+}
+.about-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: rgba(42, 127, 181, .92);
+    color: #ffffff;
+    font-size: 1.5rem;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .35);
+    transform: translate(-50%, -50%);
+    transition: background .25s ease, transform .25s ease;
+}
+.about-play-button::before {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .65);
+    animation: playPulse 2s ease-out infinite;
+}
+.about-play-button .fa-play { margin-left: 4px; }
+.about-video-link:hover .about-play-button,
+.about-video-link:focus-visible .about-play-button {
+    background: #1e6fa8;
+    transform: translate(-50%, -50%) scale(1.07);
+}
