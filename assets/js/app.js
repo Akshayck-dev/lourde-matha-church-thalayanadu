@@ -267,13 +267,14 @@ $(function() {
 
         // 4. Hero Slider
         if ($('.hero-slider').length > 0 && typeof Swiper !== 'undefined') {
+            var heroCount = document.querySelectorAll('.hero-slider .swiper-slide').length;
             new Swiper('.hero-slider', {
                 speed: 800,
-                loop: true,
-                autoplay: {
+                loop: heroCount > 1,
+                autoplay: heroCount > 1 ? {
                     delay: 5000,
                     disableOnInteraction: false
-                },
+                } : false,
                 effect: 'fade',
                 fadeEffect: { crossFade: true },
                 pagination: {
