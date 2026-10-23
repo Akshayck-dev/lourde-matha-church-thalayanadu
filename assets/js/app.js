@@ -1239,34 +1239,3 @@ I would like to know more about your courses.`;
     // Set initial state
     $(window).trigger('scroll');
 });
-
-/* Homepage YouTube facade: load the player only after the visitor taps play. */
-(function () {
-    function activateYouTubeFacade(facade) {
-        if (!facade || facade.dataset.loaded === 'true') return;
-        var videoId = facade.getAttribute('data-youtube-id');
-        if (!videoId) return;
-        facade.dataset.loaded = 'true';
-        var iframe = document.createElement('iframe');
-        iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0&playsinline=1';
-        iframe.title = 'Lourde Matha Church parish short video';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.allowFullscreen = true;
-        facade.innerHTML = '';
-        facade.removeAttribute('role');
-        facade.removeAttribute('tabindex');
-        facade.appendChild(iframe);
-    }
-
-    document.addEventListener('click', function (event) {
-        var facade = event.target.closest('.js-youtube-facade');
-        if (facade) activateYouTubeFacade(facade);
-    });
-    document.addEventListener('keydown', function (event) {
-        if (event.key !== 'Enter' && event.key !== ' ') return;
-        var facade = event.target.closest('.js-youtube-facade');
-        if (!facade) return;
-        event.preventDefault();
-        activateYouTubeFacade(facade);
-    });
-})();

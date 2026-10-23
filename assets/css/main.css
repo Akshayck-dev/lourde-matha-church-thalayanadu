@@ -7223,6 +7223,9 @@ body.nav-open .floating-buttons { display: none !important; }
     box-shadow: 0 18px 45px rgba(30, 111, 168, .14);
 }
 .youtube-facade {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
     position: relative;
     overflow: hidden;
     aspect-ratio: 16 / 9;
