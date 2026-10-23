@@ -903,6 +903,7 @@ $(function() {
         var header = document.querySelector('header[data-include="header"]');
         if (!header) return;
         document.body.style.paddingTop = header.offsetHeight + 'px';
+        document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
     }
     $(document).on('include-complete', fixHeaderOffset);
     $(window).on('resize orientationchange load', fixHeaderOffset);

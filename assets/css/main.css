@@ -1822,6 +1822,14 @@ section,
     }
 }
 
+/* Desktop: fit header + hero in exactly one screen (header height measured by JS) */
+@media (min-width: 992px) {
+    .hero-slider {
+        height: calc(100vh - var(--header-h, 96px)) !important;
+        height: calc(100svh - var(--header-h, 96px)) !important;
+    }
+}
+
 .hero-slide {
     position: relative;
     width: 100%;
