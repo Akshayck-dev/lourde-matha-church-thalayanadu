@@ -786,14 +786,12 @@ section,
     bottom: -25px;
     left: 25px;
     background: #1e6fa8 !important;
-    /* Gold Background */
-    color: #3d9bd6 !important;
-    /* Navy Text */
+    color: #ffffff !important;
     padding: 12px 24px;
     border: none !important;
     border-radius: 12px;
     font-weight: 700;
-    box-shadow: 0 10px 25px rgba(243, 193, 75, 0.3) !important;
+    box-shadow: 0 10px 25px rgba(30, 111, 168, 0.35) !important;
     z-index: 10;
 }
 
