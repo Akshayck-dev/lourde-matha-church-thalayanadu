@@ -1826,6 +1826,13 @@ section,
         height: calc(100vh - var(--header-h, 96px)) !important;
         height: calc(100svh - var(--header-h, 96px)) !important;
     }
+    /* Desktop: fill full width, no side gaps (mild top/bottom crop on wide screens) */
+    .hero-slide img {
+        object-fit: cover;
+    }
+    .hero-backdrop {
+        display: none;
+    }
 }
 
 .hero-slide {
