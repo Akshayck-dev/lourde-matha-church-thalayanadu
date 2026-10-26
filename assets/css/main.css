@@ -1833,18 +1833,33 @@ section,
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: #0b2236;
+}
+
+.hero-backdrop {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(24px) brightness(0.7);
+    transform: scale(1.15);
+    z-index: 0;
 }
 
 .hero-slide picture {
     display: block;
+    position: relative;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .hero-slide img {
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    z-index: 1;
 }
 
 .hero-overlay {
