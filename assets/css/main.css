@@ -6923,6 +6923,7 @@ body.modal-open {
 .former-vicar-plate { background: #fff; border: 1px solid #dbe7f3; border-left: 4px solid #3d9bd6; border-radius: 12px; padding: 16px 20px; }
 .former-vicar-plate .vicar-name { color: #1e3a5c; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
 .former-vicar-plate .vicar-dates { color: #64748b; font-size: 0.92rem; margin: 0; }
+.former-vicars-board-img { max-width: 460px; width: 100%; border-radius: 12px; border: 1px solid #dbe7f3; }
 @media (max-width: 767px) {
     .news-carousel-img { height: 240px; }
 }
