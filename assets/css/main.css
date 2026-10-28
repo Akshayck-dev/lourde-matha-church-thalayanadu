@@ -1830,9 +1830,6 @@ section,
     .hero-slider .hero-slide img {
         object-fit: cover;
     }
-    .hero-slider .hero-backdrop {
-        display: none;
-    }
 }
 
 .hero-slide {
@@ -1841,16 +1838,6 @@ section,
     height: 100%;
     overflow: hidden;
     background: #0b2236;
-}
-
-.hero-backdrop {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    filter: blur(24px) brightness(0.7);
-    transform: scale(1.15);
-    z-index: 0;
 }
 
 .hero-slide picture {
