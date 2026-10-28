@@ -6930,6 +6930,8 @@ body.modal-open {
     background: linear-gradient(135deg, #3d9bd6, #2a7fb5); color: #1e6fa8; font-size: 1.3rem;
 }
 .brand-text { margin-left: 14px; display: flex; flex-direction: column; }
+.brand-logo-img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.brand-nav .brand-logo-img { width: 44px; height: 44px; margin-right: 12px; }
 .brand-name { font-weight: 800; color: #3d9bd6; font-size: clamp(.9rem, 3.6vw, 1.08rem); letter-spacing: .02em; line-height: 1.15; }
 .brand-sub { color: #6c757d; font-size: clamp(.68rem, 2.5vw, .82rem); font-family: 'Playfair Display', serif; font-style: italic; }
 .menu-toggle { display: none; background: none; border: 0; padding: 10px 4px; cursor: pointer; }
