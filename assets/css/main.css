@@ -6920,6 +6920,9 @@ body.modal-open {
 .brand-logo-img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .brand-nav .brand-logo-img { width: 44px; height: 44px; margin-right: 12px; }
 .news-carousel-img { width: 100%; height: 320px; object-fit: cover; display: block; }
+.former-vicar-plate { background: #fff; border: 1px solid #dbe7f3; border-left: 4px solid #3d9bd6; border-radius: 12px; padding: 16px 20px; }
+.former-vicar-plate .vicar-name { color: #1e3a5c; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
+.former-vicar-plate .vicar-dates { color: #64748b; font-size: 0.92rem; margin: 0; }
 @media (max-width: 767px) {
     .news-carousel-img { height: 240px; }
 }
