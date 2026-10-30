@@ -591,7 +591,7 @@ $(function() {
                     
                     setTimeout(() => {
                         $('.modal').modal('hide');
-                        if (formId === 'apply-page') window.location.href = "index.html";
+                        if (formId === 'apply-page') window.location.href = "/";
                     }, 1000); // Close modal sooner as alert is overlaying
 
                 }, function(error) {
@@ -1223,8 +1223,8 @@ I would like to know more about your courses.`;
     });
     // Highlight the current page's menu item once the header include has loaded
     function markActiveNav() {
-        var page = (window.location.pathname.split('/').pop() || 'index.html').split('?')[0].split('#')[0];
-        if (!page) page = 'index.html';
+        var page = (window.location.pathname.split('/').pop() || '').split('?')[0].split('#')[0].replace(/\.html$/, '');
+        if (!page) page = 'index';
         var $links = $('.main-nav [data-page]');
         if (!$links.length) return false;
         $links.each(function () {
