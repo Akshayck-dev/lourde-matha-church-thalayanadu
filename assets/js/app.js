@@ -96,7 +96,7 @@ $(function() {
             const file = $this.data('include') + '.html';
             
             // Simplified load with error handling and cache-busting
-            fetch(file + '?v=20.0')
+            fetch(file + '?v=21.0')
                 .then(response => {
                     if (!response.ok) throw new Error('CORS or File Not Found');
                     return response.text();
@@ -1237,6 +1237,34 @@ I would like to know more about your courses.`;
     }
     $(document).on('include-complete', markActiveNav);
     setTimeout(markActiveNav, 1200); // fallback if event timing differs
+
+    // Site language toggle (EN / മലയാളം) via Google Translate
+    function getSiteLang() {
+        var m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]*)/);
+        return (m && /\/en\/ml$/.test(decodeURIComponent(m[1]))) ? 'ml' : 'en';
+    }
+    function updateLangButtons(lang) {
+        document.querySelectorAll('.lang-btn').forEach(function (b) {
+            b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+        });
+    }
+    function setSiteLang(lang) {
+        var val = '/en/' + lang;
+        document.cookie = 'googtrans=' + val + '; path=/';
+        try { document.cookie = 'googtrans=' + val + '; path=/; domain=' + location.hostname; } catch (e) {}
+        updateLangButtons(lang);
+        setTimeout(function () { location.reload(); }, 80);
+    }
+    document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest ? e.target.closest('.lang-btn') : null;
+        if (!el) return;
+        e.preventDefault();
+        if (el.getAttribute('data-lang') === getSiteLang()) return;
+        setSiteLang(el.getAttribute('data-lang'));
+    });
+    function initLangToggle() { updateLangButtons(getSiteLang()); }
+    $(document).on('include-complete', initLangToggle);
+    setTimeout(initLangToggle, 1500); // fallback
 
     // Set initial state
     $(window).trigger('scroll');
