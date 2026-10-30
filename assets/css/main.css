@@ -6930,7 +6930,7 @@ body.modal-open {
 @media (max-width: 767px) {
     .news-carousel-img { height: 240px; }
 }
-.brand-name { font-weight: 800; color: #3d9bd6; font-size: clamp(.9rem, 3.6vw, 1.08rem); letter-spacing: .02em; line-height: 1.15; }
+.brand-name { font-family: 'Marcellus', 'Playfair Display', serif; font-weight: 400; color: #3d9bd6; font-size: clamp(.95rem, 3.6vw, 1.12rem); letter-spacing: .04em; line-height: 1.15; }
 .brand-sub { color: #6c757d; font-size: clamp(.68rem, 2.5vw, .82rem); font-family: 'Playfair Display', serif; font-style: italic; }
 .menu-toggle { display: none; background: none; border: 0; padding: 10px 4px; cursor: pointer; }
 .menu-toggle span { display: block; width: 22px; height: 2.5px; background: #3d9bd6; margin: 6px 0; border-radius: 3px; transition: all .3s; }
@@ -7179,9 +7179,10 @@ body.nav-open .floating-buttons { display: none !important; }
     }
     .brand-nav .brand-name {
         color: #1e3a5c;
-        font-weight: 800;
-        font-size: 1.05rem;
-        letter-spacing: .03em;
+        font-family: 'Marcellus', 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 1.15rem;
+        letter-spacing: .06em;
         text-transform: uppercase;
     }
     .brand-nav .brand-sub {
