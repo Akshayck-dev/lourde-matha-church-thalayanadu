@@ -6920,7 +6920,10 @@ body.modal-open {
 .brand-logo-img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .brand-nav .brand-logo-img { width: 44px; height: 44px; margin-right: 12px; }
 .news-carousel-img { width: 100%; height: 320px; object-fit: cover; display: block; }
-.former-vicar-plate { background: #fff; border: 1px solid #dbe7f3; border-left: 4px solid #3d9bd6; border-radius: 12px; padding: 16px 20px; }
+.former-vicar-plate { background: #fff; border: 1px solid #dbe7f3; border-left: 4px solid #3d9bd6; border-radius: 12px; padding: 16px 20px; display: flex; align-items: center; gap: 14px; }
+.former-vicar-plate .vicar-photo { width: 76px; height: 76px; object-fit: cover; border-radius: 50%; border: 2px solid #dbe7f3; flex-shrink: 0; background: #eef4fa; }
+.former-vicar-plate .vicar-text { min-width: 0; }
+@media (max-width: 575.98px) { .former-vicar-plate .vicar-photo { width: 60px; height: 60px; } }
 .former-vicar-plate .vicar-name { color: #1e3a5c; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
 .former-vicar-plate .vicar-dates { color: #64748b; font-size: 0.92rem; margin: 0; }
 .former-vicars-board-img { max-width: 460px; width: 100%; border-radius: 12px; border: 1px solid #dbe7f3; }
