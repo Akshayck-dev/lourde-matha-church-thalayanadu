@@ -328,5 +328,9 @@ const I18N_ML = {
  "@title|Parish Short": "ഇടവക ഷോർട്ട്",
  "@title|Perunnal Live Stream": "പെരുന്നാൾ തത്സമയ സംപ്രേഷണം",
  "\"And he gave some as apostles, and some as prophets, and some as evangelists, and some as pastors and teachers.\" — Ephesians 4:11": "“അവൻ ചിലരെ അപ്പസ്തോലന്മാരായും, ചിലരെ പ്രവാചകന്മാരായും, ചിലരെ സുവിശേഷകരായും, ചിലരെ ഇടയന്മാരായും ഉപദേഷ്ടാക്കന്മാരായും നിയമിച്ചു.” — എഫേസ്യർ 4:11",
- "✝ Nine Decades of Faith in Thalayanadu": "✧ തലയനാട്ടിലെ വിശ്വാസത്തിന്റെ ഒമ്പതു ദശാബ്ദങ്ങൾ"
+ "✝ Nine Decades of Faith in Thalayanadu": "✧ തലയനാട്ടിലെ വിശ്വാസത്തിന്റെ ഒമ്പതു ദശാബ്ദങ്ങൾ",
+ "Assists the vicar in pastoral care and liturgy": "വികാരിയെ അജപാലനത്തിലും ആരാധനയിലും സഹായിക്കുന്നു",
+ "Certificates, registers and parish records": "സർട്ടിഫിക്കറ്റുകൾ, രജിസ്റ്ററുകൾ, ഇടവക രേഖകൾ",
+ "Care of the church and sacristy": "ദേവാലയത്തിന്റെയും സാക്രിസ്റ്റിയുടെയും പരിപാലനം",
+ "Elected trustees of the parish": "ഇടവകയുടെ തിരഞ്ഞെടുക്കപ്പെട്ട ട്രസ്റ്റിമാർ"
 };

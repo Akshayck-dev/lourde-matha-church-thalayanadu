@@ -6925,6 +6925,7 @@ body.modal-open {
 .vicar-card-num { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 3.4rem; font-weight: 800; color: rgba(255,255,255,.55); }
 .vicar-card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .vicar-card-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 46px 14px 14px; background: linear-gradient(to top, rgba(8,25,40,.88) 0%, rgba(8,25,40,.45) 55%, transparent 100%); }
+.vicar-card-role { display: block; color: #bae6fd; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 4px; }
 .vicar-card-name { color: #fff; font-weight: 700; font-size: .98rem; line-height: 1.35; margin: 0 0 3px; }
 .vicar-card-dates { color: rgba(255,255,255,.85); font-size: .82rem; margin: 0; }
 @media (max-width: 575.98px) { .vicar-card { border-radius: 16px; } .vicar-card-num { font-size: 2.4rem; } .vicar-card-name { font-size: .85rem; } .vicar-card-dates { font-size: .75rem; } .vicar-card-body { padding: 36px 10px 10px; } }
