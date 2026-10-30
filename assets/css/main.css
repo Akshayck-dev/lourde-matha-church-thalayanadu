@@ -7461,10 +7461,5 @@ body.nav-open .floating-buttons { display: none !important; }
 .lang-btn + .lang-btn { border-left: 1px solid #dbe7f3; }
 .lang-btn.active { background: #1e6fa8; color: #fff; }
 .desktop-nav-inner .lang-toggle { margin-left: 10px; }
-/* Google Translate chrome: hide banner/tooltips, keep page at top */
-.goog-te-banner-frame, .goog-te-balloon-frame, #goog-gt-tt, .goog-te-menu-frame { display: none !important; }
-body { top: 0 !important; }
-.goog-text-highlight { background: none !important; box-shadow: none !important; }
-#google_translate_element { display: none !important; }
-/* Malayalam typeface when the page is translated */
-html.translated-ltr body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-serif; }
+/* Malayalam typeface when the Malayalam toggle is active */
+html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-serif; }

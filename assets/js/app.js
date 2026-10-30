@@ -1238,31 +1238,82 @@ I would like to know more about your courses.`;
     $(document).on('include-complete', markActiveNav);
     setTimeout(markActiveNav, 1200); // fallback if event timing differs
 
-    // Site language toggle (EN / മലയാളം) via Google Translate
+    // Site language (EN / \u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02) - custom Malayalam dictionary (no Google Translate)
+    var I18N_KEY = 'lm-site-lang';
+    function i18nNorm(s) { return String(s).replace(/\s+/g, ' ').trim(); }
     function getSiteLang() {
-        var m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]*)/);
-        return (m && /\/en\/ml$/.test(decodeURIComponent(m[1]))) ? 'ml' : 'en';
+        try { return localStorage.getItem(I18N_KEY) === 'ml' ? 'ml' : 'en'; }
+        catch (e) { return 'en'; }
     }
     function updateLangButtons(lang) {
         document.querySelectorAll('.lang-btn').forEach(function (b) {
             b.classList.toggle('active', b.getAttribute('data-lang') === lang);
         });
     }
-    function setSiteLang(lang) {
-        var val = '/en/' + lang;
-        document.cookie = 'googtrans=' + val + '; path=/';
-        try { document.cookie = 'googtrans=' + val + '; path=/; domain=' + location.hostname; } catch (e) {}
+    function applyI18n(lang) {
+        if (typeof I18N_ML === 'undefined') return;
+        // 1. text nodes (keep original for switching back; preserve edge whitespace)
+        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+            acceptNode: function (n) {
+                if (!n.nodeValue || !i18nNorm(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+                var tag = n.parentElement ? n.parentElement.tagName : '';
+                if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return NodeFilter.FILTER_REJECT;
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        });
+        var nodes = [], n;
+        while ((n = walker.nextNode())) nodes.push(n);
+        nodes.forEach(function (tn) {
+            if (tn._enRaw === undefined) tn._enRaw = tn.nodeValue;
+            var ml = I18N_ML[i18nNorm(tn._enRaw)];
+            if (ml === undefined) return;
+            if (lang === 'ml') {
+                var lead = /^\s/.test(tn._enRaw) ? ' ' : '';
+                var trail = /\s$/.test(tn._enRaw) ? ' ' : '';
+                tn.nodeValue = lead + ml + trail;
+            } else {
+                tn.nodeValue = tn._enRaw;
+            }
+        });
+        // 2. attributes (alt / title / aria-label / placeholder)
+        ['alt', 'placeholder', 'title', 'aria-label'].forEach(function (a) {
+            document.querySelectorAll('[' + a + ']').forEach(function (el) {
+                var sk = '_en_' + a;
+                if (el[sk] === undefined) el[sk] = el.getAttribute(a);
+                var ml = I18N_ML['@' + a + '|' + i18nNorm(el[sk])];
+                if (ml === undefined) return;
+                el.setAttribute(a, lang === 'ml' ? ml : el[sk]);
+            });
+        });
+        // 3. page title
+        if (document.title) {
+            if (window._enTitle === undefined) window._enTitle = document.title;
+            var tml = I18N_ML[i18nNorm(window._enTitle)];
+            if (tml !== undefined) document.title = (lang === 'ml') ? tml : window._enTitle;
+        }
+        document.documentElement.setAttribute('lang', lang === 'ml' ? 'ml' : 'en');
         updateLangButtons(lang);
-        setTimeout(function () { location.reload(); }, 80);
+    }
+    function setSiteLang(lang) {
+        try { localStorage.setItem(I18N_KEY, lang); } catch (e) {}
+        applyI18n(lang);
     }
     document.addEventListener('click', function (e) {
         var el = e.target && e.target.closest ? e.target.closest('.lang-btn') : null;
         if (!el) return;
         e.preventDefault();
-        if (el.getAttribute('data-lang') === getSiteLang()) return;
-        setSiteLang(el.getAttribute('data-lang'));
+        var lang = el.getAttribute('data-lang');
+        if (lang === getSiteLang()) return;
+        setSiteLang(lang);
     });
-    function initLangToggle() { updateLangButtons(getSiteLang()); }
+    function initLangToggle() {
+        // clear any leftover Google Translate cookie from the earlier implementation
+        ['googtrans', 'googtrans'].forEach(function (c) {
+            document.cookie = c + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+            document.cookie = c + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + location.hostname;
+        });
+        applyI18n(getSiteLang());
+    }
     $(document).on('include-complete', initLangToggle);
     setTimeout(initLangToggle, 1500); // fallback
 
