@@ -7526,3 +7526,76 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-about .section h2.section-title { font-size: 1.5rem; }
   .page-about .legacy-card .profile-img-wrapper { height: 200px !important; }
 }
+
+/* ============================================================
+   HOMEPAGE POLISH — 2026-10-30
+   Scoped to body.page-home. Spacing system: sections 56px
+   desktop / 32px mobile. No text content changed.
+   ============================================================ */
+.page-home .section { padding: 56px 0; }
+.page-home section.about-section { padding: 56px 0 !important; }
+.page-home .section h2.display-6 { font-size: 1.8rem; font-weight: 700; }
+.page-home .section .ornament { margin: 12px 0 20px; font-size: 1.1rem; }
+
+/* ---- Hero: gradient overlay, typography, CTAs ---- */
+.page-home .hero-overlay { background: linear-gradient(180deg, rgba(8,25,40,.58) 0%, rgba(8,25,40,.32) 45%, rgba(8,25,40,.68) 100%); }
+.page-home .hero-content h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); text-shadow: 0 2px 20px rgba(0,0,0,.45); }
+.page-home .hero-content p { font-size: 1.1rem; color: rgba(255,255,255,.93); text-shadow: 0 1px 8px rgba(0,0,0,.4); max-width: 640px; margin: 0 auto 28px; }
+.page-home .hero-buttons { gap: 14px; }
+.page-home .hero-buttons .btn { padding: 12px 34px; border-radius: 999px; font-weight: 600; font-size: 1rem; }
+.page-home .hero-buttons .btn:first-child { background: #fff !important; color: #1e6fa8 !important; border-color: #fff !important; }
+.page-home .hero-buttons .btn:first-child:hover { background: transparent !important; color: #fff !important; }
+.page-home .swiper-pagination-bullet { background: rgba(255,255,255,.55); opacity: 1; }
+.page-home .swiper-pagination-bullet-active { background: #fff; width: 26px; border-radius: 999px; }
+
+/* ---- Welcome / about preview ---- */
+.page-home .about-container { gap: 48px; }
+.page-home .about-content h2 { font-size: 1.9rem; }
+.page-home .about-features-grid { gap: 16px !important; margin-bottom: 24px; padding-top: 24px; }
+.page-home .about-feature-item { background: #fff !important; padding: 20px !important; border-radius: 16px !important; box-shadow: 0 4px 12px rgba(61,155,214,.07) !important; border: 1px solid #edf2f7; }
+.page-home .about-feature-item h6 { font-size: .98rem; margin-bottom: 6px; color: var(--text-dark); }
+.page-home .stat-item { padding: 16px; gap: 12px; }
+
+/* ---- Feature cards (mass timings) ---- */
+.page-home .feature-card { background: #fff; border: 1px solid #edf2f7; border-radius: 16px; box-shadow: 0 4px 12px rgba(61,155,214,.06); padding: 24px 20px !important; height: 100%; transition: transform .3s ease, box-shadow .3s ease; }
+.page-home .feature-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(61,155,214,.12); }
+.page-home .feature-card h4 { font-size: 1.15rem; margin-bottom: 10px; color: var(--text-dark); }
+.page-home .feature-card p { font-size: .95rem; }
+.page-home .feature-card p:last-child { margin-bottom: 0; }
+
+/* ---- Vicar message ---- */
+.page-home .vicar-message-card { padding: 1.5rem 1.25rem; border-radius: 16px; max-width: 420px; }
+.page-home .vicar-message-card img { width: 180px; height: 180px; }
+.page-home .vicar-message-text { font-size: 1rem; line-height: 1.8; }
+
+/* ---- Parish administration panel ---- */
+.page-home #parish-administration .container { background: linear-gradient(135deg, #f0f7fd, #e3f0fa); border: 1px solid #dbeefb; border-radius: 20px; padding: 40px 32px; }
+.page-home #parish-administration .ornament { margin: 10px 0 16px; }
+
+/* ---- News & events ---- */
+.page-home #news-events .card { border-radius: 16px; }
+.page-home .news-carousel-img { height: 300px; }
+.page-home #news-events .card-body { padding: 1.75rem !important; }
+.page-home #news-events .badge.bg-gold { color: #fff !important; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+.page-home #news-events .card-title { font-size: 1.2rem; margin-bottom: 8px; }
+
+/* ---- Gallery preview ---- */
+.page-home .gallery-section-row img { border-radius: 12px !important; }
+
+/* ---- Final CTA ---- */
+.page-home .final-cta-banner { background: linear-gradient(rgba(10,35,60,.84), rgba(20,80,130,.78)), url('../images/gallery-real-01.jpg'); background-size: cover; background-position: center; padding: 72px 20px !important; }
+.page-home .final-cta-banner h2 { font-size: 2.2rem !important; text-shadow: 0 2px 16px rgba(0,0,0,.35); }
+.page-home .final-cta-banner p { text-shadow: 0 1px 8px rgba(0,0,0,.3); }
+
+@media (max-width: 991.98px) {
+  .page-home .section { padding: 32px 0; }
+  .page-home section.about-section { padding: 32px 0 !important; }
+  .page-home .section h2.display-6 { font-size: 1.5rem; }
+  .page-home .about-content h2 { font-size: 1.55rem; }
+  .page-home .about-container { gap: 32px; }
+  .page-home .news-carousel-img { height: 240px; }
+  .page-home #parish-administration .container { padding: 32px 20px; border-radius: 16px; }
+  .page-home .final-cta-banner { padding: 52px 20px !important; }
+  .page-home .final-cta-banner h2 { font-size: 1.7rem !important; }
+  .page-home .hero-content p { font-size: 1rem; }
+}
