@@ -7599,3 +7599,55 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home .final-cta-banner h2 { font-size: 1.7rem !important; }
   .page-home .hero-content p { font-size: 1rem; }
 }
+
+/* ============================================================
+   SERVICES / MINISTRIES PAGE POLISH — 2026-10-30
+   Scoped to body.page-services. Design system: radius 16-20px,
+   buttons 8-12px, sections 56-72px desktop. No text changed.
+   ============================================================ */
+
+/* ---- Hero: navy banner, cards on clean light bg ---- */
+.page-services .programs-hero-integrated { background: #F7F9FB; padding-bottom: 0; }
+.page-services .programs-hero-integrated .subpage-banner { background: linear-gradient(rgba(13,42,74,.88), rgba(13,42,74,.94)), url('../images/gallery-real-02.jpg') center/cover no-repeat !important; padding: 84px 0 72px !important; }
+.page-services .programs-hero-integrated .subpage-banner h1 { font-size: 2.6rem; color: #fff; margin-bottom: 12px; }
+.page-services .programs-hero-integrated .subpage-banner p { font-size: 1.05rem; max-width: 620px; margin: 0 auto 18px; }
+.page-services .programs-section-premium { background: #F7F9FB !important; padding: 48px 0 64px !important; }
+.page-services .programs-section-premium::before { display: none; }
+
+/* ---- Ministry cards ---- */
+.page-services .course-card-v3 { background: #fff !important; border: 1px solid #e8eef4 !important; border-radius: 18px !important; padding: 28px 24px !important; text-align: left !important; box-shadow: 0 4px 14px rgba(22,59,99,.06) !important; width: 100%; display: flex; flex-direction: column; transition: transform .3s ease, box-shadow .3s ease !important; }
+.page-services .course-card-v3:hover { transform: translateY(-5px) !important; box-shadow: 0 14px 34px rgba(22,59,99,.12) !important; background: #fff !important; }
+.page-services .course-card-v3 .icon-box-v3 { width: 52px !important; height: 52px !important; border-radius: 14px !important; font-size: 22px !important; margin-bottom: 18px !important; background: linear-gradient(135deg, #287CB5, #163B63) !important; box-shadow: 0 8px 18px rgba(22,59,99,.22) !important; }
+.page-services .course-card-v3:hover .icon-box-v3 { transform: translateY(-3px) !important; }
+.page-services .course-card-v3 .category-tag { color: #287CB5 !important; font-size: .7rem !important; letter-spacing: 2px !important; margin-bottom: 10px !important; }
+.page-services .course-card-v3 .card-title { font-family: inherit !important; color: #163B63 !important; font-size: 1.2rem !important; font-weight: 700 !important; line-height: 1.35 !important; margin-bottom: 10px !important; display: block !important; text-align: left !important; }
+.page-services .course-card-v3 p.small { font-size: .92rem !important; color: #5b6b7c !important; line-height: 1.65; flex-grow: 1; margin-bottom: 0 !important; }
+.page-services .course-card-v3 .apply-course-btn { margin-top: 20px !important; align-self: flex-start; padding: 10px 20px !important; font-size: .78rem !important; border-radius: 10px !important; letter-spacing: .06em; gap: 8px; }
+
+/* ---- Worship schedule ---- */
+.page-services #schedule.section { padding: 64px 0; }
+.page-services #schedule h2 { font-size: 1.8rem; color: #163B63; font-weight: 700; }
+.page-services .service-mini-card { background: #fff; border: 1px solid #e8eef4; border-radius: 18px; border-top: 4px solid #287CB5; padding: 28px 26px; box-shadow: 0 4px 14px rgba(22,59,99,.06); height: 100%; transition: transform .3s ease, box-shadow .3s ease; }
+.page-services .service-mini-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(22,59,99,.12); }
+.page-services .service-mini-icon { width: 52px; height: 52px; border-radius: 14px; font-size: 1.35rem; margin-bottom: 18px; background: linear-gradient(135deg, #287CB5, #163B63) !important; box-shadow: 0 8px 18px rgba(22,59,99,.22); }
+.page-services .service-mini-card h4 { font-size: 1.2rem; color: #163B63; margin-bottom: 10px; font-weight: 700; }
+.page-services .service-mini-card p { font-size: .95rem; color: #3d4f61; line-height: 1.7; }
+
+/* ---- Notices panel ---- */
+.page-services #notices.section { padding: 64px 0; }
+.page-services #notices .container { background: #fff; border: 1px solid #e8eef4; border-radius: 20px; padding: 36px 32px; box-shadow: 0 4px 14px rgba(22,59,99,.05); }
+.page-services #notices h2 { font-size: 1.7rem; color: #163B63; font-weight: 700; }
+.page-services #notices .btn { border-radius: 10px; padding: 12px 26px; font-size: .85rem; letter-spacing: .05em; font-weight: 700; }
+
+@media (max-width: 991.98px) {
+  .page-services .programs-hero-integrated .subpage-banner { padding: 64px 0 52px !important; }
+  .page-services .programs-hero-integrated .subpage-banner h1 { font-size: 2rem; }
+  .page-services .programs-section-premium { padding: 36px 0 48px !important; }
+  .page-services #schedule.section, .page-services #notices.section { padding: 44px 0; }
+  .page-services #schedule h2 { font-size: 1.5rem; }
+  .page-services #notices .container { padding: 28px 20px; border-radius: 16px; }
+}
+@media (max-width: 767.98px) {
+  .page-services .course-card-v3 { padding: 24px 20px !important; }
+  .page-services #notices .btn { width: 100%; justify-content: center; }
+}
