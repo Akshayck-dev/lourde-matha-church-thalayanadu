@@ -7466,3 +7466,63 @@ body.nav-open .floating-buttons { display: none !important; }
 .desktop-nav-inner .lang-toggle { margin-left: 10px; }
 /* Malayalam typeface when the Malayalam toggle is active */
 html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-serif; }
+
+/* ============================================================
+   ABOUT PAGE POLISH — 2026-10-30
+   Scoped to body.page-about. Spacing system: sections 56px
+   desktop / 32px mobile, card padding 20px, gaps 16-24px.
+   ============================================================ */
+.page-about .section { padding: 56px 0; }
+.page-about .subpage-banner { padding: 76px 0 44px; }
+.page-about .subpage-banner h1 { font-size: 2.6rem; margin-bottom: 12px; }
+.page-about section.about-section { padding: 56px 0 !important; }
+
+/* Typography hierarchy */
+.page-about .main-title { font-size: 2.35rem; line-height: 1.2; }
+.page-about .section h2.display-6,
+.page-about .section h2.display-4,
+.page-about .section h2.section-title { font-size: 1.8rem; font-weight: 700; }
+.page-about .section .ornament { margin: 12px 0 20px; font-size: 1.1rem; }
+.page-about .mission-text { letter-spacing: 4px; }
+.page-about .historical-intro { font-size: 1rem !important; line-height: 1.75 !important; }
+
+/* Feature cards (about features + worship schedule) */
+.page-about .feature-card { background: #fff; border: 1px solid #edf2f7; border-radius: 16px; box-shadow: 0 4px 12px rgba(61,155,214,.06); padding: 20px !important; height: 100%; transition: transform .3s ease, box-shadow .3s ease; }
+.page-about .feature-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(61,155,214,.12); }
+.page-about .feature-card h4 { font-size: 1.1rem; margin-bottom: 8px; color: var(--text-dark); }
+.page-about .feature-card p { font-size: .92rem; }
+
+/* Heritage cards — fix circular-crop bug, consistent layout */
+.page-about .legacy-card { padding: 20px; border-radius: 16px; text-align: left; align-items: stretch; }
+.page-about .legacy-card:hover { transform: translateY(-4px); }
+.page-about .legacy-card .profile-img-wrapper { width: 100% !important; height: 180px !important; padding: 0 !important; margin-bottom: 16px !important; }
+.page-about .legacy-card .profile-img-wrapper img { border-radius: 12px !important; transform: none !important; }
+.page-about .legacy-card .card-content { align-items: flex-start; text-align: left; margin-top: 0 !important; }
+.page-about .legacy-card .card-content h4 { font-size: 1.15rem; margin-bottom: 4px; }
+.page-about .legacy-card .card-content .designation-text { font-size: .78rem; letter-spacing: 2px; }
+
+/* Vicar message */
+.page-about .vicar-message-card { padding: 1.5rem 1.25rem; border-radius: 16px; }
+.page-about .vicar-message-card img { width: 160px; height: 160px; }
+.page-about .vicar-message-text { font-size: 1rem; line-height: 1.8; }
+
+/* Gallery */
+.page-about .gallery-item { border-radius: 16px; overflow: hidden; }
+
+/* Footer — compact, site-wide (shared fragment) */
+.footer-main { padding: 28px 0 18px !important; }
+.footer-main .footer-col h5 { margin-bottom: 12px !important; font-size: 1rem !important; }
+.footer-main .footer-logo { margin-bottom: 12px !important; }
+.footer-main .footer-col > p { margin-bottom: 12px !important; }
+.footer-bottom-bar { padding: 10px 0 !important; }
+
+@media (max-width: 991.98px) {
+  .page-about .section { padding: 32px 0; }
+  .page-about section.about-section { padding: 32px 0 !important; }
+  .page-about .subpage-banner h1 { font-size: 2rem; }
+  .page-about .main-title { font-size: 1.9rem; }
+  .page-about .section h2.display-6,
+  .page-about .section h2.display-4,
+  .page-about .section h2.section-title { font-size: 1.5rem; }
+  .page-about .legacy-card .profile-img-wrapper { height: 200px !important; }
+}
