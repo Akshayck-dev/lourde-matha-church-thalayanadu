@@ -7182,8 +7182,7 @@ body.nav-open .floating-buttons { display: none !important; }
         font-family: 'Marcellus', 'Playfair Display', serif;
         font-weight: 400;
         font-size: 1.15rem;
-        letter-spacing: .06em;
-        text-transform: uppercase;
+        letter-spacing: .04em;
     }
     .brand-nav .brand-sub {
         color: #3d9bd6;
