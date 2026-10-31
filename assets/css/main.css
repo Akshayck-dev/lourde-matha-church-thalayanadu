@@ -7651,3 +7651,25 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-services .course-card-v3 { padding: 24px 20px !important; }
   .page-services #notices .btn { width: 100%; justify-content: center; }
 }
+
+/* ============================================================
+   FORMER VICARS — mobile name tiles + tap detail popup (2026-10-31)
+   ============================================================ */
+@media (max-width: 767.98px) {
+  #former-vicars .vicar-card { aspect-ratio: auto; min-height: 118px; border-radius: 14px; cursor: pointer; }
+  #former-vicars .vicar-card-img,
+  #former-vicars .vicar-card-num { display: none !important; }
+  #former-vicars .vicar-card-body { position: static; background: none; padding: 12px 10px; }
+  #former-vicars .vicar-card-role { font-size: .58rem; }
+  #former-vicars .vicar-card-name { font-size: .78rem; }
+  #former-vicars .vicar-card-dates { font-size: .68rem; }
+}
+.vicar-modal { border: none; border-radius: 20px; overflow: hidden; }
+.vicar-modal-close { position: absolute; top: 10px; right: 10px; z-index: 3; background-color: rgba(255,255,255,.92); border-radius: 50%; padding: 10px; }
+.vicar-modal-photo { position: relative; aspect-ratio: 3/4; max-height: 46vh; background: linear-gradient(160deg, #4aa8dd, #1e6fa8); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.vicar-modal-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+.vicar-modal-num { display: none; font-size: 3.2rem; font-weight: 800; color: rgba(255,255,255,.55); }
+.vicar-modal-body { padding: 18px 20px 22px; text-align: center; }
+.vicar-modal-role { display: block; font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #3d9bd6; margin-bottom: 6px; }
+.vicar-modal-name { font-size: 1.05rem; font-weight: 700; color: #1e3a5c; margin-bottom: 4px; }
+.vicar-modal-dates { font-size: .85rem; color: #64748b; margin-bottom: 0; }

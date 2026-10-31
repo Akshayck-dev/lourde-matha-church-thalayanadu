@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=75.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=76.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -580,6 +580,61 @@
     <script src="./assets/js/app.js?v=39.0" defer></script>
     <script>AOS.init({ duration: 1000, once: true });</script>
     <div data-include="modals"></div>
+
+    <!-- Former vicar detail popup (mobile): photo + details on tap -->
+    <div class="modal fade" id="vicarModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content vicar-modal">
+                <button type="button" class="btn-close vicar-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="vicar-modal-photo">
+                    <img id="vicarModalImg" alt="">
+                    <span id="vicarModalNum" class="vicar-modal-num" aria-hidden="true"></span>
+                </div>
+                <div class="vicar-modal-body">
+                    <span id="vicarModalRole" class="vicar-modal-role"></span>
+                    <h5 id="vicarModalName" class="vicar-modal-name"></h5>
+                    <p id="vicarModalDates" class="vicar-modal-dates"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Former vicars: on mobile show name tiles; tap a tile for photo + details popup
+        document.addEventListener('DOMContentLoaded', function () {
+            var grid = document.getElementById('former-vicars');
+            if (!grid || typeof bootstrap === 'undefined') return;
+            var modalEl = document.getElementById('vicarModal');
+            if (!modalEl) return;
+            var modal = new bootstrap.Modal(modalEl);
+            var mImg = document.getElementById('vicarModalImg');
+            var mNum = document.getElementById('vicarModalNum');
+            grid.addEventListener('click', function (e) {
+                if (!window.matchMedia('(max-width: 767.98px)').matches) return;
+                var card = e.target.closest('.vicar-card');
+                if (!card) return;
+                var img = card.querySelector('.vicar-card-img');
+                var nameEl = card.querySelector('.vicar-card-name');
+                var roleEl = card.querySelector('.vicar-card-role');
+                var datesEl = card.querySelector('.vicar-card-dates');
+                var numEl = card.querySelector('.vicar-card-num');
+                if (img && img.getAttribute('src') && !img.classList.contains('d-none')) {
+                    mImg.src = img.getAttribute('src');
+                    mImg.alt = img.getAttribute('alt') || '';
+                    mImg.style.display = 'block';
+                    mNum.style.display = 'none';
+                } else {
+                    mImg.removeAttribute('src');
+                    mImg.style.display = 'none';
+                    mNum.style.display = 'flex';
+                    mNum.textContent = numEl ? numEl.textContent.trim() : '';
+                }
+                document.getElementById('vicarModalName').textContent = nameEl ? nameEl.textContent.trim() : '';
+                document.getElementById('vicarModalRole').textContent = roleEl ? roleEl.textContent.trim() : '';
+                document.getElementById('vicarModalDates').textContent = datesEl ? datesEl.textContent.trim() : '';
+                modal.show();
+            });
+        });
+    </script>
 
     <script src="./assets/js/i18n-ml.js?v=1.1" defer></script>
 </body>
