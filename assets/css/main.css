@@ -7680,3 +7680,6 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 
 /* Homepage welcome image: reduce height (2026-10-31) */
 .page-home .about-video-link { max-width: 420px; }
+
+/* Homepage welcome: top-align image and text columns (2026-10-31) */
+.page-home .about-container { align-items: start; }
