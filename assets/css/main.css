@@ -7694,3 +7694,13 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 .lang-chooser-sub { color: #64748b; margin-bottom: 20px; }
 .lang-chooser-btns { display: flex; gap: 12px; justify-content: center; }
 .lang-chooser-btns .btn { flex: 1; border-radius: 12px; padding: 12px 8px; font-weight: 700; }
+
+/* ============================================================
+   UI AUDIT FIXES — 2026-10-31
+   1. Badge contrast: bg-gold renders blue -> white text globally
+   2. News card images: uniform height (mixed orientations)
+   ============================================================ */
+.badge.bg-gold { color: #fff !important; }
+.news-card { border-radius: 16px !important; overflow: hidden; }
+.news-card .card-img-top { height: 210px; object-fit: cover; }
+.news-card .card-body { padding: 1.4rem !important; }
