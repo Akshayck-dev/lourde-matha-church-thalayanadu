@@ -7497,7 +7497,7 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 /* Heritage cards — fix circular-crop bug, consistent layout */
 .page-about .legacy-card { padding: 20px; border-radius: 16px; text-align: left; align-items: stretch; }
 .page-about .legacy-card:hover { transform: translateY(-4px); }
-.page-about .legacy-card .profile-img-wrapper { width: 100% !important; height: 180px !important; padding: 0 !important; margin-bottom: 16px !important; }
+.page-about .legacy-card .profile-img-wrapper { width: 100% !important; height: 180px !important; padding: 0 !important; margin-bottom: 16px !important; border-radius: 12px !important; border: none !important; background: transparent !important; }
 .page-about .legacy-card .profile-img-wrapper img { border-radius: 12px !important; transform: none !important; }
 .page-about .legacy-card .card-content { align-items: flex-start; text-align: left; margin-top: 0 !important; }
 .page-about .legacy-card .card-content h4 { font-size: 1.15rem; margin-bottom: 4px; }
