@@ -606,6 +606,15 @@
             var modalEl = document.getElementById('vicarModal');
             if (!modalEl) return;
             var modal = new bootstrap.Modal(modalEl);
+            var savedY = 0;
+            // mobile browsers reset body scroll when a modal locks overflow —
+            // remember position and restore so the page never jumps to top
+            modalEl.addEventListener('shown.bs.modal', function () {
+                if ((window.scrollY || 0) !== savedY) window.scrollTo(0, savedY);
+            });
+            modalEl.addEventListener('hidden.bs.modal', function () {
+                window.scrollTo(0, savedY);
+            });
             var mImg = document.getElementById('vicarModalImg');
             var mAvatar = document.getElementById('vicarModalAvatar');
             grid.addEventListener('click', function (e) {
@@ -629,6 +638,7 @@
                 document.getElementById('vicarModalName').textContent = nameEl ? nameEl.textContent.trim() : '';
                 document.getElementById('vicarModalRole').textContent = roleEl ? roleEl.textContent.trim() : '';
                 document.getElementById('vicarModalDates').textContent = datesEl ? datesEl.textContent.trim() : '';
+                savedY = window.scrollY || document.documentElement.scrollTop || 0;
                 modal.show();
             });
         });
