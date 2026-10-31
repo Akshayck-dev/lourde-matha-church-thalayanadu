@@ -7655,17 +7655,14 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 }
 
 /* ============================================================
-   FORMER VICARS — mobile name tiles + tap detail popup (2026-10-31)
+   FORMER VICARS — mobile portrait cards like desktop (2026-10-31)
    ============================================================ */
 @media (max-width: 767.98px) {
-  #former-vicars .vicar-card { aspect-ratio: auto; min-height: 118px; border-radius: 14px; cursor: pointer; }
-  #former-vicars .vicar-card-img,
-  #former-vicars .vicar-card-num,
-  #former-vicars .vicar-card-avatar { display: none !important; }
-  #former-vicars .vicar-card-body { position: static; background: none; padding: 12px 10px; }
-  #former-vicars .vicar-card-role { font-size: .58rem; }
-  #former-vicars .vicar-card-name { font-size: .78rem; }
-  #former-vicars .vicar-card-dates { font-size: .68rem; }
+  #former-vicars .vicar-card { cursor: pointer; }
+  #former-vicars .vicar-card-body { padding: 34px 10px 10px; }
+  #former-vicars .vicar-card-role { font-size: .55rem; }
+  #former-vicars .vicar-card-name { font-size: .8rem; }
+  #former-vicars .vicar-card-dates { font-size: .65rem; }
 }
 .vicar-modal { border: none; border-radius: 20px; overflow: hidden; }
 .vicar-modal-close { position: absolute; top: 10px; right: 10px; z-index: 3; background-color: rgba(255,255,255,.92); border-radius: 50%; padding: 10px; }
