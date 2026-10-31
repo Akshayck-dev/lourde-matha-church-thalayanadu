@@ -96,7 +96,7 @@ $(function() {
             const file = $this.data('include') + '.html';
             
             // Simplified load with error handling and cache-busting
-            fetch(file + '?v=21.0')
+            fetch(file + '?v=22.0')
                 .then(response => {
                     if (!response.ok) throw new Error('CORS or File Not Found');
                     return response.text();
@@ -1306,6 +1306,30 @@ I would like to know more about your courses.`;
         if (lang === getSiteLang()) return;
         setSiteLang(lang);
     });
+    var _langChooserShown = false;
+    function maybeShowLangChooser() {
+        if (_langChooserShown) return;
+        var had = null;
+        try { had = localStorage.getItem(I18N_KEY); } catch (e) { had = 'en'; }
+        if (had !== null) return; // already chose a language
+        var mel = document.getElementById('langChooserModal');
+        if (!mel || typeof bootstrap === 'undefined' || !bootstrap.Modal) return;
+        _langChooserShown = true;
+        setTimeout(function () {
+            try { new bootstrap.Modal(mel).show(); } catch (e) {}
+        }, 900);
+    }
+    // language choice from the first-visit popup
+    document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest ? e.target.closest('[data-pick-lang]') : null;
+        if (!el) return;
+        setSiteLang(el.getAttribute('data-pick-lang'));
+        var mel = document.getElementById('langChooserModal');
+        if (mel && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+            var m = bootstrap.Modal.getInstance(mel);
+            if (m) m.hide();
+        }
+    });
     function initLangToggle() {
         // clear any leftover Google Translate cookie from the earlier implementation
         ['googtrans', 'googtrans'].forEach(function (c) {
@@ -1314,8 +1338,8 @@ I would like to know more about your courses.`;
         });
         applyI18n(getSiteLang());
     }
-    $(document).on('include-complete', initLangToggle);
-    setTimeout(initLangToggle, 1500); // fallback
+    $(document).on('include-complete', function () { initLangToggle(); maybeShowLangChooser(); });
+    setTimeout(function () { initLangToggle(); maybeShowLangChooser(); }, 2200); // fallback
 
     // Set initial state
     $(window).trigger('scroll');

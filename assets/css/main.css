@@ -7683,3 +7683,14 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 
 /* Homepage welcome: top-align image and text columns (2026-10-31) */
 .page-home .about-container { align-items: start; }
+
+/* ============================================================
+   LANGUAGE CHOOSER (first visit popup) — 2026-10-31
+   ============================================================ */
+.lang-chooser { border-radius: 20px; overflow: hidden; }
+.lang-chooser-body { padding: 32px 28px; text-align: center; }
+.lang-chooser-logo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: 14px; box-shadow: 0 6px 18px rgba(30,111,168,.25); }
+.lang-chooser-body h5 { font-weight: 700; color: #1e3a5c; margin-bottom: 2px; }
+.lang-chooser-sub { color: #64748b; margin-bottom: 20px; }
+.lang-chooser-btns { display: flex; gap: 12px; justify-content: center; }
+.lang-chooser-btns .btn { flex: 1; border-radius: 12px; padding: 12px 8px; font-weight: 700; }
