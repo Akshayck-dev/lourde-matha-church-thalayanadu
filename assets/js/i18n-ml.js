@@ -1,6 +1,10 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "Notifications": "അറിയിപ്പുകൾ",
+ "Sunday Bulletin — download this week's parish bulletin": "ഞായറാഴ്ച ബുള്ളറ്റിൻ — ഈ ആഴ്ചത്തെ ഇടവക ബുള്ളറ്റിൻ ഡൗൺലോഡ് ചെയ്യുക",
+ "Feast of Our Lady of Lourdes celebrated every February": "ലൂർദ്ദ് മാതാവിന്റെ തിരുനാൾ എല്ലാ ഫെബ്രുവരിയിലും ആഘോഷിക്കുന്നു",
+ "Holy Mass: Sunday 7:00 & 9:30 AM · Mon–Fri 6:30 AM · Saturday 6:45 AM": "വിശുദ്ധ കുർബാന: ഞായർ 7:00 & 9:30 AM · തിങ്കൾ–വെള്ളി 6:30 AM · ശനി 6:45 AM",
  "(Feast of Our Lady of Lourdes — 11 February), and gather for her novena on the": "(ലൂർദ്ദ് മാതാവിന്റെ തിരുനാൾ — 11 ഫെബ്രുവരി); അവരുടെ നൊവേനയ്ക്കായി എല്ലാ മാസവും",
  "11th of every month": "11-ാം തീയതി",
  "11th of month — Lourdes Novena, 5:30 PM": "11-ാം തീയതി — ലൂർദ്ദ് നൊവേന, 5:30 PM",
