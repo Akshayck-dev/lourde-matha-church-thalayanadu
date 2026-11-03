@@ -1814,9 +1814,9 @@ section,
 
 @media (max-width: 768px) {
     .hero-slider {
-        height: 100vh !important;
-        height: 100svh !important;
-        min-height: 520px;
+        height: 72vh !important;
+        height: 72svh !important;
+        min-height: 440px;
     }
 }
 
