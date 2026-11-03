@@ -7705,14 +7705,14 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 /* ============================================================
    PARISH NOTIFICATIONS TICKER (homepage, below hero) — 2026-11-02
    ============================================================ */
-.notice-ticker { display: flex; align-items: stretch; background: #fff; border-bottom: 1px solid #e8eef4; }
-.notice-ticker-label { display: inline-flex; align-items: center; gap: 8px; background: #1e6fa8; color: #fff; font-weight: 700; font-size: .95rem; padding: 12px 22px; white-space: nowrap; text-decoration: none; flex-shrink: 0; }
-.notice-ticker-label:hover { color: #fff; background: #2a7fb5; }
+.notice-ticker { display: flex; align-items: stretch; background: linear-gradient(90deg, #1e6fa8, #2a7fb5); padding: 4px 0; }
+.notice-ticker-label { display: inline-flex; align-items: center; gap: 8px; background: #155a8a; color: #fff; font-weight: 700; font-size: .95rem; padding: 14px 24px; white-space: nowrap; text-decoration: none; flex-shrink: 0; }
+.notice-ticker-label:hover { color: #fff; background: #124e77; }
 .notice-ticker-track { flex: 1; overflow: hidden; display: flex; align-items: center; min-width: 0; }
 .notice-ticker-scroll { display: inline-flex; align-items: center; gap: 2.5rem; white-space: nowrap; padding-left: 1.5rem; animation: notice-scroll 32s linear infinite; will-change: transform; }
-.notice-ticker-scroll a { color: #1e3a5c; font-size: .95rem; text-decoration: none; }
-.notice-ticker-scroll a:hover { color: #1e6fa8; text-decoration: underline; }
-.nt-sep { color: #3d9bd6; font-size: .8rem; }
+.notice-ticker-scroll a { color: #fff; font-size: .95rem; font-weight: 500; text-decoration: none; }
+.notice-ticker-scroll a:hover { color: #e3f2fd; text-decoration: underline; }
+.nt-sep { color: rgba(255,255,255,.65); font-size: .8rem; }
 .notice-ticker:hover .notice-ticker-scroll { animation-play-state: paused; }
 @keyframes notice-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (max-width: 575.98px) {
