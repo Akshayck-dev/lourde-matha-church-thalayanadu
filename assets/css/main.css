@@ -7748,3 +7748,12 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 @media (min-width: 992px) {
   .page-home #about .about-stats-staggered { grid-template-columns: repeat(4, 1fr); margin-top: 36px; }
 }
+
+/* ============================================================
+   HOMEPAGE admin auto-scrolling marquee — 2026-11-03
+   ============================================================ */
+.admin-marquee { overflow: hidden; margin: 30px -12px 10px; }
+.admin-marquee-track { display: inline-flex; gap: 18px; padding: 6px 12px; animation: notice-scroll 36s linear infinite; will-change: transform; }
+.admin-marquee:hover .admin-marquee-track { animation-play-state: paused; }
+.admin-card { width: 200px; flex-shrink: 0; }
+@media (max-width: 575.98px) { .admin-card { width: 150px; } .admin-marquee-track { gap: 12px; } }
