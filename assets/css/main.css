@@ -7757,3 +7757,10 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 .admin-marquee:hover .admin-marquee-track { animation-play-state: paused; }
 .admin-card { width: 200px; flex-shrink: 0; }
 @media (max-width: 575.98px) { .admin-card { width: 150px; } .admin-marquee-track { gap: 12px; } }
+
+/* ============================================================
+   PARISH ORGANISATIONS logos — 2026-11-03
+   ============================================================ */
+.org-card { text-align: center; }
+.org-logo { width: 76px; height: 76px; object-fit: contain; margin-bottom: 12px; }
+.org-logo-emoji { display: block; font-size: 52px; line-height: 76px; margin-bottom: 12px; }
