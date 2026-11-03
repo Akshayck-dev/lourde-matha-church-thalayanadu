@@ -7727,3 +7727,10 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .footer-col.contact-section .den-contact-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; }
   .footer-col.contact-section .footer-contact-item { margin-bottom: 0 !important; }
 }
+
+/* ============================================================
+   HOMEPAGE mobile gallery carousel: compact fixed height — 2026-11-03
+   ============================================================ */
+@media (max-width: 767.98px) {
+  #galleryCarousel .carousel-item img { height: 320px; object-fit: cover; }
+}
