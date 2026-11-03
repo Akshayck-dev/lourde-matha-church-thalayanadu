@@ -7772,7 +7772,7 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 .ne-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 34px; flex-wrap: wrap; }
 .ne-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .8rem; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: #1e3a5c; margin-bottom: 10px; }
 .ne-eyebrow .ne-line { display: inline-block; width: 44px; height: 2px; background: #c9a24b; }
-.ne-title { font-family: 'Marcellus', serif; font-size: 2.7rem; color: #16294a; margin: 0 0 8px; line-height: 1.1; }
+.ne-title { font-family: 'Marcellus', serif; font-size: 2.7rem; color: #16294a; margin: 0 0 8px; line-height: 1.25; display: inline-block; background: linear-gradient(transparent 64%, rgba(201,162,75,.45) 64%); }
 .ne-sub { color: #5a6b82; margin: 0; font-size: 1rem; }
 .btn.ne-viewall { background: #1c4f8c; color: #fff; border-radius: 999px; padding: 12px 26px; font-weight: 600; border: none; white-space: nowrap; }
 .btn.ne-viewall:hover { background: #163f70; color: #fff; }
