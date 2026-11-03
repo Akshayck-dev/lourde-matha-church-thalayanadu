@@ -7719,3 +7719,11 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .notice-ticker-label { padding: 10px 14px; font-size: .85rem; }
   .notice-ticker-scroll a { font-size: .85rem; }
 }
+
+/* ============================================================
+   FOOTER mobile: Contact as 2-col grid (compact) — 2026-11-03
+   ============================================================ */
+@media (max-width: 991.98px) {
+  .footer-col.contact-section .den-contact-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; }
+  .footer-col.contact-section .footer-contact-item { margin-bottom: 0 !important; }
+}
