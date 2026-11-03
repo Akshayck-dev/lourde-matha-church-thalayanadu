@@ -1,6 +1,20 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "How We Serve": "ഞങ്ങളുടെ സേവനം",
+ "Three threads run through every ministry at Lourde Matha — worship, family, and charity.": "ലൂർദ്ദ് മാതാവിലെ എല്ലാ ശുശ്രൂഷകളിലും മൂന്ന് കാര്യങ്ങൾ — ആരാധന, കുടുംബം, കാരുണ്യം.",
+ "Spiritual Life": "ആത്മീയ ജീവിതം",
+ "Holy Qurbana in the Syro-Malabar rite — Sunday 7:00 & 9:30 AM, Monday to Friday 6:30 AM, Saturday 6:45 AM — with the sacraments, weekly novenas and First Friday adoration.": "സീറോ മലബാർ റീത്തിൽ വിശുദ്ധ കുർബാന — ഞായർ 7:00 & 9:30 AM, തിങ്കൾ മുതൽ വെള്ളി വരെ 6:30 AM, ശനി 6:45 AM — കൂദാശകൾ, ആഴ്ചതോറുമുള്ള നൊവേനകൾ, ആദ്യ വെള്ളിയാഴ്ച ആരാധന.",
+ "VIEW MASS TIMINGS": "കുർബാന സമയം കാണുക",
+ "Parish Family": "ഇടവക കുടുംബം",
+ "Catechism for children and youth, youth fellowship, women's association, choir and altar servers, Legion of Mary and family prayer units — one family in faith.": "കുട്ടികൾക്കും യുവജനങ്ങൾക്കും വേദപാഠം, യുവജന കൂട്ടായ്മ, വനിതാ സംഘടന, ക്വയർ, അൾത്താര ശുശ്രൂഷകർ, ലീജിയൻ ഓഫ് മേരി, കുടുംബ പ്രാർത്ഥനാ യൂണിറ്റുകൾ — വിശ്വാസത്തിൽ ഒരു കുടുംബം.",
+ "OUR PARISH": "ഞങ്ങളുടെ ഇടവക",
+ "Charity & Outreach": "കാരുണ്യ പ്രവർത്തനങ്ങൾ",
+ "Charitable outreach to the poor and the suffering carries our parish mission beyond the church walls — serving Christ in our neighbours around Thalayanadu.": "പാവപ്പെട്ടവർക്കും ദുരിതമനുഭവിക്കുന്നവർക്കുമുള്ള കാരുണ്യ പ്രവർത്തനങ്ങൾ പള്ളിമതിലുകൾക്കപ്പുറം ഇടവക ദൗത്യം എത്തിക്കുന്നു — തലയനാട്ടിലെ അയൽക്കാരിൽ ക്രിസ്തുവിനെ ശുശ്രൂഷിക്കുന്നു.",
+ "GET IN TOUCH": "ബന്ധപ്പെടുക",
+ "WORSHIP": "ആരാധന",
+ "COMMUNITY": "കൂട്ടായ്മ",
+ "SERVICE": "സേവനം",
  "Notifications": "അറിയിപ്പുകൾ",
  "Sunday Bulletin — download this week's parish bulletin": "ഞായറാഴ്ച ബുള്ളറ്റിൻ — ഈ ആഴ്ചത്തെ ഇടവക ബുള്ളറ്റിൻ ഡൗൺലോഡ് ചെയ്യുക",
  "Feast of Our Lady of Lourdes celebrated every February": "ലൂർദ്ദ് മാതാവിന്റെ തിരുനാൾ എല്ലാ ഫെബ്രുവരിയിലും ആഘോഷിക്കുന്നു",
