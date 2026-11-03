@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=91.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=92.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -442,76 +442,69 @@
             </div>
         </section>
 
-    <!-- News & Events (Auto-sliding) -->
-    <section class="section bg-light" id="news-events">
+    <!-- News & Events (redesigned 2026-11-03) -->
+    <section class="section news-events-redesign" id="news-events">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-4" data-aos="fade-up">
+            <div class="ne-header" data-aos="fade-up">
                 <div>
-                    <h4 class="text-gold display-font">Stay Updated</h4>
-                    <h2 class="display-6 text-navy">News &amp; Events</h2>
+                    <span class="ne-eyebrow"><span class="ne-line"></span>Stay Updated<span class="ne-line"></span></span>
+                    <h2 class="ne-title">News &amp; Events</h2>
+                    <p class="ne-sub">Parish news, celebrations, announcements and upcoming events</p>
                 </div>
-                <a href="news" class="btn btn-primary mb-2">View All News</a>
+                <a href="news" class="btn ne-viewall">View All News <span aria-hidden="true">&rarr;</span></a>
             </div>
 
-            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-aos="fade-up">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card border-0 shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    <img src="./assets/images/gallery-real-14-sm.jpg" class="news-carousel-img" alt="Our Lady of Lourdes" loading="lazy">
+            <div class="ne-carousel-wrap" data-aos="fade-up">
+                <button class="ne-arrow ne-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev" aria-label="Previous news"><span aria-hidden="true">&lsaquo;</span></button>
+                <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ne-card">
+                                <div class="ne-img-wrap">
+                                    <img src="./assets/images/gallery-real-14-sm.jpg" alt="Our Lady of Lourdes" loading="lazy">
                                 </div>
-                                <div class="col-md-7 d-flex align-items-center">
-                                    <div class="card-body p-4">
-                                        <span class="badge bg-gold text-dark mb-2">Feast</span>
-                                        <h5 class="card-title text-navy">Feast of Our Lady of Lourdes</h5>
-                                        <p class="card-text text-muted small">Our annual parish feast in honour of our patroness is celebrated every February with solemn Mass, procession and parish gatherings. All are welcome.</p>
-                                        <a href="news" class="btn btn-sm btn-outline-primary">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    <img src="./assets/images/gallery-real-02-sm.jpg" class="news-carousel-img" alt="Church sanctuary" loading="lazy">
-                                </div>
-                                <div class="col-md-7 d-flex align-items-center">
-                                    <div class="card-body p-4">
-                                        <span class="badge bg-gold text-dark mb-2">Liturgy</span>
-                                        <h5 class="card-title text-navy">Holy Week &amp; Easter Services</h5>
-                                        <p class="card-text text-muted small">Join us for the sacred Triduum and Easter celebrations. Detailed service timings are announced in the Sunday bulletin and on the parish notice board.</p>
-                                        <a href="news" class="btn btn-sm btn-outline-primary">Read More</a>
-                                    </div>
+                                <div class="ne-body">
+                                    <span class="ne-badge">Feast</span>
+                                    <h3 class="ne-card-title">Feast of Our Lady of Lourdes</h3>
+                                    <p class="ne-desc">Our annual parish feast in honour of our patroness is celebrated every February with solemn Mass, procession and parish gatherings. All are welcome.</p>
+                                    <a href="news" class="btn ne-cta">Read More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    <img src="./assets/images/gallery-real-12-sm.jpg" class="news-carousel-img" alt="Parish community" loading="lazy">
+                        <div class="carousel-item">
+                            <div class="ne-card">
+                                <div class="ne-img-wrap">
+                                    <img src="./assets/images/gallery-real-02-sm.jpg" alt="Church sanctuary" loading="lazy">
                                 </div>
-                                <div class="col-md-7 d-flex align-items-center">
-                                    <div class="card-body p-4">
-                                        <span class="badge bg-gold text-dark mb-2">Media</span>
-                                        <h5 class="card-title text-navy">Perunnal Celebrations on YouTube</h5>
-                                        <p class="card-text text-muted small">Relive our recent Perunnal celebrations — watch the live stream and highlights on our YouTube channel, now in the parish gallery.</p>
-                                        <a href="gallery#videos" class="btn btn-sm btn-outline-primary">Watch Videos</a>
-                                    </div>
+                                <div class="ne-body">
+                                    <span class="ne-badge">Liturgy</span>
+                                    <h3 class="ne-card-title">Holy Week &amp; Easter Services</h3>
+                                    <p class="ne-desc">Join us for the sacred Triduum and Easter celebrations. Detailed service timings are announced in the Sunday bulletin and on the parish notice board.</p>
+                                    <a href="news" class="btn ne-cta">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ne-card">
+                                <div class="ne-img-wrap">
+                                    <img src="./assets/images/gallery-real-12-sm.jpg" alt="Parish community" loading="lazy">
+                                </div>
+                                <div class="ne-body">
+                                    <span class="ne-badge"><span aria-hidden="true">&#9654;</span> Media</span>
+                                    <h3 class="ne-card-title">Perunnal Celebrations on YouTube</h3>
+                                    <p class="ne-desc">Relive our recent Perunnal celebrations &mdash; watch the live stream and highlights on our YouTube channel, now in the parish gallery.</p>
+                                    <a href="gallery#videos" class="btn ne-cta"><span aria-hidden="true">&#9654;</span> Watch Videos</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-indicators" style="position: relative; margin-top: 18px; margin-bottom: 0;">
-                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active bg-gold" aria-current="true" aria-label="News 1"></button>
-                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" class="bg-gold" aria-label="News 2"></button>
-                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" class="bg-gold" aria-label="News 3"></button>
-                </div>
+                <button class="ne-arrow ne-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next" aria-label="Next news"><span aria-hidden="true">&rsaquo;</span></button>
+            </div>
+            <div class="carousel-indicators ne-dots">
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="News 1"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="News 2"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="News 3"></button>
             </div>
         </div>
     </section>
@@ -757,7 +750,7 @@
     </script>
 
 
-    <script src="./assets/js/i18n-ml.js?v=1.4" defer></script>
+    <script src="./assets/js/i18n-ml.js?v=1.5" defer></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "Parish news, celebrations, announcements and upcoming events": "ഇടവക വാർത്തകൾ, ആഘോഷങ്ങൾ, അറിയിപ്പുകൾ, വരാനിരിക്കുന്ന പരിപാടികൾ",
  "Parish Organisations": "ഇടവക സംഘടനകൾ",
  "United by faith — dedicated organisations rooted in the Syro-Malabar tradition.": "വിശ്വാസത്താൽ ഒന്നിച്ച — സീറോ മലബാർ പാരമ്പര്യത്തിലൂന്നിയ സമർപ്പിത സംഘടനകൾ.",
  "Empowers young Catholics through faith, leadership, service, and fellowship — inspiring them to grow spiritually and serve Church and society.": "വിശ്വാസം, നേതൃത്വം, സേവനം, കൂട്ടായ്മ എന്നിവയിലൂടെ യുവ കത്തോലിക്കരെ ശാക്തീകരിക്കുന്നു — ആത്മീയമായി വളരാനും സഭയെയും സമൂഹത്തെയും സേവിക്കാനും പ്രചോദനം നൽകുന്നു.",
