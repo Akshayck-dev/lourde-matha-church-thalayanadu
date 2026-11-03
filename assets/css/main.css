@@ -7734,3 +7734,10 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 @media (max-width: 767.98px) {
   #galleryCarousel .carousel-item img { height: 320px; object-fit: cover; }
 }
+
+/* ============================================================
+   PARISH ORGANISATIONS cards (services page) — 2026-11-03
+   ============================================================ */
+.org-card { border: 1px solid #e8eef4 !important; border-radius: 16px !important; padding: 22px !important; box-shadow: 0 2px 12px rgba(30,111,168,.06) !important; transition: transform .25s ease, box-shadow .25s ease; }
+.org-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(30,111,168,.12) !important; }
+.org-name { color: #1e6fa8; font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; }

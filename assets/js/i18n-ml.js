@@ -1,6 +1,20 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "Parish Organisations": "ഇടവക സംഘടനകൾ",
+ "United by faith — dedicated organisations rooted in the Syro-Malabar tradition.": "വിശ്വാസത്താൽ ഒന്നിച്ച — സീറോ മലബാർ പാരമ്പര്യത്തിലൂന്നിയ സമർപ്പിത സംഘടനകൾ.",
+ "Empowers young Catholics through faith, leadership, service, and fellowship — inspiring them to grow spiritually and serve Church and society.": "വിശ്വാസം, നേതൃത്വം, സേവനം, കൂട്ടായ്മ എന്നിവയിലൂടെ യുവ കത്തോലിക്കരെ ശാക്തീകരിക്കുന്നു — ആത്മീയമായി വളരാനും സഭയെയും സമൂഹത്തെയും സേവിക്കാനും പ്രചോദനം നൽകുന്നു.",
+ "Mathurvedhi": "മാതൃവേദി",
+ "Unites mothers in faith, prayer, and service — strengthening families, promoting Christian values, and inspiring Christ-centered leadership.": "വിശ്വാസത്തിലും പ്രാർത്ഥനയിലും സേവനത്തിലും അമ്മമാരെ ഒന്നിപ്പിക്കുന്നു — കുടുംബങ്ങളെ ശക്തിപ്പെടുത്തുന്നു, ക്രൈസ്തവ മൂല്യങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നു.",
+ "Family Apostolate": "ഫാമിലി അപ്പസ്തോലേറ്റ്",
+ "Strengthens parish life through family-centered pastoral care, lay participation, evangelization, unity, and spiritual growth.": "കുടുംബ കേന്ദ്രീകൃത അജപാലന ശുശ്രൂഷ, അല്മായ പങ്കാളിത്തം, സുവിശേഷവത്കരണം, ഐക്യം, ആത്മീയ വളർച്ച എന്നിവയിലൂടെ ഇടവക ജീവിതം ശക്തിപ്പെടുത്തുന്നു.",
+ "Cherupushpa Mission League — missionary organisation nurturing faith and mission spirit among children and youth.": "ചെറുപുഷ്പ മിഷൻ ലീഗ് — കുട്ടികളിലും യുവജനങ്ങളിലും വിശ്വാസവും മിഷൻ ചൈതന്യവും വളർത്തുന്ന സംഘടന.",
+ "Pithruvedhi": "പിതൃവേദി",
+ "Catholic organisation for fathers — helping men grow spiritually and live their vocation as faithful husbands and loving fathers.": "പിതാക്കന്മാർക്കായുള്ള കത്തോലിക്കാ സംഘടന — വിശ്വസ്തരായ ഭർത്താക്കന്മാരും സ്നേഹമുള്ള പിതാക്കന്മാരുമായി ജീവിക്കാൻ പുരുഷന്മാരെ സഹായിക്കുന്നു.",
+ "Thirubala Sakyam": "തിരുബാലസഖ്യം",
+ "Children gathering for special prayers dedicated to Unniyeshu — sowing seeds of faith in young hearts.": "ഉണ്ണീശോയ്ക്ക് സമർപ്പിച്ച പ്രത്യേക പ്രാർത്ഥനകൾക്കായി കുട്ടികളുടെ കൂട്ടായ്മ — കൊച്ചു ഹൃദയങ്ങളിൽ വിശ്വാസ വിത്ത് പാകുന്നു.",
+ "Vincent De Paul": "വിൻസെന്റ് ഡി പോൾ",
+ "International Catholic voluntary organisation dedicated to serving the poor and disadvantaged.": "പാവപ്പെട്ടവരെയും പാർശ്വവത്കരിക്കപ്പെട്ടവരെയും സേവിക്കുന്ന അന്തർദേശീയ കത്തോലിക്കാ സന്നദ്ധ സംഘടന.",
  "How We Serve": "ഞങ്ങളുടെ സേവനം",
  "Three threads run through every ministry at Lourde Matha — worship, family, and charity.": "ലൂർദ്ദ് മാതാവിലെ എല്ലാ ശുശ്രൂഷകളിലും മൂന്ന് കാര്യങ്ങൾ — ആരാധന, കുടുംബം, കാരുണ്യം.",
  "Spiritual Life": "ആത്മീയ ജീവിതം",
