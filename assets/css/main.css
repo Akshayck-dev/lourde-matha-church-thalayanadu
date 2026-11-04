@@ -7803,3 +7803,16 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .ne-title { font-size: 2rem; }
   .ne-card-title { font-size: 1.5rem; }
 }
+
+/* ============================================================
+   HOMEPAGE about: row-wise stacked layout (desktop) — 2026-11-04
+   ============================================================ */
+@media (min-width: 992px) {
+  .page-home #about .about-container { grid-template-columns: 1fr; gap: 8px; max-width: 920px; text-align: center; }
+  .page-home #about .about-image-wrapper { max-width: 660px; width: 100%; margin: 0 auto; }
+  .page-home #about .about-image { margin-bottom: 40px !important; }
+  .page-home #about .about-image img { max-width: 660px; }
+  .page-home #about .about-content { text-align: center; max-width: 780px; margin: 0 auto; }
+  .page-home #about .about-content .ornament { text-align: center; }
+  .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
+}
