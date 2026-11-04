@@ -1,6 +1,7 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "February 10 & 11 — Parish Feast": "ഫെബ്രുവരി 10, 11 — ഇടവക തിരുനാൾ",
  "Parish news, celebrations, announcements and upcoming events": "ഇടവക വാർത്തകൾ, ആഘോഷങ്ങൾ, അറിയിപ്പുകൾ, വരാനിരിക്കുന്ന പരിപാടികൾ",
  "Parish Organisations": "ഇടവക സംഘടനകൾ",
  "United by faith — dedicated organisations rooted in the Syro-Malabar tradition.": "വിശ്വാസത്താൽ ഒന്നിച്ച — സീറോ മലബാർ പാരമ്പര്യത്തിലൂന്നിയ സമർപ്പിത സംഘടനകൾ.",
