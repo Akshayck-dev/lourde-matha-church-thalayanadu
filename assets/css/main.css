@@ -7816,3 +7816,8 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .about-content .ornament { text-align: center; }
   .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
 }
+
+/* ============================================================
+   OFFERINGS dummy QR — 2026-11-04
+   ============================================================ */
+.offering-qr { width: 132px; height: 132px; border-radius: 12px; background: #fff; padding: 8px; box-shadow: 0 2px 10px rgba(30,58,92,.12); flex-shrink: 0; }
