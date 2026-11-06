@@ -1,6 +1,8 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "Join us for the Holy Eucharist": "വിശുദ്ധ കുർബാനയിൽ പങ്കുചേരൂ",
+ "Holy Mass": "വിശുദ്ധ കുർബാന",
  "February 10 & 11 — Parish Feast": "ഫെബ്രുവരി 10, 11 — ഇടവക തിരുനാൾ",
  "Parish news, celebrations, announcements and upcoming events": "ഇടവക വാർത്തകൾ, ആഘോഷങ്ങൾ, അറിയിപ്പുകൾ, വരാനിരിക്കുന്ന പരിപാടികൾ",
  "Parish Organisations": "ഇടവക സംഘടനകൾ",

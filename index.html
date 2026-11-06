@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=96.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=97.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -318,41 +318,72 @@
         </section>
 
         <!-- Holy Mass Timings -->
-        <section class="section bg-light" id="mass-timings">
+        <section class="section mass-timings-redesign" id="mass-timings">
             <div class="container">
-                <div class="text-center mb-4" data-aos="fade-up">
-                    <h2 class="display-6 text-navy">Holy Mass Timings</h2>
-                    <div class="ornament">✦ ✦ ✦</div>
-                    <p class="text-muted">The church is open daily from 6:00 AM to 8:00 PM</p>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <svg class="mt-chalice" viewBox="0 0 120 92" fill="none" aria-hidden="true">
+                        <g stroke="#c9a24b" stroke-width="2" stroke-linecap="round">
+                            <line x1="60" y1="3" x2="60" y2="11"/>
+                            <line x1="40" y1="7" x2="45" y2="14"/>
+                            <line x1="80" y1="7" x2="75" y2="14"/>
+                            <line x1="25" y1="17" x2="32" y2="21"/>
+                            <line x1="95" y1="17" x2="88" y2="21"/>
+                        </g>
+                        <circle cx="60" cy="24" r="10" fill="#f5d76e" stroke="#c9a24b" stroke-width="1.5"/>
+                        <path d="M44 35 h32 v9 c0 10 -7 18 -16 18 s-16 -8 -16 -18 z" fill="#c9a24b"/>
+                        <rect x="57" y="62" width="6" height="12" fill="#c9a24b"/>
+                        <path d="M42 80 h36 l-5 -6 h-26 z" fill="#c9a24b"/>
+                        <path d="M26 72 q-8 -12 0 -22 M26 72 q2 -14 12 -18" stroke="#c9a24b" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M94 72 q8 -12 0 -22 M94 72 q-2 -14 -12 -18" stroke="#c9a24b" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    <h2 class="mt-title">Holy Mass Timings</h2>
+                    <div class="mt-divider"><span class="mt-line"></span><span class="mt-cross">&#10013;</span><span class="mt-line"></span></div>
+                    <p class="mt-sub">Join us for the Holy Eucharist</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                        <div class="p-4 feature-card h-100 text-center">
-                            <i class="fas fa-sun fa-2x text-gold mb-3"></i>
-                            <h4>Sunday</h4>
-                            <p class="small text-muted mb-1">Holy Mass — 7:00 AM</p>
-                            <p class="small text-muted">Holy Mass — 9:30 AM</p>
+                        <div class="mt-card mt-card-sunday h-100">
+                            <div class="mt-card-head">
+                                <i class="fas fa-church"></i>
+                                <h4>Sunday</h4>
+                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
+                            </div>
+                            <div class="mt-card-body">
+                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">7:00 AM</span></div>
+                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">9:30 AM</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="p-4 feature-card h-100 text-center">
-                            <i class="fas fa-calendar-day fa-2x text-gold mb-3"></i>
-                            <h4>Monday – Friday</h4>
-                            <p class="small text-muted">Holy Mass — 6:30 AM</p>
+                        <div class="mt-card h-100">
+                            <div class="mt-card-head">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4>Monday &ndash; Friday</h4>
+                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
+                            </div>
+                            <div class="mt-card-body">
+                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">6:30 AM</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="p-4 feature-card h-100 text-center">
-                            <i class="fas fa-calendar-week fa-2x text-gold mb-3"></i>
-                            <h4>Saturday</h4>
-                            <p class="small text-muted">Holy Mass — 6:45 AM</p>
+                        <div class="mt-card h-100">
+                            <div class="mt-card-head">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4>Saturday</h4>
+                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
+                            </div>
+                            <div class="mt-card-body">
+                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">6:45 AM</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-4" data-aos="fade-up">
-                    <a href="services#schedule" class="btn btn-primary">View Full Worship Schedule</a>
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="services#schedule" class="btn mt-schedule-btn"><i class="far fa-calendar-alt me-2"></i>View Full Worship Schedule <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
+            <svg class="mt-bottom-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,80 L0,80 Z" fill="#cfe6f7"/><path d="M0,55 C240,85 480,25 720,50 C960,75 1200,30 1440,55 L1440,80 L0,80 Z" fill="#a8d0f0" opacity="0.7"/></svg>
         </section>
 
         <!-- Leadership Section -->
@@ -750,7 +781,7 @@
     </script>
 
 
-    <script src="./assets/js/i18n-ml.js?v=1.6" defer></script>
+    <script src="./assets/js/i18n-ml.js?v=1.7" defer></script>
 </body>
 
 </html>

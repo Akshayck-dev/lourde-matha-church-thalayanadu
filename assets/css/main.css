@@ -7826,3 +7826,35 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .about-content p { color: #5a6b82; }
   .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: none; margin-left: 0; margin-right: 0; text-align: center; }
 }
+
+/* ============================================================
+   HOLY MASS TIMINGS redesign (Figma, 2026-11-06) — scoped
+   ============================================================ */
+.mass-timings-redesign { background: linear-gradient(180deg, #eef5fb 0%, #ffffff 75%); position: relative; overflow: hidden; padding-bottom: 0 !important; }
+.mass-timings-redesign .container { position: relative; z-index: 2; padding-bottom: 56px; }
+.mt-chalice { width: 92px; height: auto; margin-bottom: 10px; }
+.mt-title { font-family: 'Marcellus', serif; font-size: 2.7rem; color: #16294a; margin: 0 0 14px; line-height: 1.15; }
+.mt-divider { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 14px; }
+.mt-divider .mt-line { display: inline-block; width: 56px; height: 2px; background: #c9a24b; }
+.mt-divider .mt-cross { color: #c9a24b; font-size: 1.3rem; line-height: 1; }
+.mt-sub { color: #5a6b82; font-size: 1.05rem; margin: 0; }
+.mt-card { background: #fff; border: 1px solid #e8eef4; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(22,41,74,.08); transition: transform .25s ease, box-shadow .25s ease; }
+.mt-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(22,41,74,.14); }
+.mt-card-sunday { border: 2px solid #c9a24b; }
+.mt-card-head { position: relative; background: linear-gradient(135deg, #2a7fb5, #1e6fa8 55%, #155a8a); padding: 26px 20px 34px; text-align: center; color: #fff; }
+.mt-card-head i { font-size: 1.9rem; display: block; margin-bottom: 10px; }
+.mt-card-head h4 { color: #fff; font-size: 1.35rem; font-weight: 700; margin: 0; }
+.mt-wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 20px; display: block; }
+.mt-card-body { padding: 22px 22px 26px; }
+.mt-row { display: flex; align-items: center; gap: 12px; padding: 12px 2px; }
+.mt-row + .mt-row { border-top: 1px solid #eef2f7; }
+.mt-row i { color: #1e6fa8; font-size: 1.05rem; }
+.mt-row span { color: #33475e; font-size: 1rem; }
+.mt-time { margin-left: auto; background: #e3f2fd; color: #16294a; font-weight: 700; font-size: .98rem; padding: 7px 16px; border-radius: 8px; white-space: nowrap; }
+.btn.mt-schedule-btn { background: #fff8e1; color: #16294a; border: 1.5px solid #c9a24b; border-radius: 999px; padding: 13px 30px; font-weight: 700; }
+.btn.mt-schedule-btn:hover { background: #ffefc2; color: #16294a; border-color: #b8933f; }
+.mt-bottom-wave { display: block; width: 100%; height: 70px; position: relative; z-index: 1; }
+@media (max-width: 991.98px) {
+  .mt-title { font-size: 2rem; }
+  .mt-chalice { width: 72px; }
+}
