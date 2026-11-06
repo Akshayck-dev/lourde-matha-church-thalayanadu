@@ -7915,3 +7915,22 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .vm-photo img { height: 260px; }
   .vm-quote { padding-left: 40px; }
 }
+
+/* ============================================================
+   HERO slide 1 text redesign (Figma, 2026-11-06) — scoped
+   ============================================================ */
+.page-home .hero-content.hero-content-1 { text-align: left; }
+.page-home .hero-content.hero-content-1 h1 { font-family: 'Marcellus', serif; font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; margin-bottom: 8px; }
+.hero-eyebrow { display: block; color: #f2c14e; font-weight: 600; letter-spacing: .35em; text-transform: uppercase; font-size: .95rem; margin-bottom: 10px; }
+.hero-place { display: block; color: #f2c14e; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: 1.35rem; margin-bottom: 12px; }
+.hero-est { display: flex; align-items: center; gap: 14px; color: #fff; letter-spacing: .28em; text-transform: uppercase; font-size: .9rem; font-weight: 600; margin-bottom: 18px; }
+.hero-est-line { display: inline-block; width: 56px; height: 1px; background: rgba(255,255,255,.7); }
+.page-home .hero-content.hero-content-1 p { max-width: 560px; }
+.hero-buttons .btn-hero-gold { background: #e9b949; color: #1e3a5c; border: 1.5px solid #e9b949; }
+.hero-buttons .btn-hero-gold:hover { background: #dfa92e; color: #1e3a5c; border-color: #dfa92e; }
+@media (max-width: 575.98px) {
+  .hero-eyebrow { font-size: .8rem; letter-spacing: .28em; }
+  .hero-place { font-size: 1.05rem; }
+  .hero-est { font-size: .78rem; gap: 10px; }
+  .hero-est-line { width: 36px; }
+}

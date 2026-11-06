@@ -1,6 +1,9 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "Welcome to": "സ്വാഗതം",
+ "Thalayanadu": "തലയനാട്",
+ "A parish family under the patronage of Our Lady of Lourdes, serving Thalayanadu with faith, prayer and love.": "പരിശുദ്ധ ലൂർദ് മാതാവിന്റെ സംരക്ഷണത്തിൽ, വിശ്വാസവും പ്രാർത്ഥനയും സ്നേഹവുമായി തലയനാടിനെ സേവിക്കുന്ന ഒരു ഇടവക കുടുംബം.",
  "Join us for the Holy Eucharist": "വിശുദ്ധ കുർബാനയിൽ പങ്കുചേരൂ",
  "Holy Mass": "വിശുദ്ധ കുർബാന",
  "February 10 & 11 — Parish Feast": "ഫെബ്രുവരി 10, 11 — ഇടവക തിരുനാൾ",
