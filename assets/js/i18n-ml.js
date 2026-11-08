@@ -1,6 +1,9 @@
 /* Malayalam translations for the EN/ML toggle (custom dictionary, no Google Translate).
    Key = normalized English text (or @attr|value for attributes). */
 const I18N_ML = {
+ "📢 Last Sunday's Church Collection: ₹5,735/-. Thank you for your generous contributions!": "📢 കഴിഞ്ഞ ഞായറാഴ്ചത്തെ പള്ളി പിരിവ്: ₹5,735/-. നിങ്ങളുടെ ഔദാര്യപൂർവ്വമായ സംഭാവനകൾക്ക് നന്ദി!",
+ "📢 Parish Council Meeting – Coming Sunday at 2:00 PM. All members are requested to attend.": "📢 ഇടവക കൗൺസിൽ യോഗം – വരുന്ന ഞായറാഴ്ച ഉച്ചയ്ക്ക് 2:00 മണിക്ക്. എല്ലാ അംഗങ്ങളും പങ്കെടുക്കണമെന്ന് അഭ്യർത്ഥിക്കുന്നു.",
+ "📢 Mathruvedi Meeting – Coming Sunday at 4:00 PM. All members are requested to participate.": "📢 മാതൃവേദി യോഗം – വരുന്ന ഞായറാഴ്ച വൈകുന്നേരം 4:00 മണിക്ക്. എല്ലാ അംഗങ്ങളും പങ്കെടുക്കണമെന്ന് അഭ്യർത്ഥിക്കുന്നു.",
  "Welcome to": "സ്വാഗതം",
  "Thalayanadu": "തലയനാട്",
  "A parish family under the patronage of Our Lady of Lourdes, serving Thalayanadu with faith, prayer and love.": "പരിശുദ്ധ ലൂർദ് മാതാവിന്റെ സംരക്ഷണത്തിൽ, വിശ്വാസവും പ്രാർത്ഥനയും സ്നേഹവുമായി തലയനാടിനെ സേവിക്കുന്ന ഒരു ഇടവക കുടുംബം.",
