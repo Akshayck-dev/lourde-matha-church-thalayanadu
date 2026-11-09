@@ -7949,10 +7949,14 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .stat-icon { width: 42px !important; height: 42px !important; font-size: 20px !important; border-radius: 10px !important; }
   .page-home #about .stat-num { font-size: 16px !important; }
   .page-home #about .about-video-link { max-width: 380px !important; }
-  .page-home #about .about-image { margin-bottom: 24px !important; }
+  .page-home #about .about-image { margin-bottom: 0 !important; }
   .page-home #about.about-section { padding: 28px 0 20px !important; }
   .page-home #about .about-content h2 { font-size: 2rem !important; line-height: 1.15 !important; }
   .page-home #about .about-content .ornament { margin: 6px 0 10px !important; font-size: 1rem !important; }
   .page-home #about .about-content p { margin-bottom: 8px !important; line-height: 1.55 !important; }
-  .page-home #about .about-container { align-items: center !important; }
+  .page-home #about .about-container { align-items: center !important; grid-template-columns: 1fr !important; gap: 28px !important; max-width: 820px !important; margin-left: auto !important; margin-right: auto !important; }
+  .page-home #about .about-image-wrapper { max-width: 380px !important; margin-left: auto !important; margin-right: auto !important; }
+  .page-home #about .about-content { text-align: center !important; }
+  .page-home #about .about-features-grid { max-width: 640px !important; margin-left: auto !important; margin-right: auto !important; }
+  .page-home #about .about-stats-staggered { grid-template-columns: repeat(2, 1fr) !important; max-width: 640px !important; margin-left: auto !important; margin-right: auto !important; }
 }
