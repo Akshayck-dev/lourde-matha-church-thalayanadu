@@ -7948,4 +7948,7 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .stat-item { padding: 12px 14px !important; gap: 10px !important; }
   .page-home #about .stat-icon { width: 42px !important; height: 42px !important; font-size: 20px !important; border-radius: 10px !important; }
   .page-home #about .stat-num { font-size: 16px !important; }
+  .page-home #about .about-video-link { max-width: 380px !important; }
+  .page-home #about .about-image { margin-bottom: 24px !important; }
+  .page-home #about.about-section { padding: 36px 0 28px !important; }
 }
