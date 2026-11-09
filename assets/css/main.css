@@ -7991,3 +7991,22 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .af-text { text-align: center; }
   .page-home #about .af-divider { justify-content: center; }
 }
+
+/* ============================================================
+   HOMEPAGE: tighten section gaps to the maximum (2026-11-09)
+   ============================================================ */
+@media (min-width: 992px) {
+  .page-home .section { padding: 24px 0 !important; }
+  .page-home .mass-timings-redesign,
+  .page-home .admin-redesign,
+  .page-home .vicar-redesign { padding-bottom: 0 !important; }
+  .page-home .mass-timings-redesign .container,
+  .page-home .admin-redesign .container,
+  .page-home .vicar-redesign .container { padding-bottom: 24px !important; }
+  .page-home .mt-bottom-wave,
+  .page-home .ad-bottom-wave,
+  .page-home .vm-bottom-wave { height: 32px !important; }
+  .page-home #about .af-section-wave { height: 28px !important; margin-top: 12px !important; }
+  .page-home #parish-administration .text-center.mb-5 { margin-bottom: 16px !important; }
+  .page-home .final-cta-banner { padding: 48px 20px !important; }
+}
