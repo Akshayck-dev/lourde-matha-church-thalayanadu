@@ -374,5 +374,8 @@ const I18N_ML = {
  "Assists the vicar in pastoral care and liturgy": "വികാരിയെ അജപാലനത്തിലും ആരാധനയിലും സഹായിക്കുന്നു",
  "Certificates, registers and parish records": "സർട്ടിഫിക്കറ്റുകൾ, രജിസ്റ്ററുകൾ, ഇടവക രേഖകൾ",
  "Care of the church and sacristy": "ദേവാലയത്തിന്റെയും സാക്രിസ്റ്റിയുടെയും പരിപാലനം",
- "Elected trustees of the parish": "ഇടവകയുടെ തിരഞ്ഞെടുക്കപ്പെട്ട ട്രസ്റ്റിമാർ"
+ "Elected trustees of the parish": "ഇടവകയുടെ തിരഞ്ഞെടുക്കപ്പെട്ട ട്രസ്റ്റിമാർ",
+ "About Our Church": "ഞങ്ങളുടെ പള്ളിയെക്കുറിച്ച്",
+ "Lourde Matha Church, Thalayanadu, established in 1935, is a vibrant faith community rooted in prayer, service and fellowship. Guided by the love of Our Lady of Lourdes, we continue to grow in faith, unity and charity.": "1935-ല്‍ സ്ഥാപിതമായ തലയനാട് ലൂര്‍ദ് മാതാ പള്ളി, പ്രാര്‍ത്ഥനയിലും സേവനത്തിലും സഹവാസത്തിലും വേരൂന്നിയ ഒരു സജീവ വിശ്വാസ സമൂഹമാണ്. ലൂര്‍ദ് മാതാവിന്റെ സ്നേഹത്താല്‍ നയിക്കപ്പെട്ട്, വിശ്വാസത്തിലും ഐക്യത്തിലും കാരുണ്യത്തിലും ഞങ്ങള്‍ വളര്‍ന്നുകൊണ്ടിരിക്കുന്നു.",
+ "Learn More": "കൂടുതല്‍ അറിയുക",
 };

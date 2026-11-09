@@ -7960,3 +7960,34 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .about-features-grid { max-width: 640px !important; margin-left: auto !important; margin-right: auto !important; }
   .page-home #about .about-stats-staggered { grid-template-columns: repeat(2, 1fr) !important; max-width: 640px !important; margin-left: auto !important; margin-right: auto !important; }
 }
+
+/* ============================================================
+   HOMEPAGE about: Figma 3-column redesign (2026-11-09)
+   photo | About Our Church | Holy Mass Timings card
+   ============================================================ */
+.page-home #about.about-section { background: linear-gradient(180deg, #f7fbfe 0%, #edf3fa 100%) !important; }
+.page-home #about .about-figma { display: grid; grid-template-columns: 1.15fr 1fr 0.95fr; gap: 36px; align-items: center; max-width: 1200px; margin: 0 auto; }
+.page-home #about .af-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 12px 32px rgba(22,41,74,.12); display: block; aspect-ratio: 16/10; }
+.page-home #about .af-text h2 { font-family: 'Marcellus', serif; font-size: 1.9rem; color: #16294a; font-weight: 700; margin-bottom: 10px; }
+.page-home #about .af-divider { display: flex; align-items: center; gap: 10px; color: #c9a24b; margin-bottom: 14px; }
+.page-home #about .af-divider span { display: block; width: 44px; height: 2px; background: #c9a24b; }
+.page-home #about .af-text p { color: #3d4f66; font-size: .98rem; line-height: 1.65; margin-bottom: 20px; }
+.page-home #about .af-learn { border: 1.5px solid #1e6fa8 !important; color: #1e6fa8 !important; background: #fff !important; border-radius: 999px !important; padding: 10px 22px !important; font-weight: 600 !important; }
+.page-home #about .af-learn:hover { background: #1e6fa8 !important; color: #fff !important; }
+.page-home #about .af-timings { background: #fff; border-radius: 16px; box-shadow: 0 12px 32px rgba(22,41,74,.12); overflow: hidden; display: flex; flex-direction: column; }
+.page-home #about .af-timings-head { background: linear-gradient(135deg, #1e6fa8, #164a73); color: #fff; display: flex; align-items: center; gap: 12px; padding: 16px 20px; }
+.page-home #about .af-timings-head i { color: #e8b64c; font-size: 1.4rem; }
+.page-home #about .af-timings-head h3 { color: #fff; font-size: 1.15rem; font-weight: 700; margin: 0; }
+.page-home #about .af-rows { list-style: none; margin: 0; padding: 8px 20px 4px; }
+.page-home #about .af-rows li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid #eef2f7; }
+.page-home #about .af-rows li:last-child { border-bottom: 0; }
+.page-home #about .af-day { color: #1e3a5c; font-weight: 600; display: flex; align-items: center; gap: 9px; }
+.page-home #about .af-day i { color: #b8933f; }
+.page-home #about .af-rows strong { color: #1e3a5c; font-weight: 700; white-space: nowrap; }
+.page-home #about .af-wave { display: block; width: 100%; height: 34px; margin-top: auto; }
+.page-home #about .af-section-wave { display: block; width: 100%; height: 44px; margin-top: 28px; }
+@media (max-width: 991.98px) {
+  .page-home #about .about-figma { grid-template-columns: 1fr; gap: 24px; }
+  .page-home #about .af-text { text-align: center; }
+  .page-home #about .af-divider { justify-content: center; }
+}
