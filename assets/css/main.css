@@ -7939,8 +7939,8 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
    HOMEPAGE about: compact feature cards + stats (2026-11-09)
    ============================================================ */
 @media (min-width: 992px) {
-  .page-home #about .about-features-grid { padding-top: 14px !important; margin-bottom: 16px !important; gap: 12px !important; align-items: start !important; }
-  .page-home #about .about-feature-item { padding: 14px 16px !important; height: auto !important; }
+  .page-home #about .about-features-grid { padding-top: 14px !important; margin-bottom: 16px !important; gap: 12px !important; align-items: start !important; align-content: start !important; grid-auto-rows: auto !important; }
+  .page-home #about .about-feature-item { padding: 14px 16px !important; height: auto !important; align-self: start !important; }
   .page-home #about .about-feature-item i { margin-bottom: 8px !important; font-size: 1.4rem !important; }
   .page-home #about .about-feature-item h6 { margin-bottom: 4px !important; }
   .page-home #about .about-feature-item p { margin-bottom: 0 !important; }
