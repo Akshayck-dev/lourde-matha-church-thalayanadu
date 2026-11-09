@@ -7939,7 +7939,7 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
    HOMEPAGE about: compact feature cards + stats (2026-11-09)
    ============================================================ */
 @media (min-width: 992px) {
-  .page-home #about .about-features-grid { padding-top: 14px !important; margin-bottom: 16px !important; gap: 12px !important; align-items: start !important; align-content: start !important; grid-auto-rows: auto !important; }
+  .page-home #about .about-features-grid { padding-top: 8px !important; margin-bottom: 10px !important; gap: 12px !important; align-items: start !important; align-content: start !important; grid-auto-rows: auto !important; }
   .page-home #about .about-feature-item { display: flex !important; flex-direction: column !important; justify-content: flex-start !important; padding: 14px 16px !important; height: auto !important; min-height: 0 !important; align-self: stretch !important; }
   .page-home #about .about-feature-item i { margin-bottom: 8px !important; font-size: 1.4rem !important; }
   .page-home #about .about-feature-item h6 { margin-bottom: 4px !important; }
@@ -7950,6 +7950,9 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .stat-num { font-size: 16px !important; }
   .page-home #about .about-video-link { max-width: 380px !important; }
   .page-home #about .about-image { margin-bottom: 24px !important; }
-  .page-home #about.about-section { padding: 36px 0 28px !important; }
+  .page-home #about.about-section { padding: 28px 0 20px !important; }
+  .page-home #about .about-content h2 { font-size: 2rem !important; line-height: 1.15 !important; }
+  .page-home #about .about-content .ornament { margin: 6px 0 10px !important; font-size: 1rem !important; }
+  .page-home #about .about-content p { margin-bottom: 8px !important; line-height: 1.55 !important; }
   .page-home #about .about-container { align-items: center !important; }
 }
