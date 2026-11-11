@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=100.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=95.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -81,16 +81,13 @@
                                 fetchpriority="high" width="1080" height="1440">
                         </picture>
                         <div class="hero-overlay">
-                            <div class="container hero-content hero-content-1" data-aos="fade-up">
-                                <span class="hero-eyebrow">Welcome to</span>
-                                <h1>Lourde Matha Church</h1>
-                                <span class="hero-place">Thalayanadu</span>
-                                <span class="hero-est"><span class="hero-est-line"></span>Est. 1935<span class="hero-est-line"></span></span>
-                                <p>A parish family under the patronage of Our Lady of Lourdes, serving Thalayanadu with faith, prayer and love.</p>
+                            <div class="container hero-content" data-aos="fade-up">
+                                <h1>Lourde Matha Church, Thalayanadu</h1>
+                                <p>A parish family under the patronage of Our Lady of Lourdes — serving Thalayanadu since 1935.</p>
                                 <div class="hero-buttons">
-                                    <a href="#" class="btn btn-hero-gold" data-bs-toggle="modal"
-                                        data-bs-target="#visitModal"><i class="fas fa-church me-2"></i>Mass Timings <span aria-hidden="true">&rarr;</span></a>
-                                    <a href="about" class="btn btn-outline"><i class="fas fa-play-circle me-2"></i>Our Story</a>
+                                    <a href="#" class="btn btn-outline" data-bs-toggle="modal"
+                                        data-bs-target="#visitModal">Mass Timings</a>
+                                    <a href="about" class="btn btn-outline">Our Story</a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +172,7 @@
         <section class="about-section fade-in" id="about">
             <div class="container">
                 <div class="about-container">
-                    <div class="about-image-wrapper">
+                    <div class="about-image-wrapper" data-aos="fade-right">
                         <!-- Desktop Only Shapes -->
                         <div class="about-shape shape-1 d-none d-lg-block"></div>
                         <div class="about-shape shape-2 d-none d-lg-block"></div>
@@ -191,7 +188,7 @@
 
                         </div>
                     </div>
-                    <div class="about-content">
+                    <div class="about-content" data-aos="fade-left">
                         <span class="text-gold fw-bold text-uppercase ls-2">Welcome to Lourde Matha Church</span>
                         <h2 class="mb-3 text-navy">✝ Nine Decades of Faith in Thalayanadu</h2>
                         <h5 class="text-navy mb-4 italic">A Catholic parish under the patronage of Our Lady of Lourdes</h5>
@@ -294,209 +291,155 @@
         </section>
 
         <!-- Message from Fr. Vicar -->
-        <section class="section vicar-redesign" id="vicar-message">
+        <section class="section bg-white border-top" id="vicar-message">
             <div class="container">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <svg class="vm-icon" viewBox="0 0 120 82" fill="none" aria-hidden="true">
-                        <g stroke="#c9a24b" stroke-width="2" stroke-linecap="round">
-                            <line x1="60" y1="2" x2="60" y2="9"/>
-                            <line x1="38" y1="6" x2="43" y2="12"/>
-                            <line x1="82" y1="6" x2="77" y2="12"/>
-                            <line x1="22" y1="16" x2="29" y2="20"/>
-                            <line x1="98" y1="16" x2="91" y2="20"/>
-                        </g>
-                        <path d="M60 13 v20 M51 19 h18" stroke="#c9a24b" stroke-width="4" stroke-linecap="round"/>
-                        <path d="M20 46 C35 38 50 38 60 44 C70 38 85 38 100 46 V70 C85 62 70 62 60 68 C50 62 35 62 20 70 Z" fill="#f5d76e" stroke="#c9a24b" stroke-width="2" stroke-linejoin="round"/>
-                        <line x1="60" y1="44" x2="60" y2="68" stroke="#c9a24b" stroke-width="2"/>
-                    </svg>
-                    <h2 class="vm-title"><span class="vm-line"></span>Message from Fr. Vicar<span class="vm-line"></span></h2>
-                    <svg class="vm-flourish" viewBox="0 0 200 20" aria-hidden="true"><path d="M8 12 Q60 2 100 10 T192 8" stroke="#c9a24b" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="display-6 text-navy text-uppercase">Message from Fr. Vicar</h2>
                 </div>
-                <div class="row align-items-center g-4 g-lg-5" data-aos="fade-up">
+                                <div class="row align-items-center g-4 g-lg-5" data-aos="fade-up">
                     <div class="col-lg-4">
-                        <div class="vm-photo-card">
-                            <div class="vm-photo"><img src="./assets/images/vicar-fr-alex-diocese.jpg" alt="V. Rev. Fr Alex Thannikunnel, Vicar of Lourde Matha Church, Thalayanadu" loading="lazy" width="260" height="260"></div>
-                            <div class="vm-nameplate">
-                                <svg class="vm-plate-wave" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true">
-                                    <path d="M0,20 L0,10 Q75,2 150,8 T300,10 L300,20 Z" fill="#1e6fa8"/>
-                                    <path d="M0,10 Q75,2 150,8 T300,10" fill="none" stroke="#c9a24b" stroke-width="2"/>
-                                </svg>
-                                <span class="vm-cross">&#8212; &#10013; &#8212;</span>
-                                <h5 class="vm-name">V. Rev. Fr Alex Thannikunnel</h5>
-                                <p class="vm-role">Vicar</p>
-                            </div>
-                        </div>
+                        <div class="vicar-message-card">
+
+                    <img src="./assets/images/vicar-fr-alex-diocese.jpg" alt="V. Rev. Fr Alex Thannikunnel, Vicar of Lourde Matha Church, Thalayanadu"
+                        loading="lazy" width="260" height="260">
+                    <h5 class="text-uppercase mt-4 mb-1">V. Rev. Fr Alex Thannikunnel</h5>
+                    <p class="text-muted mb-0">Vicar</p>
+                                        </div>
                     </div>
                     <div class="col-lg-8">
-                        <blockquote class="vm-quote">
-                            <span class="vm-qmark vm-qmark-open" aria-hidden="true">&ldquo;</span>
-                            <p>Dear brothers and sisters in Christ, welcome to Lourde Matha Church, Thalayanadu. For ninety years, this parish has been a home of prayer for the families of this region, gathered around the Holy Eucharist and under the loving protection of Our Lady of Lourdes.</p>
-                            <p>Whether you are a parishioner or a visitor passing through, you are welcome here — to pray, to find peace, and to grow in faith together as one parish family. May Our Lady of Lourdes intercede for you and your loved ones, and may the Lord bless you abundantly.</p>
-                            <span class="vm-qmark-close" aria-hidden="true"><span class="vm-close-line"></span>&rdquo;</span>
-                        </blockquote>
+                        <div class="vicar-message-text">
+
+                    <p>Dear brothers and sisters in Christ, welcome to Lourde Matha Church, Thalayanadu. For ninety years, this parish has been a home of prayer for the families of this region, gathered around the Holy Eucharist and under the loving protection of Our Lady of Lourdes.</p>
+                    <p>Whether you are a parishioner or a visitor passing through, you are welcome here — to pray, to find peace, and to grow in faith together as one parish family. May Our Lady of Lourdes intercede for you and your loved ones, and may the Lord bless you abundantly.</p>
+                                        </div>
                     </div>
                 </div>
             </div>
-            <svg class="vm-bottom-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,80 L0,80 Z" fill="#cfe6f7"/><path d="M0,55 C240,85 480,25 720,50 C960,75 1200,30 1440,55 L1440,80 L0,80 Z" fill="#a8d0f0" opacity="0.7"/></svg>
         </section>
 
         <!-- Holy Mass Timings -->
-        <section class="section mass-timings-redesign" id="mass-timings">
+        <section class="section bg-light" id="mass-timings">
             <div class="container">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <svg class="mt-chalice" viewBox="0 0 120 92" fill="none" aria-hidden="true">
-                        <g stroke="#c9a24b" stroke-width="2" stroke-linecap="round">
-                            <line x1="60" y1="3" x2="60" y2="11"/>
-                            <line x1="40" y1="7" x2="45" y2="14"/>
-                            <line x1="80" y1="7" x2="75" y2="14"/>
-                            <line x1="25" y1="17" x2="32" y2="21"/>
-                            <line x1="95" y1="17" x2="88" y2="21"/>
-                        </g>
-                        <circle cx="60" cy="24" r="10" fill="#f5d76e" stroke="#c9a24b" stroke-width="1.5"/>
-                        <path d="M44 35 h32 v9 c0 10 -7 18 -16 18 s-16 -8 -16 -18 z" fill="#c9a24b"/>
-                        <rect x="57" y="62" width="6" height="12" fill="#c9a24b"/>
-                        <path d="M42 80 h36 l-5 -6 h-26 z" fill="#c9a24b"/>
-                        <path d="M26 72 q-8 -12 0 -22 M26 72 q2 -14 12 -18" stroke="#c9a24b" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <path d="M94 72 q8 -12 0 -22 M94 72 q-2 -14 -12 -18" stroke="#c9a24b" stroke-width="2" fill="none" stroke-linecap="round"/>
-                    </svg>
-                    <h2 class="mt-title">Holy Mass Timings</h2>
-                    <div class="mt-divider"><span class="mt-line"></span><span class="mt-cross">&#10013;</span><span class="mt-line"></span></div>
-                    <p class="mt-sub">Join us for the Holy Eucharist</p>
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="display-6 text-navy">Holy Mass Timings</h2>
+                    <div class="ornament">✦ ✦ ✦</div>
+                    <p class="text-muted">The church is open daily from 6:00 AM to 8:00 PM</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                        <div class="mt-card mt-card-sunday h-100">
-                            <div class="mt-card-head">
-                                <i class="fas fa-church"></i>
-                                <h4>Sunday</h4>
-                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
-                            </div>
-                            <div class="mt-card-body">
-                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">7:00 AM</span></div>
-                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">9:30 AM</span></div>
-                            </div>
+                        <div class="p-4 feature-card h-100 text-center">
+                            <i class="fas fa-sun fa-2x text-gold mb-3"></i>
+                            <h4>Sunday</h4>
+                            <p class="small text-muted mb-1">Holy Mass — 7:00 AM</p>
+                            <p class="small text-muted">Holy Mass — 9:30 AM</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="mt-card h-100">
-                            <div class="mt-card-head">
-                                <i class="fas fa-calendar-alt"></i>
-                                <h4>Monday &ndash; Friday</h4>
-                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
-                            </div>
-                            <div class="mt-card-body">
-                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">6:30 AM</span></div>
-                            </div>
+                        <div class="p-4 feature-card h-100 text-center">
+                            <i class="fas fa-calendar-day fa-2x text-gold mb-3"></i>
+                            <h4>Monday – Friday</h4>
+                            <p class="small text-muted">Holy Mass — 6:30 AM</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="mt-card h-100">
-                            <div class="mt-card-head">
-                                <i class="fas fa-calendar-alt"></i>
-                                <h4>Saturday</h4>
-                                <svg class="mt-wave" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H400 V6 C300,20 220,20 160,12 C100,4 50,4 0,12 Z" fill="#ffffff"/></svg>
-                            </div>
-                            <div class="mt-card-body">
-                                <div class="mt-row"><i class="far fa-clock"></i><span>Holy Mass</span><span class="mt-time">6:45 AM</span></div>
-                            </div>
+                        <div class="p-4 feature-card h-100 text-center">
+                            <i class="fas fa-calendar-week fa-2x text-gold mb-3"></i>
+                            <h4>Saturday</h4>
+                            <p class="small text-muted">Holy Mass — 6:45 AM</p>
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5" data-aos="fade-up">
-                    <a href="services#schedule" class="btn mt-schedule-btn"><i class="far fa-calendar-alt me-2"></i>View Full Worship Schedule <span aria-hidden="true">&rarr;</span></a>
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <a href="services#schedule" class="btn btn-primary">View Full Worship Schedule</a>
                 </div>
             </div>
-            <svg class="mt-bottom-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,80 L0,80 Z" fill="#cfe6f7"/><path d="M0,55 C240,85 480,25 720,50 C960,75 1200,30 1440,55 L1440,80 L0,80 Z" fill="#a8d0f0" opacity="0.7"/></svg>
         </section>
 
         <!-- Leadership Section -->
         <!-- Parish Administration -->
-        <section class="section admin-redesign" id="parish-administration">
+        <section class="section bg-white" id="parish-administration">
             <div class="container">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <svg class="ad-icon" viewBox="0 0 120 72" fill="none" aria-hidden="true">
-                        <path d="M14 56 A52 52 0 0 1 106 56" stroke="#c9a24b" stroke-width="2" fill="none"/>
-                        <path d="M60 4 v16 M52 10 h16" stroke="#c9a24b" stroke-width="3" stroke-linecap="round"/>
-                        <circle cx="60" cy="34" r="8" fill="#1e6fa8"/>
-                        <path d="M44 60 c0 -10 7 -17 16 -17 s16 7 16 17 z" fill="#1e6fa8"/>
-                        <circle cx="31" cy="40" r="6" fill="#2a7fb5"/>
-                        <path d="M19 60 c0 -8 5 -13 12 -13 s12 5 12 13 z" fill="#2a7fb5"/>
-                        <circle cx="89" cy="40" r="6" fill="#2a7fb5"/>
-                        <path d="M77 60 c0 -8 5 -13 12 -13 s12 5 12 13 z" fill="#2a7fb5"/>
-                    </svg>
-                    <h2 class="ad-title">Parish Administration</h2>
-                    <div class="ad-divider"><span class="ad-line"></span><span class="ad-cross">&#10013;</span><span class="ad-line"></span></div>
-                    <p class="ad-sub mx-auto" style="max-width: 680px;">Lourde Matha Church is guided by our Vicar and the parish council, under the Thodupuzha Forane in the Syro-Malabar Eparchy of Kothamangalam.</p>
-                </div>
-                <div class="row g-4 justify-content-center align-items-end">
-                    <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="ad-card h-100">
-                            <div class="ad-card-top">
-                                <span class="ad-ic"><i class="fas fa-users"></i></span>
-                                <h5 class="ad-role">Parish Trustees</h5>
-                                <span class="ad-underline"></span>
-                            </div>
-                            <div class="ad-card-bottom">
-                                <svg class="ad-wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0,2 H400 V10 C300,24 220,24 160,16 C100,8 50,8 0,16 Z" fill="#c9a24b"/><path d="M0,7 H400 V13 C300,26 220,26 160,19 C100,11 50,11 0,19 Z" fill="#ffffff"/></svg>
-                                <span class="ad-name">Kaikkarans</span>
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="display-6 text-navy">Parish Administration</h2>
+                    <div class="ornament">✦ ✦ ✦</div>
+                    <p class="text-muted mx-auto" style="max-width: 640px;">Lourde Matha Church is guided by our Vicar and the parish council, under the Thodupuzha Forane in the Syro-Malabar Eparchy of Kothamangalam.</p>
+                    <div class="admin-marquee" data-aos="fade-up">
+                        <div class="admin-marquee-track">
+                        <div class="vicar-card admin-card">
+                            <img src="./assets/images/vicar-fr-alex-diocese.jpg" alt="V. Rev. Fr Alex Thannikunnel, Vicar of Lourde Matha Church, Thalayanadu" class="vicar-card-img" loading="lazy">
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Vicar</span>
+                                <h5 class="vicar-card-name">V. Rev. Fr Alex Thannikunnel</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="80">
-                        <div class="ad-card ad-card-vicar h-100">
-                            <div class="ad-photo"><img src="./assets/images/vicar-fr-alex-diocese.jpg" alt="V. Rev. Fr Alex Thannikunnel, Vicar of Lourde Matha Church, Thalayanadu" loading="lazy"></div>
-                            <span class="ad-vicar-badge">Vicar</span>
-                            <div class="ad-card-bottom">
-                                <svg class="ad-wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0,2 H400 V10 C300,24 220,24 160,16 C100,8 50,8 0,16 Z" fill="#c9a24b"/><path d="M0,7 H400 V13 C300,26 220,26 160,19 C100,11 50,11 0,19 Z" fill="#ffffff"/></svg>
-                                <span class="ad-name">V. Rev. Fr Alex Thannikunnel</span>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Assistant Vicar</span>
+                                <h5 class="vicar-card-name">Assistant Parish Priest</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="160">
-                        <div class="ad-card h-100">
-                            <div class="ad-card-top">
-                                <span class="ad-ic"><i class="fas fa-user"></i></span>
-                                <h5 class="ad-role">Assistant Vicar</h5>
-                                <span class="ad-underline"></span>
-                            </div>
-                            <div class="ad-card-bottom">
-                                <svg class="ad-wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0,2 H400 V10 C300,24 220,24 160,16 C100,8 50,8 0,16 Z" fill="#c9a24b"/><path d="M0,7 H400 V13 C300,26 220,26 160,19 C100,11 50,11 0,19 Z" fill="#ffffff"/></svg>
-                                <span class="ad-name">Assistant Parish Priest</span>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Office Secretary</span>
+                                <h5 class="vicar-card-name">Parish Office</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="240">
-                        <div class="ad-card h-100">
-                            <div class="ad-card-top">
-                                <span class="ad-ic"><i class="fas fa-file-alt"></i></span>
-                                <h5 class="ad-role">Office Secretary</h5>
-                                <span class="ad-underline"></span>
-                            </div>
-                            <div class="ad-card-bottom">
-                                <svg class="ad-wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0,2 H400 V10 C300,24 220,24 160,16 C100,8 50,8 0,16 Z" fill="#c9a24b"/><path d="M0,7 H400 V13 C300,26 220,26 160,19 C100,11 50,11 0,19 Z" fill="#ffffff"/></svg>
-                                <span class="ad-name">Parish Office</span>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Kappiyar</span>
+                                <h5 class="vicar-card-name">Sacristan</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="320">
-                        <div class="ad-card h-100">
-                            <div class="ad-card-top">
-                                <span class="ad-ic"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="8" r="5" fill="#f5d76e" stroke="#1e6fa8" stroke-width="1.2"/><path d="M13 14 h14 v4 c0 5 -3 8 -7 8 s-7 -3 -7 -8 z" fill="#1e6fa8"/><rect x="18.5" y="26" width="3" height="5" fill="#1e6fa8"/><path d="M12 34 h16 l-2.5 -3 h-11 z" fill="#1e6fa8"/></svg></span>
-                                <h5 class="ad-role">Kappiyar</h5>
-                                <span class="ad-underline"></span>
-                            </div>
-                            <div class="ad-card-bottom">
-                                <svg class="ad-wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0,2 H400 V10 C300,24 220,24 160,16 C100,8 50,8 0,16 Z" fill="#c9a24b"/><path d="M0,7 H400 V13 C300,26 220,26 160,19 C100,11 50,11 0,19 Z" fill="#ffffff"/></svg>
-                                <span class="ad-name">Sacristan</span>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Kaikkarans</span>
+                                <h5 class="vicar-card-name">Parish Trustees</h5>
                             </div>
                         </div>
+                        <div class="vicar-card admin-card">
+                            <img src="./assets/images/vicar-fr-alex-diocese.jpg" alt="V. Rev. Fr Alex Thannikunnel, Vicar of Lourde Matha Church, Thalayanadu" class="vicar-card-img" loading="lazy">
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Vicar</span>
+                                <h5 class="vicar-card-name">V. Rev. Fr Alex Thannikunnel</h5>
+                            </div>
+                        </div>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Assistant Vicar</span>
+                                <h5 class="vicar-card-name">Assistant Parish Priest</h5>
+                            </div>
+                        </div>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Office Secretary</span>
+                                <h5 class="vicar-card-name">Parish Office</h5>
+                            </div>
+                        </div>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Kappiyar</span>
+                                <h5 class="vicar-card-name">Sacristan</h5>
+                            </div>
+                        </div>
+                        <div class="vicar-card admin-card">
+                            <span class="vicar-card-avatar" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="37" fill="rgba(255,255,255,0.14)"/><circle cx="40" cy="29" r="11" fill="rgba(255,255,255,0.88)"/><path d="M17 63c2.5-13.5 11.5-21.5 23-21.5s20.5 8 23 21.5c-7.5 3.5-15 5-23 5s-15.5-1.5-23-5z" fill="rgba(255,255,255,0.88)"/></svg></span>
+                            <div class="vicar-card-body">
+                                <span class="vicar-card-role">Kaikkarans</span>
+                                <h5 class="vicar-card-name">Parish Trustees</h5>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-                <div class="text-center mt-5" data-aos="fade-up">
-                    <a href="administration" class="btn ad-btn"><i class="fas fa-users me-2"></i>Meet the Parish Administration <span aria-hidden="true">&rarr;</span></a>
+                    <a href="administration" class="btn btn-primary mt-2">Meet the Parish Administration</a>
                 </div>
             </div>
-            <svg class="ad-bottom-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,80 L0,80 Z" fill="#cfe6f7"/><path d="M0,55 C240,85 480,25 720,50 C960,75 1200,30 1440,55 L1440,80 L0,80 Z" fill="#a8d0f0" opacity="0.7"/></svg>
         </section>
 
     <!-- News & Events (redesigned 2026-11-03) -->
@@ -807,7 +750,7 @@
     </script>
 
 
-    <script src="./assets/js/i18n-ml.js?v=1.8" defer></script>
+    <script src="./assets/js/i18n-ml.js?v=1.6" defer></script>
 </body>
 
 </html>
