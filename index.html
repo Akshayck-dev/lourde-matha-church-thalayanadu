@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css?v=7.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=110.0">
+    <link rel="stylesheet" href="./assets/css/main.css?v=100.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -24,6 +24,42 @@
             background: rgba(0, 0, 0, 0.7) !important;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+    <style>
+        /* Force Uniform Feature Box Heights on Desktop */
+        @media (min-width: 768px) {
+            .about-features-grid {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                grid-auto-rows: 1fr !important;
+                align-items: stretch !important;
+            }
+
+            .about-feature-item {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: center !important;
+                background: #fff !important;
+                padding: 25px 15px !important;
+                /* Further Reduced Padding */
+                border-radius: 15px !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+                border: 1px solid rgba(0, 0, 0, 0.03) !important;
+                height: 100% !important;
+                min-height: 280px !important;
+                /* Further Reduced for more compact look */
+            }
+
+            .about-feature-item h6 {
+                margin-top: 5px !important;
+                /* Minimal top margin */
+                margin-bottom: 12px !important;
+                font-weight: 700 !important;
+                color: var(--primary-navy) !important;
+            }
         }
     </style>
 </head>
@@ -123,12 +159,12 @@
             <a href="news#notices" class="notice-ticker-label"><i class="fas fa-bell" aria-hidden="true"></i><span>Notifications</span></a>
             <div class="notice-ticker-track">
                 <div class="notice-ticker-scroll">
-                    <a href="news#notices">📢 Last Sunday's Church Collection: ₹5,735/-. Thank you for your generous contributions!</a><span class="nt-sep" aria-hidden="true">✦</span>
-                    <a href="news#notices">📢 Parish Council Meeting – Coming Sunday at 2:00 PM. All members are requested to attend.</a><span class="nt-sep" aria-hidden="true">✦</span>
-                    <a href="news#notices">📢 Mathruvedi Meeting – Coming Sunday at 4:00 PM. All members are requested to participate.</a><span class="nt-sep" aria-hidden="true">✦</span>
-                    <a href="news#notices">📢 Last Sunday's Church Collection: ₹5,735/-. Thank you for your generous contributions!</a><span class="nt-sep" aria-hidden="true">✦</span>
-                    <a href="news#notices">📢 Parish Council Meeting – Coming Sunday at 2:00 PM. All members are requested to attend.</a><span class="nt-sep" aria-hidden="true">✦</span>
-                    <a href="news#notices">📢 Mathruvedi Meeting – Coming Sunday at 4:00 PM. All members are requested to participate.</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="news#notices">Sunday Bulletin — download this week's parish bulletin</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="news">Feast of Our Lady of Lourdes celebrated every February</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="services#schedule">Holy Mass: Sunday 7:00 &amp; 9:30 AM · Mon–Fri 6:30 AM · Saturday 6:45 AM</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="news#notices">Sunday Bulletin — download this week's parish bulletin</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="news">Feast of Our Lady of Lourdes celebrated every February</a><span class="nt-sep" aria-hidden="true">✦</span>
+                    <a href="services#schedule">Holy Mass: Sunday 7:00 &amp; 9:30 AM · Mon–Fri 6:30 AM · Saturday 6:45 AM</a><span class="nt-sep" aria-hidden="true">✦</span>
                 </div>
             </div>
         </div>
@@ -136,43 +172,125 @@
         <div class="section-divider"></div>
 
         <!-- About Preview -->
-        <!-- About Our Church (Figma design, 2026-11-09) -->
         <section class="about-section fade-in" id="about">
             <div class="container">
-                <div class="about-figma">
-                    <div class="af-photo">
-                        <img src="./assets/images/hero-slide2-facade.jpg" alt="Lourde Matha Church, Thalayanadu" loading="lazy" width="1920" height="1080">
-                    </div>
-                    <div class="af-text">
-                        <h2>About Our Church</h2>
-                        <div class="af-divider" aria-hidden="true"><span></span>✝<span></span></div>
-                        <p>Lourde Matha Church, Thalayanadu, established in 1935, is a vibrant faith community rooted in prayer, service and fellowship. Guided by the love of Our Lady of Lourdes, we continue to grow in faith, unity and charity.</p>
-                        <a href="about" class="btn af-learn">Learn More <span aria-hidden="true">→</span></a>
-                    </div>
-                    <div class="af-timings">
-                        <div class="af-timings-head">
-                            <i class="fas fa-church" aria-hidden="true"></i>
-                            <h3>Holy Mass Timings</h3>
+                <div class="about-container">
+                    <div class="about-image-wrapper">
+                        <!-- Desktop Only Shapes -->
+                        <div class="about-shape shape-1 d-none d-lg-block"></div>
+                        <div class="about-shape shape-2 d-none d-lg-block"></div>
+
+                        <div class="about-image mb-lg-4">
+                            <a class="about-video-link" href="https://youtube.com/shorts/sIT-s5DbYxo?si=nyMWwvL8xQ5uNkDPED" target="_blank" rel="noopener" aria-label="Watch the Lourde Matha Church parish short on YouTube">
+                                <img src="./assets/images/gallery-real-01-sm.jpg" alt="Lourde Matha Church, Thalayanadu"
+                                    class="img-fluid" loading="lazy" width="800" height="600">
+                                <span class="about-play-button" aria-hidden="true"><i class="fas fa-play"></i></span>
+                            </a>
+                            <div class="badge-30">90+ Years of Faith</div>
                         </div>
-                        <ul class="af-rows">
-                            <li>
-                                <span class="af-day"><i class="far fa-calendar-alt" aria-hidden="true"></i> Sunday</span>
-                                <strong>7:00 AM &amp; 9:30 AM</strong>
-                            </li>
-                            <li>
-                                <span class="af-day"><i class="far fa-calendar-alt" aria-hidden="true"></i> Monday – Friday</span>
-                                <strong>6:30 AM</strong>
-                            </li>
-                            <li>
-                                <span class="af-day"><i class="far fa-calendar-alt" aria-hidden="true"></i> Saturday</span>
-                                <strong>6:45 AM</strong>
-                            </li>
-                        </ul>
-                        <svg class="af-wave" viewBox="0 0 400 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0,30 C90,12 170,12 230,26 C290,40 350,38 400,22 L400,48 L0,48 Z" fill="#d9a441"/></svg>
+
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="text-gold fw-bold text-uppercase ls-2">Welcome to Lourde Matha Church</span>
+                        <h2 class="mb-3 text-navy">✝ Nine Decades of Faith in Thalayanadu</h2>
+                        <h5 class="text-navy mb-4 italic">A Catholic parish under the patronage of Our Lady of Lourdes</h5>
+                        <div class="ornament">✦ ✦ ✦</div>
+                        <p>
+                            Established on 26 October 1935, Lourde Matha Church stands on the Kolapra–Thalayanadu Road
+                            in the heart of Idukki district. For over ninety years, this parish has been the
+                            spiritual home of the Catholic families of Thalayanadu — a place where faith is handed
+                            down from generation to generation, and where all are welcome to pray.
+                        </p>
+
+                        <!-- Features Grid (Desktop Only) -->
+                        <div class="about-features-grid mt-4 d-none d-md-grid">
+                            <div class="about-feature-item">
+                                <i class="fas fa-church fa-2x text-gold mb-3"></i>
+                                <h6>Catholic Parish</h6>
+                                <p class="small text-muted mb-0">Rooted in the faith and traditions of the Catholic
+                                    Church since 1935.</p>
+                            </div>
+                            <div class="about-feature-item">
+                                <i class="fas fa-cross fa-2x text-gold mb-3"></i>
+                                <h6>Daily Holy Mass</h6>
+                                <p class="small text-muted mb-0">Holy Mass every morning, with two Sunday
+                                    celebrations for the whole parish.</p>
+                            </div>
+                        </div>
+
+                        <!-- Features Carousel (Mobile Only) -->
+                        <div id="featuresCarousel" class="carousel slide d-md-none mt-4 pt-4 border-top"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="text-center px-3">
+                                        <i class="fas fa-church fa-2x text-gold mb-3"></i>
+                                        <h5 class="text-navy fw-bold">Catholic Parish</h5>
+                                        <p class="small text-muted">Rooted in the faith and traditions of the Catholic
+                                            Church since 1935.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="text-center px-3">
+                                        <i class="fas fa-cross fa-2x text-gold mb-3"></i>
+                                        <h5 class="text-navy fw-bold">Daily Holy Mass</h5>
+                                        <p class="small text-muted">Holy Mass every morning, with two Sunday
+                                            celebrations for the whole parish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators" style="position: relative; margin-top: 20px;">
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="0"
+                                    class="active bg-gold rounded-circle" style="width: 10px; height: 10px;"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="1"
+                                    class="bg-gold rounded-circle" style="width: 10px; height: 10px;"></button>
+                            </div>
+                        </div>
+
+                        <!-- Original Mobile Stats Grid (Mobile ONLY) -->
+                        <div class="mb-4 mt-4 d-lg-none">
+                            <div class="stat-box">90+ Years</div>
+                            <div class="stat-box">Est. 1935</div>
+                            <div class="stat-box">Open Daily</div>
+                            <div class="stat-box">Idukki, Kerala</div>
+                        </div>
+
+                        <a href="about" class="btn btn-primary">Read More About Us</a>
                     </div>
                 </div>
-            </div>
-            <svg class="af-section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C240,56 480,8 720,26 C960,44 1200,12 1440,32 L1440,60 L0,60 Z" fill="#dcebf7"/></svg>
+
+                    <!-- Stats Grid (Desktop ONLY - full width, single row) -->
+                    <div class="about-stats-staggered d-none d-lg-grid">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-history stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-num">90+ Years</span>
+                                <span class="stat-text">Of Faith</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-church stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-num">Est. 1935</span>
+                                <span class="stat-text">Parish</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-clock stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-num">Open Daily</span>
+                                <span class="stat-text">6 AM &ndash; 8 PM</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-map-marker-alt stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-num">Idukki</span>
+                                <span class="stat-text">Kerala</span>
+                            </div>
+                        </div>
+                    </div>
         </section>
 
         <!-- Message from Fr. Vicar -->
@@ -689,7 +807,7 @@
     </script>
 
 
-    <script src="./assets/js/i18n-ml.js?v=2.0" defer></script>
+    <script src="./assets/js/i18n-ml.js?v=1.8" defer></script>
 </body>
 
 </html>
