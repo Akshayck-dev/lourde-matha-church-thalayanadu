@@ -7826,3 +7826,15 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
   .page-home #about .about-content p { color: #5a6b82; }
   .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: none; margin-left: 0; margin-right: 0; text-align: center; }
 }
+
+/* ============================================================
+   HOMEPAGE about: stats under the photo, 2x2 grid (2026-11-12, user ask)
+   ============================================================ */
+@media (min-width: 992px) {
+  .page-home #about .about-image-wrapper .about-stats-staggered {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 460px;
+    gap: 14px !important;
+    margin-top: 12px !important;
+  }
+}
