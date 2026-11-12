@@ -7838,3 +7838,12 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
     margin-top: 12px !important;
   }
 }
+
+/* ============================================================
+   HOMEPAGE admin: auto slider replacing marquee (2026-11-12)
+   ============================================================ */
+.admin-slider { margin: 30px 0 10px; padding: 6px 0; }
+.admin-slider .swiper-slide .admin-card { width: 100%; }
+.admin-slider .admin-pagination { position: static !important; margin-top: 14px; text-align: center; }
+.page-home .admin-pagination .swiper-pagination-bullet { background: rgba(30,111,168,.35); opacity: 1; width: 8px; height: 8px; margin: 0 4px; }
+.page-home .admin-pagination .swiper-pagination-bullet-active { background: #1e6fa8; width: 26px; border-radius: 999px; }

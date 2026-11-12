@@ -284,6 +284,29 @@ $(function() {
             });
         }
 
+        // 4b. Parish Administration auto slider (replaces marquee, 2026-11-12)
+        if ($('.admin-slider').length > 0 && typeof Swiper !== 'undefined') {
+            new Swiper('.admin-slider', {
+                speed: 700,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                },
+                slidesPerView: 2,
+                spaceBetween: 12,
+                pagination: {
+                    el: '.admin-pagination',
+                    clickable: true
+                },
+                breakpoints: {
+                    768: { slidesPerView: 3, spaceBetween: 18 },
+                    992: { slidesPerView: 4, spaceBetween: 18 }
+                }
+            });
+        }
+
         // 5. Portfolio/Gallery Swiper
         if ($('.mySwiper').length > 0 && typeof Swiper !== 'undefined') {
             new Swiper(".mySwiper", {
