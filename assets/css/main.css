@@ -7805,48 +7805,24 @@ html[lang="ml"] body { font-family: 'Noto Sans Malayalam', 'Nirmala UI', sans-se
 }
 
 /* ============================================================
-   HOMEPAGE about: row-wise stacked layout (desktop) — 2026-11-04
-   ============================================================ */
-@media (min-width: 992px) {
-  .page-home #about .about-container { grid-template-columns: 1fr; gap: 8px; max-width: 920px; text-align: center; }
-  .page-home #about .about-image-wrapper { max-width: 660px; width: 100%; margin: 0 auto; }
-  .page-home #about .about-image { margin-bottom: 40px !important; }
-  .page-home #about .about-image img { max-width: 660px; }
-  .page-home #about .about-content { text-align: center; max-width: 780px; margin: 0 auto; }
-  .page-home #about .about-content .ornament { text-align: center; }
-  .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
-}
-
-/* ============================================================
    OFFERINGS dummy QR — 2026-11-04
    ============================================================ */
 .offering-qr { width: 132px; height: 132px; border-radius: 12px; background: #fff; padding: 8px; box-shadow: 0 2px 10px rgba(30,58,92,.12); flex-shrink: 0; }
 
 /* ============================================================
-   HOMEPAGE ABOUT: Figma 3-column rebuild (2026-11-11, re-applied on Thursday base)
+   HOMEPAGE about: design-matched 2-col portrait (2026-11-06)
+   Replaces the row-wise layout — per user's design mockup.
    ============================================================ */
-.page-home #about .about-figma { display: grid; grid-template-columns: 1.15fr 1fr 0.95fr; gap: 36px; align-items: center; max-width: 1200px; margin: 0 auto; }
-.page-home #about .af-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 12px 32px rgba(22,41,74,.12); display: block; aspect-ratio: 16/10; }
-.page-home #about .af-text h2 { font-family: 'Marcellus', serif; font-size: 1.9rem; color: #16294a; font-weight: 700; margin-bottom: 10px; }
-.page-home #about .af-divider { display: flex; align-items: center; gap: 10px; color: #c9a24b; margin-bottom: 14px; }
-.page-home #about .af-divider span { display: block; width: 44px; height: 2px; background: #c9a24b; }
-.page-home #about .af-text p { color: #3d4f66; font-size: .98rem; line-height: 1.65; margin-bottom: 20px; }
-.page-home #about .af-learn { border: 1.5px solid #1e6fa8 !important; color: #1e6fa8 !important; background: #fff !important; border-radius: 999px !important; padding: 10px 22px !important; font-weight: 600 !important; }
-.page-home #about .af-learn:hover { background: #1e6fa8 !important; color: #fff !important; }
-.page-home #about .af-timings { background: #fff; border-radius: 16px; box-shadow: 0 12px 32px rgba(22,41,74,.12); overflow: hidden; display: flex; flex-direction: column; }
-.page-home #about .af-timings-head { background: linear-gradient(135deg, #1e6fa8, #164a73); color: #fff; display: flex; align-items: center; gap: 12px; padding: 16px 20px; }
-.page-home #about .af-timings-head i { color: #e8b64c; font-size: 1.4rem; }
-.page-home #about .af-timings-head h3 { color: #fff; font-size: 1.15rem; font-weight: 700; margin: 0; }
-.page-home #about .af-rows { list-style: none; margin: 0; padding: 8px 20px 4px; }
-.page-home #about .af-rows li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid #eef2f7; }
-.page-home #about .af-rows li:last-child { border-bottom: 0; }
-.page-home #about .af-day { color: #1e3a5c; font-weight: 600; display: flex; align-items: center; gap: 9px; }
-.page-home #about .af-day i { color: #b8933f; }
-.page-home #about .af-rows strong { color: #1e3a5c; font-weight: 700; white-space: nowrap; }
-.page-home #about .af-wave { display: block; width: 100%; height: 34px; margin-top: auto; }
-.page-home #about .af-section-wave { display: block; width: 100%; height: 44px; margin-top: 28px; }
-@media (max-width: 991.98px) {
-  .page-home #about .about-figma { grid-template-columns: 1fr; gap: 24px; }
-  .page-home #about .af-text { text-align: center; }
-  .page-home #about .af-divider { justify-content: center; }
+@media (min-width: 992px) {
+  .page-home #about .about-container { grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; text-align: left; align-items: start; }
+  .page-home #about .about-image-wrapper { max-width: none; width: auto; margin: 0; }
+  .page-home #about .about-image { margin-bottom: 40px !important; }
+  .page-home #about .about-video-link { display: block; max-width: 460px; aspect-ratio: 4 / 5; border-radius: 20px; overflow: hidden; }
+  .page-home #about .about-video-link img { width: 100%; height: 100%; max-width: none; object-fit: cover; border-radius: 0; box-shadow: none; }
+  .page-home #about .about-content { text-align: left; max-width: none; margin: 0; }
+  .page-home #about .about-content .text-gold { letter-spacing: .18em; font-size: .82rem; }
+  .page-home #about .about-content h2 { font-family: 'Marcellus', serif; font-size: 2.5rem; color: #16294a; font-weight: 400; line-height: 1.2; }
+  .page-home #about .about-content h5.italic { color: #3d9bd6; font-style: normal; font-weight: 400; font-size: 1.05rem; }
+  .page-home #about .about-content p { color: #5a6b82; }
+  .page-home #about .about-features-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: none; margin-left: 0; margin-right: 0; text-align: center; }
 }
